@@ -1,0 +1,143 @@
+.ball {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: right 0.5s ease-in-out;
+  width: 55px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.darkModePlanetContainer,
+.lightModePlanetContainer {
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 76px;
+  height: 76px;
+}
+
+.darkModeBall {
+  right: -5px;
+}
+
+.lightModeBall {
+  right: 50px;
+}
+
+.modeChangeStars {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 70px;
+  transform: translate(-70%, -50%);
+}
+
+.modeChangeClouds {
+  position: absolute;
+  top: 50%;
+  width: 70px;
+  height: 60px;
+  transform: translate(92%, -51%);
+}
+.modeChangeBackgroundDarkMode,
+.modeChangeBackgroundLightMode {
+  width: 160px;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 55px;
+}
+
+.modeChangeBackgroundDarkMode {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(15, 15, 15, 1));
+}
+
+.modeChangeBackgroundLightMode {
+  background: linear-gradient(0deg, #0071f5, #1d24cf);
+}
+
+/* ////////////////////////////////////////////////////
+v1
+//////////////////////////////////////////////////// */
+
+/* .darkMode {
+  position: absolute;
+  right: -85px;
+  width: 250px;
+  height: 80px;
+  top: 50%;
+  transform: translate(0, -50%);
+  animation: moonAppear 0.8s ease-in-out forwards;
+}
+
+@keyframes moonAppear {
+  0% {
+    opacity: 0;
+    right: 20px;
+  }
+  100% {
+    opacity: 1;
+    right: -85px;
+  }
+}
+
+.darkModeOff {
+  animation: darkModeOff 0.8s ease-in-out forwards;
+}
+
+@keyframes darkModeOff {
+  0% {
+    right: -85px;
+    opacity: 1;
+  }
+  100% {
+    right: 20px;
+    opacity: 0;
+  }
+}
+
+.lightMode {
+  position: absolute;
+  height: 100px;
+  width: 250px;
+  border: 1px solid gray;
+  left: -80px;
+  top: 50%;
+  background: linear-gradient(0deg, #0071f5, #1d24cf);
+  transform: translate(0, -50%);
+  animation: sunAppear 0.5s ease-in-out forwards;
+}
+
+@keyframes sunAppear {
+  0% {
+    left: -20px;
+    opacity: 0;
+  }
+  100% {
+    left: -80px;
+    opacity: 1;
+  }
+}
+
+.lightModeOff {
+  animation: lightModeOff 0.5s ease-in-out forwards;
+}
+
+@keyframes lightModeOff {
+  0% {
+    left: -80px;
+    opacity: 1;
+  }
+  100% {
+    left: -20px;
+    opacity: 0;
+  }
+}
+
+.moon {
+} */

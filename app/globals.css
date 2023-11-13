@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,4 +25,30 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 75px);
+  gap: 20px;
+}
+
+/* col-span-full */
+.main-grid-element {
+  grid-column: 1/-1;
+}
+
+@layer components {
+  .test {
+    @apply border border-blue-200 p-3 col-span-5 md:col-span-full;
+  }
+  .saffron {
+    @apply col-span-7;
+  }
+  .planet {
+    @apply col-span-3;
+  }
+  .modeChangeBackground {
+    @apply relative border-2 rounded-[24px] w-[72px] h-[37px] transition-[border] hover:border-main overflow-hidden;
+  }
 }
