@@ -9,9 +9,36 @@ module.exports = {
     extend: {
       colors: {
         main: "#CD482B",
+        main2: "#4AABF3",
+        bgcolor: "#0E0D0D",
+        bgcolor2: "#000000",
+        textMain: "#E9E9E9",
+        textSub: "#8E8E8E",
+        textSub2: "#C3BABA",
+        textSub3: "#E1E1E1",
+      },
+      animation: {
+        appearFromTop: "appearFromTop .3s ease-in-out forwards",
+        disappearToTop: "disappearToTop 1s ease-in-out forwards",
+      },
+      keyframes: {
+        appearFromTop: {
+          "0%": { transform: "translate(-50%, -50%) scale(0.3)", opacity: 0 },
+          "60%": { opacity: 0.3 },
+          "100%": { transform: "translate(-50, -50%) scale(1)", opacity: 1 },
+        },
+        disappearToTop: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
       },
       fontFamily: {
         lato: ["Lato", "serif"],
+        catamaran: ["Catamaran", "serif"],
+      },
+      fontSize: {
+        title: "32px",
+        base: "18px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

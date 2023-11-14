@@ -1,22 +1,31 @@
 import Nav from "@/components/Nav";
-import Image from "next/image";
+import Mainthreed from "@/components/Mainthreed";
+import Title from "@/components/Title";
+import NameCard from "@/components/NameCard";
+import NameCardImage from "@/components/NameCardImage";
+import Summary from "@/components/Summary";
+import History from "@/components/History";
+import Offer from "@/components/Offer";
+import Languages from "@/components/Languages";
+import Media from "@/components/Media";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="font-lato">
+    <div className=" font-lato text-textSub bg-bgcolor">
       <Nav />
-      <main className="main-grid border-2 border-gray-100 max-w-fit mx-auto">
-        <div className="max-w-full border border-green-200">3D ELEMENT</div>
-        <div className="test">title</div>
-        <div className="test saffron">Name Card</div>
-        <div className="test planet">Planet</div>
-        <div className="test">summary</div>
-        <div className="test">history</div>
-        <div className="test">what can i offer</div>
-        <div className="test">languages</div>
-        <div className="test">media</div>
-        <div className="test">footer</div>
+      <main className="main-grid  max-w-fit mx-auto">
+        <Mainthreed />
+        <Title />
+        <NameCard />
+        <NameCardImage />
+        <Summary />
+        <History />
+        <Offer />
+        <Languages />
+        <Media />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Lato:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,17 +31,16 @@ body {
 .main-grid {
   display: grid;
   grid-template-columns: repeat(10, 75px);
-  gap: 20px;
-}
-
-/* col-span-full */
-.main-grid-element {
-  grid-column: 1/-1;
+  gap: 0 20px;
+  margin-top: 15px;
 }
 
 @layer components {
+  .link {
+    @apply text-[#BBBBBB] hover:text-white cursor-pointer  transition duration-200;
+  }
   .test {
-    @apply border border-blue-200 p-3 col-span-5 md:col-span-full;
+    @apply col-span-full md:col-span-full;
   }
   .saffron {
     @apply col-span-7;
@@ -50,5 +50,25 @@ body {
   }
   .modeChangeBackground {
     @apply relative border-2 rounded-[24px] w-[72px] h-[37px] transition-[border] hover:border-main overflow-hidden;
+  }
+  .navLanguageTab {
+    @apply absolute h-fit w-[100px] animate-appearFromTop top-[155%] rounded-md left-1/2 -translate-x-1/2 flex flex-col border-[#303030] border-2 bg-[#161616] z-10;
+  }
+  .navLanguageChoice {
+    @apply flex gap-2 text-lg w-fit bg-[#2B2B2B] my-2 mx-auto items-center py-1 px-2 rounded-md hover:bg-[#464545] hover:border-[#747474] border border-[#2B2B2B] transition duration-100;
+  }
+  .textTitle {
+    @apply font-lato text-[24px] text-textSub2 font-bold py-2 border-b-4 border-main w-fit mb-3;
+  }
+  .summary-button {
+    @apply bg-main2 text-black font-bold text-base flex justify-center items-center gap-3 px-6 py-4 rounded-lg mx-auto my-12;
+  }
+
+  .offerCategory {
+    @apply text-textSub3 font-lato font-bold whitespace-nowrap min-w-[100px];
+  }
+
+  .knownLanguage {
+    @apply flex justify-center items-center gap-3;
   }
 }

@@ -61,26 +61,23 @@
   transform: translate(52%, -51%);
   animation: cloudAnimation 4s infinite ease-in-out;
 }
-/* 
+
 @keyframes cloudAnimation {
   0% {
     opacity: 1;
-    transform: translate(92%, -51%);
+    transform: translate(52%, -51%);
   }
   33% {
-    transform: translate(93%, -53%);
+    transform: translate(55%, -55%);
   }
   50% {
     opacity: 0.8;
   }
-  66% {
-    transform: translate(88%, -48%);
-  }
   100% {
     opacity: 1;
-    transform: translate(92%, -51%);
+    transform: translate(52%, -51%);
   }
-} */
+}
 
 .modeChangeBackgroundDarkMode,
 .modeChangeBackgroundLightMode {
@@ -94,7 +91,11 @@
 }
 
 .modeChangeBackgroundDarkMode {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(15, 15, 15, 1));
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(55, 55, 55, 1)
+  );
 }
 
 .modeChangeBackgroundLightMode {
