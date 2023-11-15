@@ -20,12 +20,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  min-height: 100vh;
 }
 
 .main-grid {
@@ -35,12 +30,21 @@ body {
   margin-top: 15px;
 }
 
+.on {
+  background: -webkit-linear-gradient(#ff4a21, #cd482b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px #cd482b;
+  display: inline-block;
+  /* transform: rotate3d(1, 1, 0, 100deg); */
+}
+
 @layer components {
   .link {
     @apply text-[#BBBBBB] hover:text-white cursor-pointer  transition duration-200;
   }
   .test {
-    @apply col-span-full md:col-span-full;
+    @apply col-span-full;
   }
   .saffron {
     @apply col-span-7;
@@ -70,5 +74,17 @@ body {
 
   .knownLanguage {
     @apply flex justify-center items-center gap-3;
+  }
+
+  /* ////// WORKS */
+  .mainWorkCategory {
+    @apply text-[20px] text-category border-l border-[#424242] first-of-type:border-none px-6 cursor-pointer;
+  }
+
+  .mainWorkCategory-active {
+    @apply text-textSub3 border-b-2;
+  }
+  .pause {
+    @apply h-[30px] border-l-2 border-[#424242];
   }
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Summary() {
   return (
@@ -8,7 +9,7 @@ export default function Summary() {
         Passion for{" "}
         <span className="text-textSub3">
           work, learning and freedom to create
-        </span>
+        </span>{" "}
         what's on my mind. Working in{" "}
         <span className="text-main">Civil Engineering</span> has enhanced my{" "}
         communication skills and problem solving abilities.{" "}
@@ -21,10 +22,10 @@ export default function Summary() {
         have filled my mind with thousands of ideas that are yet to be created.
       </p>
 
-      <button className="summary-button ">
+      <Link href="/work" className="summary-button w-fit ">
         <span>See my work</span>
         <Image src="/images/threearrows.svg" width={32} height={21} />
-      </button>
+      </Link>
     </div>
   );
 }
