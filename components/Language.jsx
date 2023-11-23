@@ -5,7 +5,14 @@ import React, { useEffect, useRef, useState } from "react";
 
 function Language() {
   const [showMenu, setShowMenu] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState("en");
+
   const menuRef = useRef(null);
+
+  function handleLanguageChange(lang) {
+    setCurrentLanguage(lang);
+  }
+
   useEffect(() => {
     function handleClickOutside(e) {
       if (showMenu && e.target.classList.contains("navLanguageTab") !== false) {
@@ -28,10 +35,15 @@ function Language() {
       }}
     >
       <div className="group relative w-[32px] h-[24px]">
-        <Image src="/images/flag_gb.svg" fill objectFit="" alt="" />
+        <Image
+          src={`/images/flag_${currentLanguage}.svg`}
+          fill
+          objectFit=""
+          alt=""
+        />
         <div className="w-full h-full absolute bg-gradient-to-t from-black opacity-0 group-hover:opacity-100 transition-all duration-300">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-sm ">
-            EN
+            {currentLanguage.toUpperCase()}
           </div>
         </div>
       </div>
@@ -47,9 +59,12 @@ function Language() {
 
       {showMenu && (
         <div ref={menuRef} className="navLanguageTab text-textMain">
-          <div className="navLanguageChoice ">
+          <div
+            onClick={() => handleLanguageChange("en")}
+            className="navLanguageChoice "
+          >
             <Image
-              src="/images/flag_gb.svg"
+              src="/images/flag_en.svg"
               width={"32"}
               height={"24"}
               alt=""
@@ -57,7 +72,10 @@ function Language() {
             <span>EN</span>
           </div>
           <hr className="w-2/4 mx-auto border-[#2E2E2E] border" />
-          <div className="navLanguageChoice ">
+          <div
+            onClick={() => handleLanguageChange("pl")}
+            className="navLanguageChoice "
+          >
             <Image
               src="/images/flag_pl.svg"
               width={"32"}
@@ -67,7 +85,10 @@ function Language() {
             <span>PL</span>
           </div>
           <hr className="w-2/4 mx-auto border-[#2E2E2E] border" />
-          <div className="navLanguageChoice ">
+          <div
+            onClick={() => handleLanguageChange("jp")}
+            className="navLanguageChoice "
+          >
             <Image
               src="/images/flag_jp.svg"
               width={"32"}

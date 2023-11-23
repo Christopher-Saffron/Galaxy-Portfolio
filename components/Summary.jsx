@@ -22,7 +22,10 @@ export default function Summary() {
         have filled my mind with thousands of ideas that are yet to be created.
       </p>
 
-      <Link href="/work" className="summary-button w-fit ">
+      <Link
+        href="/work"
+        className="summary-button w-fit duration-200 transition-all ease-in-out hover:bg-[#6dc4ec] hover:scale-[1.03] border-2 border-transparent shadow-md hover:border-[#4aabf3] hover:shadow-lg "
+      >
         <span>See my work</span>
         <Image src="/images/threearrows.svg" width={32} height={21} />
       </Link>

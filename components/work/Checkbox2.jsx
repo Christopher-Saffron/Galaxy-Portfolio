@@ -1,17 +1,22 @@
 "use client";
+import { useSearchParams } from "next/navigation";
 import { forwardRef, useEffect, useState } from "react";
 
 export default function Checkbox2(props) {
-  const [checked, setChecked] = useState(false);
+  const searchParams = useSearchParams();
+  // if (searchParams.get(props.text.replace(".", ""))) {
+  //   console.log(searchParams.get(props.text.replace(".", "")));
+  // }
+
+  // const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(
+    Boolean(searchParams.get(props.text.replace(".", "")))
+  );
 
   function handleChange() {
-    props?.onChange(!checked);
+    props?.onChange({ [props.text]: !checked });
     setChecked(!checked);
   }
-
-  useEffect(() => {
-    console.log(checked);
-  }, [checked]);
 
   return (
     <div className="flex items-center gap-2">

@@ -24,6 +24,74 @@
   content: url("../public/images/rocket.svg");
 }
 
+.filteredProjects-no-rocket::before {
+  content: "";
+}
+
+.not-found-rocket-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    0deg,
+    #0e0d0d 5%,
+    transparent 15%,
+    transparent 85%,
+    #0e0d0d 95%
+  );
+}
+
+.moving-rocket {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  animation: rocketMove 5s infinite linear;
+  transform: translate(-50%, 0);
+}
+
+@keyframes rocketMove {
+  0% {
+    bottom: 0;
+    left: 50%;
+  }
+  20% {
+    bottom: -3%;
+    left: 55%;
+  }
+  40% {
+    bottom: 3%;
+    left: 49%;
+  }
+  60% {
+    bottom: -5%;
+    left: 51%;
+  }
+  80% {
+    bottom: -5%;
+    left: 45%;
+  }
+
+  100% {
+    bottom: 0;
+    left: 50%;
+  }
+}
+
+.cloudsLOOP {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  animation: cloudsLOOP 2.5s infinite linear;
+}
+
+@keyframes cloudsLOOP {
+  0% {
+    bottom: 30%;
+  }
+
+  100% {
+    bottom: -158%;
+  }
+}
+
 .skeleton-shine {
   background-image: linear-gradient(
     90deg,
@@ -53,6 +121,16 @@
     background-position: right -40px top 0;
   }
 }
+
+/* @keyframes shine-avatar {
+  0% {
+    background-position: -60%;
+  }
+  40%,
+  100% {
+    background-position: 450%;
+  }
+} */
 
 @keyframes shine-avatar {
   0% {

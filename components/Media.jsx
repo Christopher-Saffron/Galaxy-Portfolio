@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Media() {
   return (
-    <div className="test my-6 mb-12">
+    <div className="test my-3 mb-12">
       <p className=" textTitle mb-7">@ Media</p>
       <div className="flex flex-col text-base gap-4">
         <div className="flex gap-8">

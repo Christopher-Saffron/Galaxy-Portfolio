@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function History() {
   return (
-    <div className="test">
+    <div className="test  my-3">
       <p className=" textTitle mb-7">History</p>
       <div className=" font-catamaran text-base flex flex-col gap-3">
         <div className="flex  gap-8">

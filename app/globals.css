@@ -23,6 +23,12 @@ body {
   min-height: 100vh;
 }
 
+.grid-inside {
+  display: grid;
+  grid-template-columns: repeat(10, 75px);
+  gap: 0 20px;
+}
+
 .main-grid {
   display: grid;
   grid-template-columns: repeat(10, 75px);
@@ -37,6 +43,10 @@ body {
   text-shadow: 0 0 5px #cd482b;
   display: inline-block;
   /* transform: rotate3d(1, 1, 0, 100deg); */
+}
+
+.projectLink {
+  box-shadow: 0 0 8px 0 #4aabf3;
 }
 
 @layer components {
@@ -86,5 +96,31 @@ body {
   }
   .pause {
     @apply h-[30px] border-l-2 border-[#424242];
+  }
+  .reactTag {
+    @apply bg-[#222644] px-2 py-1 text-[10px] text-textSub2 rounded-md;
+  }
+
+  .projectLink {
+    @apply font-catamaran text-sm tracking-widest uppercase text-textMain bg-gradient-to-t from-[#1C3548] to-[#264C69] px-[6px] rounded-md min-w-[75px] text-center;
+  }
+
+  .projectLoad {
+    @apply bg-gradient-to-b from-[#212121] to-[#151515]  rounded-md relative text-center;
+  }
+
+  .projectSecondaryImg {
+    @apply cursor-pointer hover:scale-105 transition duration-150 w-[265px] h-[165px];
+  }
+
+  /* ////////// RESUME */
+  .resumeLink {
+    @apply relative ml-8 w-fit font-bold text-textSub2 text-base cursor-pointer;
+  }
+  .hoverMain {
+    @apply transition duration-100 hover:text-main;
+  }
+  .download-view-pdf {
+    @apply underline text-sm italic underline-offset-4 cursor-pointer whitespace-nowrap;
   }
 }

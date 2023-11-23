@@ -20,10 +20,15 @@ export default function Nav() {
           <Link href="/work" className=" link">
             Work
           </Link>
-          <li className=" link rounded-md cursor-pointer  transition duration-200 bg-main px-6 py-4 text-black font-bold">
+          <Link
+            href="/"
+            className=" link rounded-md cursor-pointer  transition duration-200 bg-main px-6 py-4 text-black font-bold"
+          >
             Blog
-          </li>
-          <li className="link">Resume</li>
+          </Link>
+          <Link href="/resume" className="link">
+            Resume
+          </Link>
         </ul>
       </div>
       <div className=" w-fit flex items-center gap-5">

@@ -3,6 +3,8 @@ import "./globals.css";
 import "@/styles/navbar.css";
 import "@/styles/checkbox.css";
 import "@/styles/work.css";
+import "@/styles/project.css";
+import "@/styles/resume.css";
 import Footer from "@/components/Footer";
 import Mainthreed from "@/components/Mainthreed";
 

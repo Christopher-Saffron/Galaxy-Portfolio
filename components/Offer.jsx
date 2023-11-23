@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Offer() {
   return (
-    <div className="test my-5">
-      <p className=" textTitle my-7">What can I offer?</p>
+    <div className="test  my-3">
+      <p className=" textTitle mb-7">What can I offer?</p>
       <div className=" font-catamaran text-base font-bold flex flex-col gap-3">
         <div className="flex  gap-8">
           <span className="offerCategory">Front-end</span>
