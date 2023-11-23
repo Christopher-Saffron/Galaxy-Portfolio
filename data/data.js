@@ -1,5 +1,6 @@
 const template = {
   id: 0,
+  category: "",
   slug: "",
   name: "",
   description: "",
@@ -14,6 +15,7 @@ const template = {
 const PROJECTS = [
   {
     id: 0,
+    category: "Web Development",
     slug: "szafranprojekt",
     name: "SZAFRAN PROJEKT",
     description:
@@ -40,6 +42,7 @@ const PROJECTS = [
   },
   {
     id: 1,
+    category: "Web Development",
     slug: "airbnb",
     name: "AirBnB",
     description:
@@ -69,6 +72,7 @@ const PROJECTS = [
   },
   {
     id: 2,
+    category: "Web Development",
     slug: "insta",
     name: "Instagram",
     description:
@@ -90,6 +94,7 @@ const PROJECTS = [
   },
   {
     id: 3,
+    category: "Web Development",
     slug: "amazon",
     name: "Amazon",
     description:
@@ -113,6 +118,7 @@ const PROJECTS = [
   },
   {
     id: 4,
+    category: "Web Development",
     slug: "portfolio3d",
     name: "Portfolio 3D",
     description:
@@ -127,6 +133,7 @@ const PROJECTS = [
   },
   {
     id: 5,
+    category: "Web Development",
     slug: "portfolio2d",
     name: "Portfolio 2D",
     description:
@@ -140,6 +147,7 @@ const PROJECTS = [
   },
   {
     id: 6,
+    category: "Web Development",
     slug: "hulu",
     name: "Hulu",
     description:
@@ -154,6 +162,7 @@ const PROJECTS = [
   },
   {
     id: 7,
+    category: "Web Development",
     slug: "facebook",
     name: "Facebook",
     description:
@@ -174,6 +183,7 @@ const PROJECTS = [
   },
   {
     id: 8,
+    category: "Web Development",
     slug: "blog",
     name: "Blog",
     description:
@@ -188,6 +198,7 @@ const PROJECTS = [
   },
   {
     id: 9,
+    category: "Web Development",
     slug: "mementomori",
     name: "Memento Mori",
     description:
@@ -202,6 +213,7 @@ const PROJECTS = [
   },
   {
     id: 10,
+    category: "Web Development",
     slug: "simpleServer",
     name: "File Archive",
     description:
@@ -223,6 +235,7 @@ const PROJECTS = [
   },
   {
     id: 11,
+    category: "Web Development",
     slug: "oldserver",
     name: "Old Server - File Archive",
     description:
@@ -249,6 +262,7 @@ const PROJECTS = [
   },
   {
     id: 12,
+    category: "Web Development",
     slug: "tictactoe",
     name: "[2019] TIC-TAC-TOE with a (fake) chat",
     description: "Old project for either FreeCodeCamp or Project Odin.",
@@ -261,6 +275,7 @@ const PROJECTS = [
   },
   {
     id: 13,
+    category: "Web Development",
     slug: "battleships",
     name: "[2019] Classic Battleship game",
     description: "Old project for either FreeCodeCamp or Project Odin.",
@@ -273,6 +288,7 @@ const PROJECTS = [
   },
   {
     id: 14,
+    category: "Web Development",
     slug: "restaurant",
     name: "[2019] Restaurant website",
     description: "Old project for either FreeCodeCamp or Project Odin.",
@@ -285,6 +301,7 @@ const PROJECTS = [
   },
   {
     id: 15,
+    category: "Web Development",
     slug: "pomodoro",
     name: "[2019] Pomodoro website",
     description: "25 minutes of work - 5 minutes of break",
@@ -297,6 +314,7 @@ const PROJECTS = [
   },
   {
     id: 16,
+    category: "Web Development",
     slug: "learnjapanese",
     name: "[2019] Japanese learning website",
     description: "Website I used to memorize words for japanese class.",
@@ -306,6 +324,236 @@ const PROJECTS = [
     githubLink: "https://github.com/Havir-S/jap_learn",
     websiteLink: "https://havir-s.github.io/jap_learn/",
     technology: ["javascript"],
+  },
+  {
+    id: 17,
+    category: "3D Models",
+    slug: "forest",
+    name: "3D Portfolio Website forest",
+    description: "Made for portfolio purposes.",
+    descriptionShort:
+      "Blender scene turned into a looped animation for website's needs.",
+    mainImg: "/project_images/forest8.png",
+    imgs: [
+      "/project_images/forest1.jpg",
+      "/project_images/forest2.jpg",
+      "/project_images/forest3.jpg",
+      "/project_images/forest4.jpg",
+      "/project_images/forest5.jpg",
+      "/project_images/forest6.jpg",
+      "/project_images/forest7.png",
+      "/project_images/forest8.png",
+      "/project_images/forest9.png",
+      "/project_images/forest10.png",
+      "/project_images/forest11.png",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender", "gimp"],
+  },
+  {
+    id: 18,
+    category: "3D Models",
+    slug: "shrine",
+    name: "Low-poly shrine",
+    description: "A shrine used for navigation on a website",
+    descriptionShort: "A shrine used for navigation on a website",
+    mainImg: "/project_images/shrine.jpg",
+    imgs: [
+      "/project_images/shrine.jpg",
+      "/project_images/shrine2.jpg",
+      "/project_images/shrine3.jpg",
+      "/project_images/shrine4.jpg",
+      "/project_images/shrine5.jpg",
+      "/project_images/shrine6.jpg",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender", "gimp"],
+  },
+  {
+    id: 19,
+    category: "3D Models",
+    slug: "castle-render",
+    name: "Castle Render",
+    description:
+      "In this project, I have been experimenting within Blender to achieve a more realistic appearance. Trying my hands on material nodes, especially focusing on water.",
+    descriptionShort: "Testing photorealistic settings.",
+    mainImg: "/project_images/castle.jfif",
+    imgs: [
+      "/project_images/castle1.jfif",
+      "/project_images/castle2.jfif",
+      "/project_images/castle.jfif",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender"],
+  },
+  {
+    id: 20,
+    category: "3D Models",
+    slug: "japanese-objects",
+    name: "Japanese props",
+    description: "Thinks I made for warmup.",
+    descriptionShort: "Things I made for warmup",
+    mainImg: "/project_images/japanese5.jfif",
+    imgs: [
+      "/project_images/japanese2.jfif",
+      "/project_images/japanese3.jfif",
+      "/project_images/japanese4.jfif",
+      "/project_images/japanese5.jfif",
+      "/project_images/japanese1.jfif",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender"],
+  },
+  {
+    id: 21,
+    category: "3D Models",
+    slug: "2d-portfolio-props",
+    name: "2D Portfolio Props",
+    description: "Thinks I made for warmup.",
+    descriptionShort: "Things I made for warmup",
+    mainImg: "/project_images/LightPage14.jpg",
+    imgs: [
+      "/project_images/LightPage15.jpg",
+      "/project_images/LightPage16.jpg",
+      "/project_images/LightPage17.jpg",
+      "/project_images/LightPage14.jpg",
+      "/project_images/LightPage4.jpg",
+      "/project_images/LightPage5.jpg",
+      "/project_images/LightPage6.jpg",
+      "/project_images/LightPage7.jpg",
+      "/project_images/LightPage8.jpg",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender", "gimp"],
+  },
+  {
+    id: 22,
+    category: "3D Models",
+    slug: "ichigo",
+    name: "Ichigo",
+    description:
+      "Back when I used to make characters for game use (like VRChat), I spotted a lot of people talking about one anime and the main character, and given that I was late to the party I decided to pick up the side quest, rather than the main mission, and so I went on to create the side character, rather than enter the race to create the main character late.",
+    descriptionShort: "Anime styled character",
+    mainImg: "/project_images/ichigo.jpg",
+    imgs: [
+      "/project_images/ichigo2.jpg",
+      "/project_images/ichigo4.jpg",
+      "/project_images/ichigo5.png",
+      "/project_images/ichigo7.jpg",
+      "/project_images/ichigo8.jfif",
+      "/project_images/ichigo8.jfif",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender", "gimp"],
+  },
+  {
+    id: 23,
+    category: "3D Models",
+    slug: "ramiris",
+    name: "Ramiris",
+    description:
+      "Character from a show I watched. This time I've went 3 steps ahead and created a character that was foreshadowed, yet has not appeared on screen once. I picked up some source material and figured out everything myself.",
+    descriptionShort: "Anime styled character",
+    mainImg: "/project_images/Ramiris1.jpg",
+    imgs: [
+      "/project_images/Ramiris1.jpg",
+      "/project_images/Ramiris6.jpg",
+      "/project_images/Ramiris8.png",
+      "/project_images/Ramiris.jpg",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender", "gimp"],
+  },
+  {
+    id: 24,
+    category: "3D Models",
+    slug: "rimuru",
+    name: "Rimuru",
+    description:
+      "Main character from a show I've watched. This is my first attempt on a anime-styled character. It's from the same series as the other model I've created - Ramiris.",
+    descriptionShort: "Anime styled character",
+    mainImg: "/project_images/Rimuru3.jpg",
+    imgs: [
+      "/project_images/Rimuru.jpg",
+      "/project_images/Rimuru3.jpg",
+      "/project_images/Rimuru6.jpg",
+      "/project_images/Rimuru5.jpg",
+      "/project_images/Rimuru4.jpg",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender", "gimp"],
+  },
+  {
+    id: 25,
+    category: "3D Models",
+    slug: "mirio",
+    name: "Mirio",
+    description:
+      "A Fallout-esque looking character which has caught my attention. Male anime characters have a completely different face structure from female characters, and until this character, I've never made a male character. So to top it off, I have also picked an unusual one.",
+    descriptionShort: "Anime styled character",
+    mainImg: "/project_images/Mirio3.png",
+    imgs: [
+      "/project_images/Mirio2.png",
+      "/project_images/Mirio3.png",
+      "/project_images/Mirio.png",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender", "gimp"],
+  },
+  {
+    id: 26,
+    category: "3D Models",
+    slug: "hayasaka",
+    name: "Hayasaka",
+    description:
+      "Character which I haven't finished. During the creation of this model, I've been frequently visiting a game called VRChat, which back then had some unimaginable issues with hackers/crashers. Essentially what happend was - some folks decided to fry my GPU and by doing so, the power surge got most of my pc, somehow including my hard drive, on which this model was. I don't have files for this work so it only stays here as an old memento. The pictures are only from the development stage.",
+    descriptionShort: "Anime styled character",
+    mainImg: "/project_images/Hayasaka.png",
+    imgs: [
+      "/project_images/Hayasaka2.jfif",
+      "/project_images/Hayasaka3.jfif",
+      "/project_images/Hayasaka.png",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender", "gimp"],
+  },
+  {
+    id: 27,
+    category: "3D Models",
+    slug: "shinon",
+    name: "Shinon",
+    description:
+      "First character I've ever made. Created by following a 20+ parts, each 30min long tutorial.",
+    descriptionShort: "Anime styled character",
+    mainImg: "/project_images/sinon.jpg",
+    imgs: ["/project_images/sinon.jpg"],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender", "gimp"],
+  },
+  {
+    id: 28,
+    category: "3D Models",
+    slug: "shinon",
+    name: "Shinon",
+    description:
+      "First character I've ever made. Created by following a 20+ parts, each 30min long tutorial.",
+    descriptionShort: "Anime styled character",
+    mainImg: "/project_images/sinon.jpg",
+    imgs: ["/project_images/sinon.jpg"],
+    githubLink: "",
+    websiteLink: "",
+    technology: ["blender", "gimp"],
   },
 ];
 

@@ -1,7 +1,7 @@
-.filteredProjects {
+.rocketBorder {
 }
 
-.filteredProjects::after {
+.rocketBorder::after {
   content: "";
   width: 100%;
   height: 5px;
@@ -16,7 +16,7 @@
   /* opacity: 0; */
 }
 
-.filteredProjects::before {
+.rocketBorder::before {
   position: absolute;
   top: calc(100% - 12px);
 
@@ -24,7 +24,7 @@
   content: url("../public/images/rocket.svg");
 }
 
-.filteredProjects-no-rocket::before {
+.rocketBorder-no-rocket::before {
   content: "";
 }
 

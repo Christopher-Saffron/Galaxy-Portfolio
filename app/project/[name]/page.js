@@ -13,10 +13,12 @@ export default function Page({ params }) {
     <main className="main-grid max-w-fit mx-auto">
       <div className="test flex items-center justify-start gap-4">
         <div className="flex items-center justify-center gap-2">
-          <span className="text-main text-base">Work</span>
+          <Link href="/work" className="text-main text-base">
+            Work
+          </Link>
           <span className="text-textSub2 font-bold text-base">{">"}</span>
           <span className="text-textSub2 font-bold text-2xl">
-            {params.name}
+            {projectData.name}
           </span>
         </div>
         <div className="reactTag">
@@ -26,12 +28,14 @@ export default function Page({ params }) {
       <p className="test indent-8 mt-4 text-textSub2 w-full font-catamaran font-bold">
         {projectData.description}
       </p>
-      <div className="test projectLinksIndent mt-5 mb-10 gap-4 flex flex-col justify-center">
+      <div className="test projectLinksIndent my-5 mb-10 gap-4 flex flex-col justify-center">
         <Link
           href={projectData.websiteLink}
           className="flex  gap-4 items-center cursor-pointer"
         >
-          <div className="projectLink">Website</div>
+          <div className="projectLink">
+            {projectData.websiteLink.length > 0 && "GITHUB"}
+          </div>
           <div className="text-main font-catamaran underline">
             {projectData.websiteLink}
           </div>
@@ -40,13 +44,17 @@ export default function Page({ params }) {
           href={projectData.githubLink}
           className="flex  gap-4 items-center cursor-pointer"
         >
-          <div className="projectLink">GITHUB</div>
+          <div className="projectLink">
+            {projectData.githubLink.length > 0 && "GITHUB"}
+          </div>
           <div className="text-main font-catamaran underline">
             {projectData.githubLink}
           </div>
         </Link>
         <div href="/" className="flex  gap-4 items-center ">
-          <div className="projectLink">TOOLS</div>
+          <div className="projectLink">
+            {projectData.technology.length > 0 && "TOOLS"}
+          </div>
           <div className="text-main font-catamaran ">
             {projectData.technology.map((item, i) => {
               if (i + 1 === projectData.technology.length) {

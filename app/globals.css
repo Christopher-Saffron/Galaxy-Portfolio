@@ -92,7 +92,7 @@ body {
   }
 
   .mainWorkCategory-active {
-    @apply text-textSub3 border-b-2;
+    @apply text-textSub3 border-b-2 border-main;
   }
   .pause {
     @apply h-[30px] border-l-2 border-[#424242];
@@ -106,7 +106,7 @@ body {
   }
 
   .projectLoad {
-    @apply bg-gradient-to-b from-[#212121] to-[#151515]  rounded-md relative text-center;
+    @apply bg-gradient-to-b from-[#212121] to-[#151515]  rounded-2xl relative text-center;
   }
 
   .projectSecondaryImg {

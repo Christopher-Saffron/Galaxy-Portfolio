@@ -25,7 +25,7 @@ export default function Categories() {
 
   return (
     <div className="test">
-      <p className=" textTitle mb-7">My Work</p>
+      {/* <p className=" textTitle mb-7">My Work</p>
       <div className="  flex flex-wrap justify-center font-bold items-center textSub2">
         <div className="mainWorkCategory mainWorkCategory-active">
           <div className=" border-b-2 py-3 border-main">Web Development</div>
@@ -34,7 +34,7 @@ export default function Categories() {
         <div className="mainWorkCategory">FIGMA Designs</div>
         <div className="mainWorkCategory">Scripts</div>
         <div className="mainWorkCategory">Traffic Design</div>
-      </div>
+      </div> */}
       <div className="my-4">
         <Checkbox2
           onChange={() => setShowCategories((prev) => !prev)}
