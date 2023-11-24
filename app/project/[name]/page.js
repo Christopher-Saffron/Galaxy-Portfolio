@@ -9,6 +9,13 @@ export const revalidate = false;
 export default function Page({ params }) {
   const projectData = PROJECTS.find((project) => project.slug === params.name);
 
+  const showLinks = Boolean(
+    projectData.websiteLink.length > 0 &&
+      projectData.githubLink.length > 0 &&
+      projectData.technology.length > 0
+  );
+  console.log(showLinks);
+
   return (
     <main className="main-grid max-w-fit mx-auto">
       <div className="test flex items-center justify-start gap-4">
@@ -17,18 +24,37 @@ export default function Page({ params }) {
             Work
           </Link>
           <span className="text-textSub2 font-bold text-base">{">"}</span>
+          <Link
+            href={`/work/` + projectData.category}
+            className="text-main text-base"
+          >
+            {projectData.category}
+          </Link>
+          <span className="text-textSub2 font-bold text-base">{">"}</span>
           <span className="text-textSub2 font-bold text-2xl">
             {projectData.name}
           </span>
         </div>
-        <div className="reactTag">
-          {projectData.technology[0].toUpperCase()}
+        <div
+          className={`reactTag ${
+            projectData?.technology.length === 0 && "hidden"
+          }`}
+        >
+          {projectData?.technology[0]?.toUpperCase()}
         </div>
       </div>
-      <p className="test indent-8 mt-4 text-textSub2 w-full font-catamaran font-bold">
+      <p
+        className={`test indent-8  text-textSub2 w-full font-catamaran font-bold ${
+          showLinks ? "mt-4" : "mt-4 mb-6"
+        }`}
+      >
         {projectData.description}
       </p>
-      <div className="test projectLinksIndent my-5 mb-10 gap-4 flex flex-col justify-center">
+      <div
+        className={`test projectLinksIndent my-5 mb-10 gap-4 flex flex-col justify-center ${
+          showLinks ? "" : "hidden"
+        }`}
+      >
         <Link
           href={projectData.websiteLink}
           className="flex  gap-4 items-center cursor-pointer"
@@ -78,11 +104,11 @@ export default function Page({ params }) {
           style={{ objectFit: "cover" }}
         />
       </Link>
-      <div className=" relative col-span-full w-2/5 min-h-[40px] mx-auto my-2 p-3 text-center  ">
+      <div className=" relative col-span-full w-2/5 min-h-[40px] mx-auto my-6 p-3 text-center  ">
         {projectData.descriptionShort}
       </div>
 
-      <div className="flex flex-wrap  w-full col-span-full justify-between gap-y-9 items-center mb-16">
+      <div className="flex flex-wrap  w-full col-span-full justify-evenly gap-y-9 items-center mb-16">
         {projectData.imgs.length > 1 &&
           projectData.imgs.map((item, i) => (
             <div

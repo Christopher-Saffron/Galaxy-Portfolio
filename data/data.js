@@ -12,10 +12,18 @@ const template = {
   technology: [""],
 };
 
+export const WORKTYPES = [
+  "web-development",
+  "3d-models",
+  "figma-designs",
+  "scripts",
+  "traffic-design",
+];
+
 const PROJECTS = [
   {
     id: 0,
-    category: "Web Development",
+    category: "web-development",
     slug: "szafranprojekt",
     name: "SZAFRAN PROJEKT",
     description:
@@ -42,13 +50,13 @@ const PROJECTS = [
   },
   {
     id: 1,
-    category: "Web Development",
+    category: "web-development",
     slug: "airbnb",
     name: "AirBnB",
     description:
       "'AirBnB' project explores practical implementations using Airbnb's structure to simulate payment methods, map integration, databases, and basic 3D model usage. Utilizing technologies such as React, MongoDB, Paypal, Stripe, and more, it showcases these functionalities in action. Check out the project on GitHub and experience its features live on the website.",
     descriptionShort:
-      "AirBnB with 3D models, STRIPE and Paypal, maps, login and reservation",
+      "AirBnB with 3d-models, STRIPE and Paypal, maps, login and reservation",
     mainImg: "/project_images/airbnb.jpg",
     imgs: ["/project_images/airbnb.jpg"],
     githubLink: "https://github.com/Havir-S/havirbnb",
@@ -72,7 +80,7 @@ const PROJECTS = [
   },
   {
     id: 2,
-    category: "Web Development",
+    category: "web-development",
     slug: "insta",
     name: "Instagram",
     description:
@@ -94,7 +102,7 @@ const PROJECTS = [
   },
   {
     id: 3,
-    category: "Web Development",
+    category: "web-development",
     slug: "amazon",
     name: "Amazon",
     description:
@@ -118,7 +126,7 @@ const PROJECTS = [
   },
   {
     id: 4,
-    category: "Web Development",
+    category: "web-development",
     slug: "portfolio3d",
     name: "Portfolio 3D",
     description:
@@ -133,7 +141,7 @@ const PROJECTS = [
   },
   {
     id: 5,
-    category: "Web Development",
+    category: "web-development",
     slug: "portfolio2d",
     name: "Portfolio 2D",
     description:
@@ -147,7 +155,7 @@ const PROJECTS = [
   },
   {
     id: 6,
-    category: "Web Development",
+    category: "web-development",
     slug: "hulu",
     name: "Hulu",
     description:
@@ -162,7 +170,7 @@ const PROJECTS = [
   },
   {
     id: 7,
-    category: "Web Development",
+    category: "web-development",
     slug: "facebook",
     name: "Facebook",
     description:
@@ -183,7 +191,7 @@ const PROJECTS = [
   },
   {
     id: 8,
-    category: "Web Development",
+    category: "web-development",
     slug: "blog",
     name: "Blog",
     description:
@@ -198,7 +206,7 @@ const PROJECTS = [
   },
   {
     id: 9,
-    category: "Web Development",
+    category: "web-development",
     slug: "mementomori",
     name: "Memento Mori",
     description:
@@ -213,7 +221,7 @@ const PROJECTS = [
   },
   {
     id: 10,
-    category: "Web Development",
+    category: "web-development",
     slug: "simpleServer",
     name: "File Archive",
     description:
@@ -235,7 +243,7 @@ const PROJECTS = [
   },
   {
     id: 11,
-    category: "Web Development",
+    category: "web-development",
     slug: "oldserver",
     name: "Old Server - File Archive",
     description:
@@ -262,7 +270,7 @@ const PROJECTS = [
   },
   {
     id: 12,
-    category: "Web Development",
+    category: "web-development",
     slug: "tictactoe",
     name: "[2019] TIC-TAC-TOE with a (fake) chat",
     description: "Old project for either FreeCodeCamp or Project Odin.",
@@ -275,7 +283,7 @@ const PROJECTS = [
   },
   {
     id: 13,
-    category: "Web Development",
+    category: "web-development",
     slug: "battleships",
     name: "[2019] Classic Battleship game",
     description: "Old project for either FreeCodeCamp or Project Odin.",
@@ -288,7 +296,7 @@ const PROJECTS = [
   },
   {
     id: 14,
-    category: "Web Development",
+    category: "web-development",
     slug: "restaurant",
     name: "[2019] Restaurant website",
     description: "Old project for either FreeCodeCamp or Project Odin.",
@@ -301,7 +309,7 @@ const PROJECTS = [
   },
   {
     id: 15,
-    category: "Web Development",
+    category: "web-development",
     slug: "pomodoro",
     name: "[2019] Pomodoro website",
     description: "25 minutes of work - 5 minutes of break",
@@ -314,7 +322,7 @@ const PROJECTS = [
   },
   {
     id: 16,
-    category: "Web Development",
+    category: "web-development",
     slug: "learnjapanese",
     name: "[2019] Japanese learning website",
     description: "Website I used to memorize words for japanese class.",
@@ -327,7 +335,7 @@ const PROJECTS = [
   },
   {
     id: 17,
-    category: "3D Models",
+    category: "3d-models",
     slug: "forest",
     name: "3D Portfolio Website forest",
     description: "Made for portfolio purposes.",
@@ -353,7 +361,7 @@ const PROJECTS = [
   },
   {
     id: 18,
-    category: "3D Models",
+    category: "3d-models",
     slug: "shrine",
     name: "Low-poly shrine",
     description: "A shrine used for navigation on a website",
@@ -373,7 +381,7 @@ const PROJECTS = [
   },
   {
     id: 19,
-    category: "3D Models",
+    category: "3d-models",
     slug: "castle-render",
     name: "Castle Render",
     description:
@@ -391,7 +399,7 @@ const PROJECTS = [
   },
   {
     id: 20,
-    category: "3D Models",
+    category: "3d-models",
     slug: "japanese-objects",
     name: "Japanese props",
     description: "Thinks I made for warmup.",
@@ -410,7 +418,7 @@ const PROJECTS = [
   },
   {
     id: 21,
-    category: "3D Models",
+    category: "3d-models",
     slug: "2d-portfolio-props",
     name: "2D Portfolio Props",
     description: "Thinks I made for warmup.",
@@ -433,7 +441,7 @@ const PROJECTS = [
   },
   {
     id: 22,
-    category: "3D Models",
+    category: "3d-models",
     slug: "ichigo",
     name: "Ichigo",
     description:
@@ -454,7 +462,7 @@ const PROJECTS = [
   },
   {
     id: 23,
-    category: "3D Models",
+    category: "3d-models",
     slug: "ramiris",
     name: "Ramiris",
     description:
@@ -473,7 +481,7 @@ const PROJECTS = [
   },
   {
     id: 24,
-    category: "3D Models",
+    category: "3d-models",
     slug: "rimuru",
     name: "Rimuru",
     description:
@@ -493,7 +501,7 @@ const PROJECTS = [
   },
   {
     id: 25,
-    category: "3D Models",
+    category: "3d-models",
     slug: "mirio",
     name: "Mirio",
     description:
@@ -511,7 +519,7 @@ const PROJECTS = [
   },
   {
     id: 26,
-    category: "3D Models",
+    category: "3d-models",
     slug: "hayasaka",
     name: "Hayasaka",
     description:
@@ -529,7 +537,7 @@ const PROJECTS = [
   },
   {
     id: 27,
-    category: "3D Models",
+    category: "3d-models",
     slug: "shinon",
     name: "Shinon",
     description:
@@ -543,17 +551,165 @@ const PROJECTS = [
   },
   {
     id: 28,
-    category: "3D Models",
-    slug: "shinon",
-    name: "Shinon",
+    category: "3d-models",
+    slug: "learning-shapes",
+    name: "Shape practice",
     description:
-      "First character I've ever made. Created by following a 20+ parts, each 30min long tutorial.",
-    descriptionShort: "Anime styled character",
-    mainImg: "/project_images/sinon.jpg",
-    imgs: ["/project_images/sinon.jpg"],
+      "This is the stack of screenshots I didn't really want to put in separate posts, for various reasons. Some of those creations were used for HORROR PROJECTS (Collaboration with a map maker and Unity programmer friend for a VRChat event), COMEDY PROJECTS, for CHALLENGES and many more 'occasions'.",
+    descriptionShort: "Multitude of 3d objects in one post",
+    mainImg: "/project_images/keyboard1.jpg",
+    imgs: [
+      "/project_images/trash.jfif",
+      "/project_images/trash2.jpg",
+      "/project_images/shoe1.png",
+      "/project_images/shoe2.png",
+      "/project_images/sculpting2.jfif",
+      "/project_images/sculpting.jpg",
+      "/project_images/keyboard1.jpg",
+      "/project_images/keyboard2.jpg",
+      "/project_images/garfield1.jpg",
+      "/project_images/garfield2.jpg",
+      "/project_images/garfield3.jpg",
+    ],
     githubLink: "",
     websiteLink: "",
     technology: ["blender", "gimp"],
+  },
+  {
+    id: 29,
+    category: "figma-designs",
+    slug: "szafran-projekt-firma",
+    name: "SZAFRAN PROJEKT",
+    description:
+      "Well, this site went through many changes and redesigns, but never with a proper approach to design. I've started learning FIGMA after I found job offers for a web developer spot, but it required professional experience with design. So I started learning.",
+    descriptionShort: "Final design for the website, prepared in FIGMA",
+    mainImg: "/project_images/szafranfigma4.jpg",
+    imgs: [
+      "/project_images/szafranfigma3.jpg",
+      "/project_images/szafranfigma2.jpg",
+      "/project_images/szafranfigma1.jpg",
+      "/project_images/szafranfigma4.jpg",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: [],
+  },
+  {
+    id: 30,
+    category: "figma-designs",
+    slug: "asian-restaurant",
+    name: "Asian Restaurant",
+    description:
+      "My favourite asian restaurant has a messy website, which loads images only after a second refresh. For no absolute reason. Mobile or PC. So hey, I figured, how difficult can making a better website be? Here's the starting design.",
+    descriptionShort:
+      "Idea inspired by a barely working website of my favourite asian restaurant",
+    mainImg: "/project_images/restaurante4.jpg",
+    imgs: [
+      "/project_images/restaurante3.jpg",
+      "/project_images/restaurante2.jpg",
+      "/project_images/restaurante1.jpg",
+      "/project_images/restaurante4.jpg",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: [],
+  },
+  {
+    id: 31,
+    category: "figma-designs",
+    slug: "winery",
+    name: "Winery internet shop",
+    description:
+      "Prepared for my Vue.js project. The shopping part allows me to practive all the Vue concepts I need to learn and memorize, since I'm coming from React and even though javascript is the same, many concepts can be different. ",
+    descriptionShort: "Prepared for my Vue.js project",
+    mainImg: "/project_images/winery1.jpg",
+    imgs: [
+      "/project_images/winery3.jpg",
+      "/project_images/winery2.jpg",
+      "/project_images/winery1.jpg",
+      "/project_images/winery4.jpg",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: [],
+  },
+  {
+    id: 32,
+    category: "figma-designs",
+    slug: "ecommerce-figma",
+    name: "Ecommerce website",
+    description:
+      "A website I've designed that I will use for my PHP learning session. Nothing is as good as simplicity. Simple and effective, and hopefully fits that 'capitalistic' look of a casual e-commerce page.",
+    descriptionShort:
+      "A website I've designed that I will use for my PHP learning session.",
+    mainImg: "/project_images/ecommerce2.jpg",
+    imgs: ["/project_images/ecommerce1.jpg", "/project_images/ecommerce2.jpg"],
+    githubLink: "",
+    websiteLink: "",
+    technology: [],
+  },
+  {
+    id: 33,
+    category: "scripts",
+    slug: "map-maker",
+    name: "[Python] Script for making maps",
+    description:
+      "This little snippet of code (300+ lines of code) has saved me not minutes or hours. It has currently saved me weeks and months with how much it automates the mundane and boring processes. This script can be used with different types of maps, it stitches together small individual pieces of the map, it can also saturate the end image or delete certain colors from it. All automated, without a need for a manual input other than the settings.",
+    descriptionShort: "A life-saver in my recent work.",
+    mainImg: "/project_images/mapMaker1.jpg",
+    imgs: ["/project_images/mapMaker1.jpg", "/project_images/mapMaker2.jpg"],
+    githubLink: "",
+    websiteLink: "",
+    technology: [],
+  },
+  {
+    id: 34,
+    category: "traffic-design",
+    slug: "inventory-of-the-roads",
+    name: "Taking an inventory of the roads",
+    description:
+      "Includes preparing precise videos that highlight the current situation of the road as well the surrounding road signs. In some cases those videos can also be sold to other designers. Thus making them even more of a valuable resource.",
+    descriptionShort:
+      "Videos like these are required for creating an up-to-date maps.",
+    mainImg: "/project_images/bricscad9.jpg",
+    imgs: [
+      "/project_images/bricscad11.jpg",
+      "/project_images/bricscad9.jpg",
+      "/project_images/bricscad10.jpg",
+      "/project_images/bricscad7.jpg",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: [],
+  },
+  {
+    id: 35,
+    category: "traffic-design",
+    slug: "road-sign-inventory",
+    name: "Inventory of vertical and horizontal road signs ",
+    description:
+      "Using pre-recorded videos of the roads as well as utilizing any map that can be useful in order to recreate the current situation on the road.",
+    descriptionShort:
+      "Recreating the current road situation in AutoCAD/BricsCAD",
+    mainImg: "/project_images/bricscad3.jpg",
+    imgs: ["/project_images/bricscad2.jpg", "/project_images/bricscad3.jpg"],
+    githubLink: "",
+    websiteLink: "",
+    technology: [],
+  },
+  {
+    id: 36,
+    category: "traffic-design",
+    slug: "traffic-solutions",
+    name: "Preparing traffic design solutions ",
+    description:
+      "With the template map filled with road signs, we can now access the situation, consult the technical conditions and provide the most efficient as well as most practical solutions to our given project. After it is finished, the printed version must be supplied and processed by all governing offices, as well as the main police department. ",
+    descriptionShort: "Ensuring our solutions comply with the law",
+    mainImg: "/project_images/bricscad.png",
+    imgs: ["/project_images/bricscad.png", "/project_images/bricscad4.jpg"],
+    githubLink: "",
+    websiteLink: "",
+    technology: [],
   },
 ];
 

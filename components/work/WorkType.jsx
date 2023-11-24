@@ -1,69 +1,44 @@
-export default function WorkType({ workType, setWorkType }) {
+import Link from "next/link";
+
+export default function WorkType({ workType }) {
+  console.log(workType);
   return (
     <div className="test">
       <p className=" textTitle mb-7">My Work</p>
       <div className=" select-none flex flex-wrap justify-center font-bold items-center textSub2">
-        <div
-          className="mainWorkCategory"
-          onClick={() => setWorkType("Web Development")}
-        >
-          <div
-            className={`py-3 ${
-              workType === "Web Development" && "mainWorkCategory-active"
-            }`}
-          >
-            Web Development
-          </div>
-        </div>
-        <div
-          className="mainWorkCategory"
-          onClick={() => setWorkType("3D Models")}
-        >
-          <div
-            className={` py-3  ${
-              workType === "3D Models" && "mainWorkCategory-active"
-            }`}
-          >
-            3D Models
-          </div>
-        </div>
-        <div
-          className="mainWorkCategory"
-          onClick={() => setWorkType("FIGMA Designs")}
-        >
-          <div
-            className={` py-3  ${
-              workType === "FIGMA Designs" && "mainWorkCategory-active"
-            }`}
-          >
-            FIGMA Designs
-          </div>
-        </div>
-        <div
-          className="mainWorkCategory"
-          onClick={() => setWorkType("Scripts")}
-        >
-          <div
-            className={` py-3  ${
-              workType === "Scripts" && "mainWorkCategory-active"
-            }`}
-          >
-            Scripts
-          </div>
-        </div>
-        <div
-          className="mainWorkCategory"
-          onClick={() => setWorkType("Traffic Design")}
-        >
-          <div
-            className={` py-3  ${
-              workType === "Traffic Design" && "mainWorkCategory-active"
-            }`}
-          >
-            Traffic Design
-          </div>
-        </div>
+        <WorkLink
+          link={"web-development"}
+          text={"Web Development"}
+          workType={workType}
+        />
+        <WorkLink link={"3d-models"} text={"3D Models"} workType={workType} />
+
+        <WorkLink
+          link={"figma-designs"}
+          text={"FIGMA Designs"}
+          workType={workType}
+        />
+
+        <WorkLink link={"scripts"} text={"Scripts"} workType={workType} />
+
+        <WorkLink
+          link={"traffic-design"}
+          text={"Traffic Design"}
+          workType={workType}
+        />
       </div>
     </div>
+  );
+}
+
+function WorkLink({ link, text, workType }) {
+  return (
+    <Link href={`/work/` + link} className="mainWorkCategory">
+      <div
+        className={` py-3  ${workType === link && "mainWorkCategory-active"}`}
+      >
+        {text}
+      </div>
+    </Link>
   );
 }

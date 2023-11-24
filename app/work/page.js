@@ -21,11 +21,11 @@ export default function Page() {
       ) : workType === "3D Models" ? (
         <Projects category={"3D Models"} />
       ) : workType === "FIGMA Designs" ? (
-        <Work3DModels />
+        <Projects category={"FIGMA Designs"} />
       ) : workType === "Scripts" ? (
-        <Work3DModels />
+        <Projects category={"Scripts"} />
       ) : workType === "Traffic Design" ? (
-        <Work3DModels />
+        <Projects category={"Traffic Design"} />
       ) : (
         ""
       )}

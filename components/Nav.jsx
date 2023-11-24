@@ -17,7 +17,7 @@ export default function Nav() {
           />
         </Link>
         <ul className="flex items-center gap-7 text-xl">
-          <Link href="/work" className=" link">
+          <Link href="/work/web-development" className=" link">
             Work
           </Link>
           <Link
