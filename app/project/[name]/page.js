@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Zoom from "react-medium-image-zoom";
 import PROJECTS from "@/data/data";
 import { Suspense } from "react";
+import ImageGallery from "@/components/work/ImageGallery";
 export const dynamicParams = false; // true | false,
 export const revalidate = false;
 
@@ -14,7 +15,7 @@ export default function Page({ params }) {
       projectData.githubLink.length > 0 &&
       projectData.technology.length > 0
   );
-  console.log(showLinks);
+  console.log(projectData.imgs);
 
   return (
     <main className="main-grid max-w-fit mx-auto">
@@ -108,14 +109,14 @@ export default function Page({ params }) {
         {projectData.descriptionShort}
       </div>
 
-      <div className="flex flex-wrap  w-full col-span-full justify-evenly gap-y-9 items-center mb-16">
+      <ImageGallery images={projectData.imgs} />
+      {/* <div className="flex flex-wrap  w-full col-span-full justify-evenly gap-y-9 items-center mb-16">
         {projectData.imgs.length > 1 &&
           projectData.imgs.map((item, i) => (
             <div
               key={i}
               className=" relative projectSecondaryImg  projectLoad skeleton-shine  shadow-lg"
             >
-              {" "}
               <Image
                 src={item}
                 fill
@@ -124,17 +125,7 @@ export default function Page({ params }) {
               />
             </div>
           ))}
-
-        {/* <div className="  projectSecondaryImg  projectLoad skeleton-shine"></div>
-        <div className="  projectSecondaryImg  projectLoad skeleton-shine"></div>
-        <div className="  projectSecondaryImg  projectLoad skeleton-shine"></div>
-        <div className="  projectSecondaryImg  projectLoad skeleton-shine"></div>
-        <div className="  projectSecondaryImg  projectLoad skeleton-shine"></div>
-        <div className="  projectSecondaryImg  projectLoad skeleton-shine"></div>
-        <div className="  projectSecondaryImg  projectLoad skeleton-shine"></div>
-        <div className="  projectSecondaryImg  projectLoad skeleton-shine"></div>
-        <div className="  projectSecondaryImg  projectLoad skeleton-shine"></div> */}
-      </div>
+      </div> */}
 
       {/* <div className=" relative col-span-full w-2/5 h-[40px] mx-auto projectLoad skeleton-shine "></div> */}
     </main>

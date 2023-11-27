@@ -49,6 +49,11 @@ body {
   box-shadow: 0 0 8px 0 #4aabf3;
 }
 
+[data-rmiz-modal-overlay="visible"] {
+  background-color: rgba(155, 155, 155, 0.3) !important;
+  backdrop-filter: blur(10px);
+}
+
 @layer components {
   .link {
     @apply text-[#BBBBBB] hover:text-white cursor-pointer  transition duration-200;
