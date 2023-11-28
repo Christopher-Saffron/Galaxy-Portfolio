@@ -19,20 +19,21 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
   min-height: 100vh;
 }
 
 .grid-inside {
   display: grid;
-  grid-template-columns: repeat(10, 75px);
+  grid-template-columns: repeat(10, 60px);
   gap: 0 20px;
 }
 
 .main-grid {
   display: grid;
-  grid-template-columns: repeat(10, 75px);
+  grid-template-columns: repeat(10, 60px);
   gap: 0 20px;
+  /* border: 2px solid white; */
   margin-top: 15px;
 }
 
@@ -71,20 +72,20 @@ body {
     @apply relative border-2 rounded-[24px] w-[72px] h-[37px] transition-[border] hover:border-main overflow-hidden;
   }
   .navLanguageTab {
-    @apply absolute h-fit w-[100px] animate-appearFromTop top-[155%] rounded-md left-1/2 -translate-x-1/2 flex flex-col border-[#303030] border-2 bg-[#161616] z-10;
+    @apply absolute h-fit w-[100px] animate-appearFromTop top-[155%]  rounded-md left-1/2 -translate-x-1/2 flex flex-col border-[#303030] border-2 bg-[#161616] z-10;
   }
   .navLanguageChoice {
     @apply flex gap-2 text-lg w-fit bg-[#2B2B2B] my-2 mx-auto items-center py-1 px-2 rounded-md hover:bg-[#464545] hover:border-[#747474] border border-[#2B2B2B] transition duration-100;
   }
   .textTitle {
-    @apply font-lato text-[24px] text-textSub2 font-bold py-2 border-b-4 border-main w-fit mb-3;
+    @apply font-lato text-[24px] dark:text-textSub2 font-bold py-2 border-b-4 border-main w-fit mb-3;
   }
   .summary-button {
     @apply bg-main2 text-black font-bold text-base flex justify-center items-center gap-3 px-6 py-4 rounded-lg mx-auto my-12;
   }
 
   .offerCategory {
-    @apply text-textSub3 font-lato font-bold whitespace-nowrap min-w-[100px];
+    @apply dark:text-textSub3 font-lato font-bold whitespace-nowrap min-w-[100px];
   }
 
   .knownLanguage {
@@ -93,21 +94,21 @@ body {
 
   /* ////// WORKS */
   .mainWorkCategory {
-    @apply text-[20px] text-category border-l border-[#424242] first-of-type:border-none px-6 cursor-pointer;
+    @apply text-[20px] text-category border-l text-gray-700 dark:text-textSub border-[#424242] first-of-type:border-none px-6 cursor-pointer;
   }
 
   .mainWorkCategory-active {
-    @apply text-textSub3 border-b-2 border-main;
+    @apply dark:text-textSub3 text-black border-b-4 border-main;
   }
   .pause {
     @apply h-[30px] border-l-2 border-[#424242];
   }
   .reactTag {
-    @apply bg-[#222644] px-2 py-1 text-[10px] text-textSub2 rounded-md;
+    @apply bg-main2 px-2 py-1 text-[10px] text-black rounded-md;
   }
 
   .projectLink {
-    @apply font-catamaran text-sm tracking-widest uppercase text-textMain bg-gradient-to-t from-[#1C3548] to-[#264C69] px-[6px] rounded-md min-w-[75px] text-center;
+    @apply font-catamaran text-sm tracking-widest uppercase text-textMain bg-main dark:bg-gradient-to-t from-[#1C3548] to-[#264C69] px-[6px] rounded-md min-w-[75px] text-center;
   }
 
   .projectLoad {

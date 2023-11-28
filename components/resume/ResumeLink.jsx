@@ -9,9 +9,9 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
   const [showImgs, setShowImgs] = useState(false);
   return (
     <div className="  flex flex-col">
-      <div className="py-3 border-b-2 border-[#1A1A1A] w-full  flex justify-between ">
+      <div className="py-3 border-b-2 border-gray-300 dark:border-[#1A1A1A] w-full  flex justify-between ">
         <div
-          className="resumeLink hoverMain"
+          className="resumeLink hoverMain text-black dark:text-textSub2"
           onClick={() => setShowImgs((n) => !n)}
         >
           {fileName}

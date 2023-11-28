@@ -19,7 +19,7 @@ export default function Media() {
           <MediaLink text={"@Havir-S"} img={"github"} />
         </div>
       </div>
-      <p className="text-[14px] mx-auto w-fit text-textSub my-8">
+      <p className="text-[14px] mx-auto w-fit dark:text-textSub my-8">
         I do not "own" any casual social media accounts. I visit those websites
         solely for work related content.<span className="text-main">**</span>
       </p>
@@ -43,7 +43,9 @@ function MediaLink({ img, text, link, style }) {
           style={{ objectFit: style ? style : "" }}
         />
       </div>
-      <span className=" text-textMain font-catamaran font-bold">{text}</span>
+      <span className=" dark:text-textMain font-catamaran font-bold">
+        {text}
+      </span>
     </a>
   );
 }

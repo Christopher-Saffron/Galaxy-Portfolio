@@ -1,4 +1,3 @@
-import Image from "next/image";
 import RocketAnimation from "../RocketAnimation";
 
 export default function NotFoundRocket() {

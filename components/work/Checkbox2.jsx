@@ -20,14 +20,19 @@ export default function Checkbox2(props) {
 
   return (
     <div className="flex items-center gap-2">
-      <label className="checkbox bounce inline-block">
-        <input type="checkbox" checked={checked} onChange={handleChange} />
+      <label className="checkbox bounce inline-block ">
+        <input
+          type="checkbox"
+          checked={checked}
+          onChange={handleChange}
+          className="bg-transparent"
+        />
         <svg viewBox="0 0 21 21">
           <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
         </svg>
       </label>
       <span
-        className="font-bold cursor-pointer  inline-block"
+        className="font-bold cursor-pointer  inline-block text-gray-800 dark:text-textSub"
         onClick={handleChange}
       >
         {props?.text}

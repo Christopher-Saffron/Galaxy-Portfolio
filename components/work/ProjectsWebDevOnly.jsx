@@ -3,15 +3,10 @@ import ProjectLink from "./ProjectLink";
 import PROJECTS from "@/data/data";
 
 export default function ProjectsWebDevOnly() {
-  // const [hoveredProject, setHoveredProject] = useState(-1);
-
-  // function handleOnHover(id) {
-  //   setHoveredProject(id);
-  // }
   return (
     <Suspense fallback={"Loading...."}>
       <div className="test">
-        <div className="filteredProjects relative text-[24px] text-textSub2 font-bold pb-3 w-fit">
+        <div className="rocketBorder relative text-[24px] dark:text-textSub2 font-bold pb-3 w-fit">
           <span>Top Projects</span>
         </div>
       </div>
@@ -26,9 +21,11 @@ export default function ProjectsWebDevOnly() {
         </div>
       </div>
       <div className="test grid grid-cols-2 gap-5 my-8 mb-12 gap-x-4 gap-y-9 items-start">
-        {PROJECTS.slice(6, -1).map((project) => (
-          <ProjectLink key={project.id} project={project} />
-        ))}
+        {PROJECTS.filter((item) => item.category === "web-development").map(
+          (project) => (
+            <ProjectLink key={project.id} project={project} />
+          )
+        )}
       </div>
     </Suspense>
   );

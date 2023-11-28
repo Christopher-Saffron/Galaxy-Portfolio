@@ -5,6 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -17,6 +18,7 @@ module.exports = {
         textSub2: "#C3BABA",
         textSub3: "#E1E1E1",
       },
+
       animation: {
         appearFromTop: "appearFromTop .3s ease-in-out forwards",
         disappearToTop: "disappearToTop 1s ease-in-out forwards",
@@ -33,8 +35,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        lato: ["Lato", "serif"],
-        catamaran: ["Catamaran", "serif"],
+        lato: ["Lato", "sans-serif"],
+        catamaran: ["Catamaran", "Tahoma"],
       },
       fontSize: {
         title: "32px",

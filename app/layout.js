@@ -18,8 +18,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="font-lato text-textSub bg-bgcolor">
+    <html lang="en" className="dark">
+      <body className="font-lato bg-[#eee] dark:text-textSub dark:bg-bgcolor transition all duration-500">
         <Nav />
         <Mainthreed />
         {/* <ModalProvider>{children}</ModalProvider> */}

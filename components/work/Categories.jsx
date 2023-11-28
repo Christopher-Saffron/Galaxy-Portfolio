@@ -1,13 +1,32 @@
 "use client";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Checkbox2 from "./Checkbox2";
 import Projects from "./Projects";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Categories() {
+  // const containerRef = useRef(null);
+  // const [height, setHeight] = useState("auto");
   const router = useRouter();
   const pathName = usePathname();
   const [showCategories, setShowCategories] = useState(false);
+
+  // useEffect(() => {
+  //   if (containerRef.current) {
+  //     const resizeObserver = new ResizeObserver((entries) => {
+  //       console.log(entries);
+  //       const observedHeight = entries[0].contentRect.height;
+  //       setHeight(observedHeight);
+  //     });
+
+  //     resizeObserver.observe(containerRef.current);
+
+  //     return () => {
+  //       resizeObserver.disconnect();
+  //     };
+  //   }
+  // }, []);
 
   function handleCategories() {
     setShowCategories((prev) => !prev);
@@ -19,8 +38,9 @@ export default function Categories() {
 
   function handleResetCategories() {
     router.push(pathName);
-    //// A LITTLE FEATURE HAS BEEN SPOTTED - resetting it does not trigger a refresh, we can do it artifically but i need to check the react docs to see if there's any better solution
-    setShowCategories(true);
+    ////  BUG - resetting it, does not trigger a refresh, we can do it artifically but i need to check the react docs to see if there's any better solution
+    setShowCategories((n) => true);
+    // router.refresh();
   }
 
   return (
@@ -41,17 +61,25 @@ export default function Categories() {
           text={"Show Categories?"}
         />
       </div>
-      {showCategories && (
-        <>
-          <button
-            onClick={handleResetCategories}
-            className="mb-4 font-bold cursor-pointer  inline-block bg-main text-black py-2 px-3 rounded-lg"
+      <AnimatePresence mode="wait">
+        {showCategories && (
+          <motion.div
+            initial={{ opacity: 0, scale: 1, height: 0 }}
+            animate={{ opacity: 1, scale: 1, height: "auto" }}
+            exit={{ opacity: 0, scale: 1, height: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            // ref={containerRef}
           >
-            Reset categories
-          </button>
-          <CategoriesBox />
-        </>
-      )}
+            {/* <button
+              onClick={handleResetCategories}
+              className="mb-4 font-bold cursor-pointer  inline-block bg-main text-black py-2 px-3 rounded-lg"
+            >
+              Reset categories
+            </button> */}
+            <CategoriesBox />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
@@ -85,8 +113,8 @@ function CategoriesBox() {
     router.push(pathname + "?" + createQueryString(key, value));
   }
   return (
-    <div className=" flex flex-col bg-[#121111] w-full min-h-[400px] my-4 p-2 px-3 rounded-md">
-      <p className="text-textSub2 font-bold text-base py-1 border-b border-[#242424] ">
+    <div className=" flex flex-col bg-[#fafafa] transition duration-300 shadow-xl dark:shadow-none dark:bg-[#121111] w-full min-h-[400px] my-4 p-2 px-3 border-2 dark:border-transparent border-main rounded-lg dark:rounded-md">
+      <p className="dark:text-textSub2 font-bold text-base py-1 border-b border-[#242424] ">
         Categories
       </p>
       <div className="flex flex-wrap gap-7 mx-5 font-bold">

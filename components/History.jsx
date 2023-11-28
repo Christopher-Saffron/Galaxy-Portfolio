@@ -6,13 +6,13 @@ export default function History() {
       <p className=" textTitle mb-7">History</p>
       <div className=" font-catamaran text-base flex flex-col gap-3">
         <div className="flex  gap-8">
-          <span className="text-textSub3 font-lato font-bold">1999</span>
+          <span className="dark:text-textSub3 font-lato font-bold">1999</span>
           <span className="font-catamaran ">
             I was born in <span className="text-main">Cracow, Poland</span>
           </span>
         </div>
         <div className="flex  gap-8">
-          <span className="text-textSub3 font-lato font-bold">2018</span>
+          <span className="dark:text-textSub3 font-lato font-bold">2018</span>
           <span>
             Officially began working as a Temporary{" "}
             <span className="text-main">Traffic Management Designer</span>, as
@@ -21,7 +21,7 @@ export default function History() {
           </span>
         </div>
         <div className="flex  gap-8">
-          <span className="text-textSub3 font-lato font-bold whitespace-nowrap">
+          <span className="dark:text-textSub3 font-lato font-bold whitespace-nowrap">
             2022 to present
           </span>
           <span>

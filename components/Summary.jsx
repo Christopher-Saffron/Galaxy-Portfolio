@@ -7,7 +7,7 @@ export default function Summary() {
       <p className=" textTitle">Professional summary</p>
       <p className=" font-catamaran text-base">
         Passion for{" "}
-        <span className="text-textSub3">
+        <span className="text-main dark:text-textSub3">
           work, learning and freedom to create
         </span>{" "}
         what's on my mind. Working in{" "}

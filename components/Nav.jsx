@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className=" bg-bgcolor2  p-5 flex items-center justify-evenly z-10">
+    <nav className=" bg-bgcolor2  duration-300  p-5 flex items-center justify-evenly z-10 border-b-4 dark:border-bgcolor2 border-main shadow-xl ">
       <div className="flex gap-[60px]">
         <Link href="/">
           <Image
@@ -22,7 +22,7 @@ export default function Nav() {
           </Link>
           <Link
             href="/"
-            className=" link rounded-md cursor-pointer  transition duration-200 bg-main px-6 py-4 text-black font-bold"
+            className=" link rounded-md cursor-pointer bg-main px-6 py-4 text-black font-bold"
           >
             Blog
           </Link>

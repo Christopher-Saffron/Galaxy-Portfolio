@@ -1,15 +1,26 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function NavThemeChangev2() {
-  // const colorSchemeMediaQuery = window.matchMedia(
-  //   "(prefers-color-scheme: dark)"
-  // );
   const [darkMode, setDarkMode] = useState(true);
+
+  // useEffect(() => {
+  //   const theme = localStorage.getItem("theme");
+  //   if (theme === "dark") setDarkMode(true);
+  // }, []);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      // localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      // localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
   return (
-    /// 72x37 pixels
     <div
       onClick={() => setDarkMode((prev) => !prev)}
       className={`modeChangeBackground    ${

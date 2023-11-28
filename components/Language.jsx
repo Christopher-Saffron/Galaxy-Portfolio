@@ -29,7 +29,7 @@ function Language() {
 
   return (
     <div
-      className="flex relative gap-2 cursor-pointer"
+      className="flex relative gap-2 cursor-pointer select-none"
       onClick={() => {
         setShowMenu((prev) => !prev);
       }}

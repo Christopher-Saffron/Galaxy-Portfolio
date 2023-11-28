@@ -21,18 +21,21 @@ export default function Page({ params }) {
     <main className="main-grid max-w-fit mx-auto">
       <div className="test flex items-center justify-start gap-4">
         <div className="flex items-center justify-center gap-2">
-          <Link href="/work" className="text-main text-base">
-            Work
+          <Link
+            href="/work/web-development"
+            className="text-main text-base font-bold dark:font-medium"
+          >
+            Workaaa
           </Link>
-          <span className="text-textSub2 font-bold text-base">{">"}</span>
+          <span className="dark:text-textSub2 font-bold text-base">{">"}</span>
           <Link
             href={`/work/` + projectData.category}
-            className="text-main text-base"
+            className="text-main text-base font-bold dark:font-medium"
           >
             {projectData.category}
           </Link>
-          <span className="text-textSub2 font-bold text-base">{">"}</span>
-          <span className="text-textSub2 font-bold text-2xl">
+          <span className="dark:text-textSub2 font-bold text-base">{">"}</span>
+          <span className="dark:text-textSub2 font-bold text-2xl">
             {projectData.name}
           </span>
         </div>
@@ -45,7 +48,7 @@ export default function Page({ params }) {
         </div>
       </div>
       <p
-        className={`test indent-8  text-textSub2 w-full font-catamaran font-bold ${
+        className={`test indent-8  dark:text-textSub2 w-full font-catamaran font-bold ${
           showLinks ? "mt-4" : "mt-4 mb-6"
         }`}
       >
