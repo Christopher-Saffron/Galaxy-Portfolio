@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className=" bg-bgcolor2  duration-300  p-5 flex items-center justify-evenly z-10 border-b-4 dark:border-bgcolor2 border-main shadow-xl ">
+    <nav className=" dark:bg-bgcolor2 bg-white  duration-300  p-5 flex items-center justify-evenly z-10 border-b-4 dark:border-bgcolor2 border-main shadow-xl ">
       <div className="flex gap-[60px]">
         <Link href="/">
           <Image
@@ -33,7 +33,8 @@ export default function Nav() {
       </div>
       <div className=" w-fit flex items-center gap-5">
         <NavThemeChangev2 />
-        <div className="border h-[30px] border-[#414141]" />
+        {/* border-[#414141] */}
+        <div className="border h-[30px] border-main" />
         <Language />
       </div>
     </nav>

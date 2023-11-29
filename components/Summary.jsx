@@ -23,7 +23,7 @@ export default function Summary() {
       </p>
 
       <Link
-        href="/work"
+        href="/work/web-development"
         className="summary-button w-fit duration-200 transition-all ease-in-out hover:bg-[#6dc4ec] hover:scale-[1.03] border-2 border-transparent shadow-md hover:border-[#4aabf3] hover:shadow-lg "
       >
         <span>See my work</span>

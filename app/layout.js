@@ -19,7 +19,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
-      <body className="font-lato bg-[#eee] dark:text-textSub dark:bg-bgcolor transition all duration-500">
+      {/* bg-[#f0f0f0] */}
+      <body className="font-lato  bg-[url('../public/cloudy0.svg')]  bg-contain bg-bottom bg-no-repeat dark:text-textSub dark:bg-bgcolor transition all duration-500">
         <Nav />
         <Mainthreed />
         {/* <ModalProvider>{children}</ModalProvider> */}

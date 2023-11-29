@@ -16,10 +16,17 @@
   /* opacity: 0; */
 }
 
+.rocketShadow {
+  display: none;
+}
+
+.dark .rocketShadow {
+  display: block;
+}
+
 .rocketBorder::before {
   position: absolute;
   top: calc(100% - 12px);
-
   left: 99%;
   content: url("../public/images/rocket.svg");
 }
@@ -29,7 +36,6 @@
 }
 
 .not-found-rocket-shadow {
-  /* background-color: rgba(0, 0, 0, 0.5); */
   background: linear-gradient(
     0deg,
     #0e0d0d 5%,

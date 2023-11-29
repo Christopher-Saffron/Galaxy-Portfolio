@@ -16,7 +16,7 @@ export default function ProjectsWebDevOnly() {
         ))}
       </div>
       <div className="test">
-        <div className="rocketBorder relative text-[24px] text-textSub2 font-bold pb-3 w-fit">
+        <div className="rocketBorder relative text-[24px] dark:text-textSub2 font-bold pb-3 w-fit">
           <span>Other Projects</span>
         </div>
       </div>

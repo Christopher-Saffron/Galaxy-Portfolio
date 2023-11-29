@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence, easeInOut } from "framer-motion";
 
 function Language() {
   const [showMenu, setShowMenu] = useState(false);
@@ -11,6 +12,7 @@ function Language() {
 
   function handleLanguageChange(lang) {
     setCurrentLanguage(lang);
+    localStorage.setItem("saffronLang", lang);
   }
 
   useEffect(() => {
@@ -27,25 +29,47 @@ function Language() {
     };
   }, []);
 
+  useEffect(() => {
+    console.log(navigator.language);
+
+    //first visit
+    if (!localStorage.getItem("saffronLang")) {
+      localStorage.setItem("saffronLang", navigator.language);
+
+      if (navigator.language.includes("en")) {
+        localStorage.setItem("saffronLang", "en");
+        setCurrentLanguage("en");
+      } else if (navigator.language.includes("pl")) {
+        localStorage.setItem("saffronLang", "pl");
+        setCurrentLanguage("pl");
+      } else if (navigator.language.includes("ja")) {
+        localStorage.setItem("saffronLang", "ja");
+        setCurrentLanguage("ja");
+      } else {
+        localStorage.setItem("saffronLang", "en");
+        setCurrentLanguage("en");
+      }
+    } else {
+      ///reocurring visit
+      setCurrentLanguage(localStorage.getItem("saffronLang"));
+    }
+  }, []);
+
   return (
     <div
-      className="flex relative gap-2 cursor-pointer select-none"
+      className="flex relative gap-2 cursor-pointer select-none border-2 border-gray-500 hover:border-main transition duration-200 py-1 px-2 rounded-xl"
       onClick={() => {
         setShowMenu((prev) => !prev);
       }}
     >
-      <div className="group relative w-[32px] h-[24px]">
+      <div className="group relative w-[32px] h-[24px] ">
         <Image
           src={`/images/flag_${currentLanguage}.svg`}
           fill
           objectFit=""
           alt=""
+          className="rounded-md"
         />
-        <div className="w-full h-full absolute bg-gradient-to-t from-black opacity-0 group-hover:opacity-100 transition-all duration-300">
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-sm ">
-            {currentLanguage.toUpperCase()}
-          </div>
-        </div>
       </div>
       <Image
         src="/images/LanguagesSVG.svg"
@@ -57,48 +81,57 @@ function Language() {
         }`}
       />
 
-      {showMenu && (
-        <div ref={menuRef} className="navLanguageTab text-textMain">
-          <div
-            onClick={() => handleLanguageChange("en")}
-            className="navLanguageChoice "
+      <AnimatePresence>
+        {showMenu && (
+          <motion.div
+            initial={{ scale: 0, opacity: 0, y: -60, x: -35 }}
+            animate={{ scale: 1, opacity: 1, y: 40, x: -35 }}
+            exit={{ scale: 0, opacity: 0, y: -60, x: -35 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            ref={menuRef}
+            className="navLanguageTab transition duration-500 bg-gray-100 border-main dark:bg-[#161616] dark:border-[#303030] text-textMain"
           >
-            <Image
-              src="/images/flag_en.svg"
-              width={"32"}
-              height={"24"}
-              alt=""
-            />
-            <span>EN</span>
-          </div>
-          <hr className="w-2/4 mx-auto border-[#2E2E2E] border" />
-          <div
-            onClick={() => handleLanguageChange("pl")}
-            className="navLanguageChoice "
-          >
-            <Image
-              src="/images/flag_pl.svg"
-              width={"32"}
-              height={"24"}
-              alt=""
-            />
-            <span>PL</span>
-          </div>
-          <hr className="w-2/4 mx-auto border-[#2E2E2E] border" />
-          <div
-            onClick={() => handleLanguageChange("jp")}
-            className="navLanguageChoice "
-          >
-            <Image
-              src="/images/flag_jp.svg"
-              width={"32"}
-              height={"24"}
-              alt=""
-            />
-            <span>JP</span>
-          </div>
-        </div>
-      )}
+            <div
+              onClick={() => handleLanguageChange("en")}
+              className="navLanguageChoice "
+            >
+              <Image
+                src="/images/flag_en.svg"
+                width={"32"}
+                height={"24"}
+                alt=""
+              />
+              <span>EN</span>
+            </div>
+            <hr className="w-2/4 mx-auto border-[#2E2E2E] border" />
+            <div
+              onClick={() => handleLanguageChange("pl")}
+              className="navLanguageChoice "
+            >
+              <Image
+                src="/images/flag_pl.svg"
+                width={"32"}
+                height={"24"}
+                alt=""
+              />
+              <span>PL</span>
+            </div>
+            <hr className="w-2/4 mx-auto border-[#2E2E2E] border" />
+            <div
+              onClick={() => handleLanguageChange("jp")}
+              className="navLanguageChoice "
+            >
+              <Image
+                src="/images/flag_jp.svg"
+                width={"32"}
+                height={"24"}
+                alt=""
+              />
+              <span>JP</span>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="test bg-bgcolor2  relative py-9">
+    <div className="test bg-bgcolor2 mt-[200px]  relative py-9">
       <Image
         className=" relative left-1/2 -translate-x-1/2"
         src="/images/test2.svg"

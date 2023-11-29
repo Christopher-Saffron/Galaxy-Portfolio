@@ -71,8 +71,11 @@ body {
   .modeChangeBackground {
     @apply relative border-2 rounded-[24px] w-[72px] h-[37px] transition-[border] hover:border-main overflow-hidden;
   }
-  .navLanguageTab {
+  /* .navLanguageTab {
     @apply absolute h-fit w-[100px] animate-appearFromTop top-[155%]  rounded-md left-1/2 -translate-x-1/2 flex flex-col border-[#303030] border-2 bg-[#161616] z-10;
+  } */
+  .navLanguageTab {
+    @apply absolute h-fit w-[100px]   flex flex-col border-2  z-10 rounded-md left-1/2;
   }
   .navLanguageChoice {
     @apply flex gap-2 text-lg w-fit bg-[#2B2B2B] my-2 mx-auto items-center py-1 px-2 rounded-md hover:bg-[#464545] hover:border-[#747474] border border-[#2B2B2B] transition duration-100;

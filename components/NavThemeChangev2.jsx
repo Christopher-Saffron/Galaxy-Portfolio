@@ -23,9 +23,7 @@ export default function NavThemeChangev2() {
   return (
     <div
       onClick={() => setDarkMode((prev) => !prev)}
-      className={`modeChangeBackground    ${
-        darkMode ? "border-gray-500 " : "border-white "
-      }`}
+      className={`modeChangeBackground border-gray-500`}
     >
       {/* <div className={`ball ${darkMode ? "darkModeBall" : "lightModeBall"}`}> */}
       <div className={`ball  ${darkMode ? "darkModeBall" : "lightModeBall"}`}>

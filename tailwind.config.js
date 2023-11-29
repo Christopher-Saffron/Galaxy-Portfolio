@@ -18,7 +18,9 @@ module.exports = {
         textSub2: "#C3BABA",
         textSub3: "#E1E1E1",
       },
-
+      gradientColorStopPositions: {
+        5: "5%",
+      },
       animation: {
         appearFromTop: "appearFromTop .3s ease-in-out forwards",
         disappearToTop: "disappearToTop 1s ease-in-out forwards",
@@ -45,6 +47,7 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        lightsvg: "url('./public/cloudy0.svg')",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },

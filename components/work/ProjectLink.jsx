@@ -29,7 +29,7 @@ export default function ProjectLink({ project }) {
         href={`/project/${project.slug}`}
         className={`flex group flex-col items-center justify-center cursor-pointer transition duration-200 ease-in-out opacity-95 dark:opacity-80 hover:opacity-100 hover:scale-[1.03] `}
       >
-        <div className=" projectLoad h-[200px] w-full skeleton-shine">
+        <div className=" projectLoad h-[200px] w-full ">
           <Image
             src={project.mainImg}
             fill

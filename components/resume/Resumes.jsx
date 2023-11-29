@@ -8,17 +8,17 @@ export default function Resumes() {
       <ResumeLink
         previewImgs={["/portfolio/pl1.jpg", "/portfolio/pl2.jpg"]}
         downloadLink={"Krzysztof_Szafran_Resume_PL_28-07-2023.pdf"}
-        fileName={"Krzysztof Szafran CV - 01.08.2023 - PL"}
+        fileName={"Krzysztof Szafran CV PL"}
       />
       <ResumeLink
         previewImgs={["/portfolio/pl1.jpg", "/portfolio/pl2.jpg"]}
         downloadLink={"Krzysztof_Szafran_Resume_EN_28-07-2023.pdf"}
-        fileName={"Christopher Saffron CV - 01.08.2023 - EN"}
+        fileName={"Christopher Saffron CV EN"}
       />
       <ResumeLink
         previewImgs={["/portfolio/pl1.jpg", "/portfolio/pl2.jpg"]}
         downloadLink={"Krzysztof_Szafran_Resume_JP_28-07-2023.pdf"}
-        fileName={"Christopher Saffron 履歴書 - 01.08.2023 - JP"}
+        fileName={"Christopher Saffron 履歴書 JP"}
       />
       {/* <div className="py-3 border-b-2 border-[#1A1A1A]  flex justify-between">
         <div className="resumeLink hoverMain">
