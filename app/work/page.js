@@ -1,4 +1,5 @@
 "use client";
+import FooterBreak from "@/components/FooterBreak";
 import History from "@/components/History";
 import NameCard from "@/components/NameCard";
 import Categories from "@/components/work/Categories";
@@ -14,33 +15,35 @@ export default function Page() {
   const [workType, setWorkType] = useState("Web Development");
 
   return (
-    <main className="main-grid  max-w-fit mx-auto">
-      <WorkType workType={workType} setWorkType={setWorkType} />
-      {workType === "Web Development" ? (
-        <WorkWebDevelopment />
-      ) : workType === "3D Models" ? (
-        <Projects category={"3D Models"} />
-      ) : workType === "FIGMA Designs" ? (
-        <Projects category={"FIGMA Designs"} />
-      ) : workType === "Scripts" ? (
-        <Projects category={"Scripts"} />
-      ) : workType === "Traffic Design" ? (
-        <Projects category={"Traffic Design"} />
-      ) : (
-        ""
-      )}
-      {/* <Categories /> */}
-      {/* <NotFoundRocket /> */}
-      {/* <div className={`test ${hasParams ? "" : "hidden"}`}>
+    <>
+      <main className="main-grid  max-w-fit mx-auto">
+        <WorkType workType={workType} setWorkType={setWorkType} />
+        {workType === "Web Development" ? (
+          <WorkWebDevelopment />
+        ) : workType === "3D Models" ? (
+          <Projects category={"3D Models"} />
+        ) : workType === "FIGMA Designs" ? (
+          <Projects category={"FIGMA Designs"} />
+        ) : workType === "Scripts" ? (
+          <Projects category={"Scripts"} />
+        ) : workType === "Traffic Design" ? (
+          <Projects category={"Traffic Design"} />
+        ) : (
+          ""
+        )}
+        {/* <Categories /> */}
+        {/* <NotFoundRocket /> */}
+        {/* <div className={`test ${hasParams ? "" : "hidden"}`}>
         <FilteredProjects />
       </div>
       <div className={`test ${hasParams ? "hidden" : ""}`}>
         <Projects />
       </div> */}
 
-      {/* {hasParams && <FilteredProjects />}
+        {/* {hasParams && <FilteredProjects />}
       {!hasParams && <Projects />} */}
-      {/* <Projects /> */}
-    </main>
+        {/* <Projects /> */}
+      </main>
+    </>
   );
 }

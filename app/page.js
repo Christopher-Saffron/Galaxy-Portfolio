@@ -1,34 +1,34 @@
-import Title from "@/components/Title";
-import NameCard from "@/components/NameCard";
-import NameCardImage from "@/components/NameCardImage";
-import Summary from "@/components/Summary";
-import History from "@/components/History";
-import Offer from "@/components/Offer";
-import Languages from "@/components/Languages";
-import Media from "@/components/Media";
+import Title from "@/components/en/home/Title";
+import NameCard from "@/components/en/home/NameCard";
+import NameCardImage from "@/components/en/home/NameCardImage";
+import Summary from "@/components/en/home/Summary";
+import History from "@/components/en/home/History";
+import Offer from "@/components/en/home/Offer";
+import Languages from "@/components/en/home/Languages";
+import Media from "@/components/en/home/Media";
 
 import { AnimatePresence, motion, Spring } from "framer-motion";
-
-// const transitionSpringPhysics = {
-//   type: "spring",
-//   mass: 0.2,
-//   stiffness: 80,
-//   damping: 10,
-// };
+import Clouds from "@/components/Clouds";
+import FooterBreak from "@/components/FooterBreak";
 
 export default function Home() {
   return (
     // <AnimatePresence mode="wait">
-    <main className="main-grid  max-w-fit mx-auto">
-      <Title />
-      <NameCard />
-      <NameCardImage />
-      <Summary />
-      <History />
-      <Offer />
-      <Languages />
-      <Media />
-    </main>
+    <>
+      <main className="main-grid transition duration-200 shadow-md  bg-white dark:bg-bgcolor px-3 max-w-fit mx-auto">
+        {/* <main className="main-grid transition duration-200 shadow-md dark:shadow-main bg-white dark:bg-bgcolor px-3 max-w-fit mx-auto"></main> */}
+        <Title />
+        <NameCard />
+        <NameCardImage />
+        <Summary />
+        <History />
+        <Offer />
+        <Languages />
+        <Media />
+      </main>
+      <FooterBreak height={6} />
+      {/* <Clouds /> */}
+    </>
     // </AnimatePresence>
   );
 }

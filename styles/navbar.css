@@ -5,6 +5,22 @@ nav {
   width: 100%;
 }
 
+.logo-dark {
+  display: none;
+}
+
+.dark .logo-dark {
+  display: block;
+}
+
+.logo-light {
+  display: block;
+}
+
+.dark .logo-light {
+  display: none;
+}
+
 .ball {
   position: absolute;
   top: 50%;
