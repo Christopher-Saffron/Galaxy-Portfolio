@@ -1,50 +1,97 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
-import { motion, AnimatePresence, easeInOut } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { usePathname, useRouter } from "next/navigation";
+import { flushSync } from "react-dom";
 
 function Language() {
   const [showMenu, setShowMenu] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState("en");
-
-  const menuRef = useRef(null);
+  const pathname = usePathname();
+  const router = useRouter();
+  // const regex = /\/(pl|en|jp)\//;
+  const regex = /\/(pl|en|jp)\/?/;
 
   function handleLanguageChange(lang) {
-    setCurrentLanguage(lang);
-    localStorage.setItem("saffronLang", lang);
+    console.log(localStorage.getItem("saffronLang"), "and", lang);
+
+    ////clicking the same option does nothing
+    if (lang === localStorage.getItem("saffronLang")) {
+      return;
+    } else {
+      flushSync(() => {
+        localStorage.setItem("saffronLang", lang);
+        setCurrentLanguage(lang);
+      });
+      const newPathname = pathname.replace(regex, `/${lang}/`);
+      console.log(newPathname);
+
+      router.replace(newPathname);
+    }
   }
 
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////// CLICK OUTSIDE THE LANGUAGES TO CLOSE THE BOX
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  // useEffect(() => {
+  //   function handleClickOutside(e) {
+  //     console.log("what the fuck");
+  //     // console.log(e.target.classList);
+  //     console.log(showMenu, e.target.classList.contains("navLanguagesTab"));
+  //     if (showMenu && e.target.classList.contains("navLanguageTab") === false) {
+  //       console.log("closing it");
+  //       setShowMenu(false);
+  //     }
+  //   }
+
+  //   window.addEventListener("click", handleClickOutside);
+
+  //   return () => {
+  //     window.removeEventListener("click", handleClickOutside);
+  //   };
+  // }, []);
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////// CHECK FOR MANUAL PATH CHANGE
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////// CHECK LOCAL STORAGE FOR ALREADY EXISTING LANGUAGE SETTINGS
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+
   useEffect(() => {
-    function handleClickOutside(e) {
-      if (showMenu && e.target.classList.contains("navLanguageTab") !== false) {
-        setShowMenu(false);
-      }
-    }
-
-    window.addEventListener("click", handleClickOutside);
-
-    return () => {
-      window.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
-
-  useEffect(() => {
-    console.log(navigator.language);
-
     //first visit
     if (!localStorage.getItem("saffronLang")) {
       localStorage.setItem("saffronLang", navigator.language);
 
+      /////////////////////////////
+      //////////////////////// ENGLISH
+      /////////////////////////////
       if (navigator.language.includes("en")) {
-        localStorage.setItem("saffronLang", "en");
-        setCurrentLanguage("en");
+        flushSync(() => {
+          localStorage.setItem("saffronLang", "en");
+          setCurrentLanguage("en");
+        });
+
+        /////////////////////////////
+        //////////////////////// POLISH
+        /////////////////////////////
       } else if (navigator.language.includes("pl")) {
-        localStorage.setItem("saffronLang", "pl");
-        setCurrentLanguage("pl");
+        flushSync(() => {
+          localStorage.setItem("saffronLang", "pl");
+          setCurrentLanguage("pl");
+        });
+
+        /////////////////////////////
+        //////////////////////// JAPANESE
+        /////////////////////////////
       } else if (navigator.language.includes("ja")) {
-        localStorage.setItem("saffronLang", "ja");
-        setCurrentLanguage("ja");
+        flushSync(() => {
+          localStorage.setItem("saffronLang", "ja");
+          setCurrentLanguage("ja");
+        });
       } else {
         localStorage.setItem("saffronLang", "en");
         setCurrentLanguage("en");
@@ -52,6 +99,15 @@ function Language() {
     } else {
       ///reocurring visit
       setCurrentLanguage(localStorage.getItem("saffronLang"));
+    }
+
+    /////////////////////////////
+    //////////////////////// CHECK IF WE ARE USING THE PROPER LANGUAGE PAGE
+    /////////////////////////////
+    const match = regex.exec("pathname");
+    if (match) {
+      const newPathname = pathname.replace(regex, `/${lang}/`);
+      router.replace(newPathname);
     }
   }, []);
 
