@@ -11,7 +11,7 @@ export default function ImageGallery({ images }) {
             <Zoom className="relative w-full h-full ">
               <div
                 key={i}
-                className=" relative projectSecondaryImg  projectLoad skeleton-shine  shadow-lg hidden sm:block "
+                className=" relative projectSecondaryImg  projectLoad   shadow-lg hidden sm:block "
               >
                 <Image
                   src={item}
@@ -25,7 +25,7 @@ export default function ImageGallery({ images }) {
             {/* ////////////////////// TEMPORARY FIX FOR MOBILE - POSSIBLE MANUAL ZOOM - NO NEED FOR CODE */}
             <div
               key={i}
-              className=" relative projectSecondaryImg  projectLoad skeleton-shine  shadow-lg block sm:hidden"
+              className=" relative projectSecondaryImg  projectLoad   shadow-lg block sm:hidden"
             >
               <Image
                 src={item}

@@ -27,7 +27,7 @@ export default function Nav() {
         </Link>
         <ul className="flex items-center gap-7 text-xl">
           <Link href="/pl/work/web-development" className=" link">
-            Work
+            Praca
           </Link>
           <Link
             href="/"
@@ -36,7 +36,7 @@ export default function Nav() {
             Blog
           </Link>
           <Link href="/pl/resume" className="link">
-            Resume
+            Moje CV
           </Link>
         </ul>
       </div>

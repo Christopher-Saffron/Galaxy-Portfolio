@@ -4,29 +4,27 @@ import Link from "next/link";
 export default function Summary() {
   return (
     <div className="test">
-      <p className=" textTitle">Professional summary</p>
-      <p className=" font-catamaran text-base">
-        Passion for{" "}
+      <p className="textTitle">Podsumowanie zawodowe</p>
+      <p className="font-catamaran text-base">
+        Pasja do{" "}
         <span className="text-main dark:text-textSub3">
-          work, learning and freedom to create
+          pracy, nauki i swobody tworzenia
         </span>{" "}
-        what's on my mind. Working in{" "}
-        <span className="text-main">Civil Engineering</span> has enhanced my{" "}
-        communication skills and problem solving abilities.{" "}
-        <span className="text-main">3D Modeling</span>, video and image editing
-        expertise have been my window to express myself to the world. But it's
-        code that has peaked my interest.{" "}
-        <span className="text-main">
-          Creating web applications and scripts for automation{" "}
-        </span>{" "}
-        have filled my mind with thousands of ideas that are yet to be created.
+        tego, co mam na myśli. Praca w dziedzinie{" "}
+        <span className="text-main">Inżynierii Lądowej</span> wzmocniła moje
+        umiejętności komunikacyjne i zdolności rozwiązywania problemów. Moje
+        umiejętności w <span className="text-main">modelowaniu 3D</span>,
+        montażu wideo i obróbce zdjęć były moim oknem na wyrażanie siebie w
+        świecie. Ale to kodowanie wzbudziło moje zainteresowanie. Tworzenie
+        aplikacji internetowych i skryptów do automatyzacji wypełnia moją głowę
+        tysiącami pomysłów, które jeszcze nie zostały stworzone.
       </p>
 
       <Link
-        href="/en/work/web-development"
+        href="/pl/work/web-development"
         className="summary-button w-fit duration-200 transition-all ease-in-out hover:bg-[#6dc4ec] hover:scale-[1.03] border-2 border-transparent shadow-md shadow-[#80c9ff] hover:border-[#4aabf3]  "
       >
-        <span>See my work</span>
+        <span>Zobacz co potrafię</span>
         <Image src="/images/threearrows.svg" width={32} height={21} />
       </Link>
     </div>

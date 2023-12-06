@@ -20,8 +20,9 @@ export default function Media() {
         </div>
       </div>
       <p className="text-[14px] mx-auto w-fit dark:text-textSub my-8">
-        I do not "own" any casual social media accounts. I visit those websites
-        solely for work related content.<span className="text-main">**</span>
+        Nie posiadam "zwykłych" kont w mediach społecznościowych. Odwiedzam te
+        strony wyłącznie w celach zawodowych.
+        <span className="text-main">**</span>
       </p>
     </div>
   );

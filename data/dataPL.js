@@ -27,9 +27,9 @@ const PROJECTS = [
     slug: "szafranprojekt",
     name: "SZAFRAN PROJEKT",
     description:
-      "'SZAFRAN PROJEKT' is the official website of a traffic management design company. Using technologies such as React, Node.js, MongoDB, and more, the site demonstrates their expertise in traffic planning and design implementation. Explore their work on GitHub and experience their solutions live on their website.",
+      "'SZAFRAN PROJEKT' jest oficjalną stroną internetową firmy zajmującej się projektowaniem zarządzania ruchem drogowym. Wykorzystując technologie takie jak React, Node.js, MongoDB i inne, strona demonstruje ich ekspertyzę w planowaniu ruchu i wdrażaniu projektów. Obejrzyj ich prace na GitHubie i doświadcz rozwiązań na żywo na ich stronie internetowej.",
     descriptionShort:
-      "Official website for a traffic management designing company",
+      "Oficjalna strona dla firmy projektującej zarządzanie ruchem drogowym",
     mainImg: "/project_images/szafranprojektnextjs.jpg",
     imgs: [
       "/project_images/szafranprojektnextjs.jpg",
@@ -54,9 +54,9 @@ const PROJECTS = [
     slug: "airbnb",
     name: "AirBnB",
     description:
-      "'AirBnB' project explores practical implementations using Airbnb's structure to simulate payment methods, map integration, databases, and basic 3D model usage. Utilizing technologies such as React, MongoDB, Paypal, Stripe, and more, it showcases these functionalities in action. Check out the project on GitHub and experience its features live on the website.",
+      "Projekt 'AirBnB' eksploruje praktyczne implementacje, wykorzystując strukturę Airbnb do symulacji metod płatności, integracji map, baz danych oraz podstawowego użycia modeli 3D. Wykorzystując technologie takie jak React, MongoDB, Paypal, Stripe i inne, prezentuje te funkcjonalności w akcji. Sprawdź projekt na GitHubie i doświadcz jego funkcji na żywo na stronie internetowej.",
     descriptionShort:
-      "AirBnB with 3d-models, STRIPE and Paypal, maps, login and reservation",
+      "AirBnB z modelami 3D, STRIPE i Paypal, mapami, logowaniem i rezerwacją",
     mainImg: "/project_images/airbnb.jpg",
     imgs: ["/project_images/airbnb.jpg"],
     githubLink: "https://github.com/Havir-S/havirbnb",
@@ -84,9 +84,9 @@ const PROJECTS = [
     slug: "insta",
     name: "Instagram",
     description:
-      "'Instagram' project integrates Next.js authentication with Firebase for managing user data and files. Built on React and Next.js, it offers a streamlined user experience. Explore the project's code on GitHub and interact with its functionalities on the live website.",
+      "'Projekt 'Instagram' integruje uwierzytelnianie Next.js z Firebase w celu zarządzania danymi użytkownika i plikami. Zbudowany w oparciu o React i Next.js, oferuje zoptymalizowane doświadczenie użytkownika. Zapoznaj się z kodem projektu na GitHubie i korzystaj z jego funkcji na żywo na stronie internetowej.'",
     descriptionShort:
-      "Instagram utilizing next-auth with firebase for files + users.",
+      "'Instagram wykorzystujący next-auth z firebase dla plików + użytkowników.'",
     mainImg: "/project_images/insta.jpg",
     imgs: ["/project_images/insta.jpg"],
     githubLink: "https://github.com/Havir-S/instagram-v2",
@@ -106,8 +106,8 @@ const PROJECTS = [
     slug: "amazon",
     name: "Amazon",
     description:
-      "'Amazon' project showcases the integration of a dummy API with STRIPE functionality, creating a simulated Amazon-like experience. Developed using React, Next.js, Tailwind CSS, Google Auth, Firebase, React-Redux, and Stripe for payments, this project highlights the implementation of online retail features. Discover its codebase on GitHub and explore its functionalities live on the website.",
-    descriptionShort: "Amazon copy to highlight the STRIPE functionality",
+      "'Projekt 'Amazon' prezentuje integrację pozornego interfejsu API z funkcjonalnością STRIPE, tworząc symulację doświadczenia podobnego do Amazon. Opracowany przy użyciu React, Next.js, Tailwind CSS, Google Auth, Firebase, React-Redux i Stripe do płatności, projekt ten podkreśla implementację funkcji handlu detalicznego online. Odkryj jego kod na GitHubie i eksploruj funkcje na żywo na stronie internetowej.'",
+    descriptionShort: "'Kopia Amazona, aby podkreślić funkcjonalność STRIPE.'",
     mainImg: "/project_images/amazon.jpg",
     imgs: ["/project_images/amazon.jpg"],
     githubLink: "https://github.com/Havir-S/havir-amazon-stripe",
@@ -130,9 +130,9 @@ const PROJECTS = [
     slug: "portfolio3d",
     name: "Portfolio 3D",
     description:
-      "When I initially designed this page as a showcase for my Blender skills, I encountered strict browser limitations. Attempting to have users download a hefty 50MB file just to access the website seemed impractical. Thus, I opted to significantly reduce the file size and create a low-poly version of my original vision. This section of my portfolio employs Three.js, complemented by React Three Fiber, to present a 3D showcase that's browser-friendly and still reflects my creative capabilities. Check out the code on GitHub and experience the live version of my 3D portfolio.",
+      "Kiedy początkowo projektowałem tę stronę jako prezentację moich umiejętności w Blenderze, napotkałem surowe ograniczenia przeglądarki. Próba zmuszenia użytkowników do pobrania pokaźnego pliku o wielkości 50 MB, aby uzyskać dostęp do strony, wydawała się niepraktyczna. Dlatego postanowiłem znacznie zmniejszyć rozmiar pliku i stworzyć wersję low-poly mojej pierwotnej wizji. Ta część mojego portfolio wykorzystuje Three.js, wspierany przez React Three Fiber, aby zaprezentować pokaz 3D przyjazny dla przeglądarek, który nadal odzwierciedla moje zdolności twórcze. Sprawdź kod na GitHubie i doświadcz wersji na żywo mojego portfolio 3D.'",
     descriptionShort:
-      "3D Portfolio part, which utilizes Three.js with help from React Three Fiber",
+      "'Część 3D portfolio, która wykorzystuje Three.js z pomocą React Three Fiber.'",
     mainImg: "/project_images/preview-3dportfolio.jpg",
     imgs: ["/project_images/preview-3dportfolio.jpg"],
     githubLink: "https://github.com/Havir-S/portfolio3d",
@@ -145,8 +145,8 @@ const PROJECTS = [
     slug: "portfolio2d",
     name: "Portfolio 2D",
     description:
-      "Portfolio created with React's power. Inspired by a bunch of japanese views that I have recreated in Blender.",
-    descriptionShort: "Old 2D portfolio",
+      "Portfolio stworzone przy pomocy mocy Reacta. Zainspirowane grupą japońskich widoków, które odtworzyłem w Blenderze.",
+    descriptionShort: "'Stare portfolio 2D.'",
     mainImg: "/project_images/portfoliolight2.jpg",
     imgs: ["/project_images/portfoliolight2.jpg"],
     githubLink: "https://github.com/Havir-S/portfolio2d",
@@ -159,9 +159,9 @@ const PROJECTS = [
     slug: "hulu",
     name: "Hulu",
     description:
-      "'Hulu' project utilizes TMDB's API (The Movie Database) to populate a grid with relevant data swiftly. Built with React, Next.js, and Tailwind CSS, this project efficiently displays information retrieved from TMDB. Explore its codebase on GitHub and interact with the live version available on the website.",
+      "'Projekt 'Hulu' wykorzystuje API TMDB (The Movie Database), aby szybko wypełnić siatkę odpowiednimi danymi. Zbudowany przy użyciu React, Next.js i Tailwind CSS, ten projekt wydajnie wyświetla informacje pobrane z TMDB. Zbadaj jego kod na GitHubie i korzystaj z wersji na żywo dostępnej na stronie internetowej.'",
     descriptionShort:
-      "Works with TMDB's API (The Movie Database) and promptly shows the returned data with tailwind",
+      "'Działa z API TMDB (The Movie Database) i szybko pokazuje zwrócone dane z wykorzystaniem tailwind.'",
     mainImg: "/project_images/hulu.jpg",
     imgs: ["/project_images/hulu.jpg"],
     githubLink: "https://github.com/Havir-S/hulu-v2",
@@ -174,8 +174,8 @@ const PROJECTS = [
     slug: "facebook",
     name: "Facebook",
     description:
-      " The 'Facebook' project is a test environment that incorporates Google Authentication and generates a feed accessible to all users. This replication of Facebook features a functional login system and a dynamic feed. Developed using React, Next.js, Google Auth, Firebase, and Tailwind CSS, this project's code is available on GitHub. Explore its functionalities live on the website.",
-    descriptionShort: "Facebook copy. Working Login and feed.",
+      "'Projekt 'Facebook' to środowisko testowe, które wykorzystuje uwierzytelnianie Google i generuje kanał dostępny dla wszystkich użytkowników. Ta replika Facebooka posiada funkcjonalny system logowania i dynamiczny kanał. Opracowany przy użyciu React, Next.js, Google Auth, Firebase i Tailwind CSS, kod tego projektu jest dostępny na GitHubie. Zbadaj jego funkcje na żywo na stronie internetowej.'",
+    descriptionShort: "'Kopia Facebooka. Działający login i kanał.'",
     mainImg: "/project_images/facebook.jpg",
     imgs: ["/project_images/facebook.jpg"],
     githubLink: "https://github.com/Havir-S/fb-clone",
@@ -195,9 +195,9 @@ const PROJECTS = [
     slug: "blog",
     name: "Blog",
     description:
-      "This is my blog where you can catch up on what's currently keeping me busy. I'm using Sanity as a database to share updates on my ongoing projects. It's built with React, Next.js, Tailwind CSS, and Sanity. Feel free to check out the code on GitHub and explore my live blog to see what I'm up to these days",
+      "To jest mój blog, gdzie możesz nadążyć za tym, co obecnie mnie zajmuje. Używam Sanity jako bazy danych do udostępniania aktualizacji moich trwających projektów. Zbudowany przy użyciu React, Next.js, Tailwind CSS i Sanity. Zapraszam do sprawdzenia kodu na GitHubie i eksplorowania mojego żywego bloga, aby zobaczyć, czym się ostatnio zajmuję.'",
     descriptionShort:
-      "Using sanity as a database for my posts. It shows what I'm currently working on'",
+      "'Używanie sanity jako bazy danych do moich wpisów. Pokazuje, nad czym obecnie pracuję.'",
     mainImg: "/project_images/blog.jpg",
     imgs: ["/project_images/blog.jpg"],
     githubLink: "https://github.com/Havir-S/blog-restored",
@@ -210,9 +210,9 @@ const PROJECTS = [
     slug: "mementomori",
     name: "Memento Mori",
     description:
-      '"Memento Mori," translating to "Remember that You will die," serves as a contemplative website intended to highlight the brevity of time and potentially inspire a reduction in procrastination. This platform displays the remaining time of the year in months, days, hours, and minutes, urging visitors to consider the passage of time. Developed using React and Tailwind CSS, the project is available for exploration on GitHub and accessible on the live website.',
+      '"Memento Mori," co tłumaczy się jako "Pamiętaj, że umrzesz", służy jako refleksyjna strona internetowa mająca na celu podkreślenie krótkotrwałości czasu i potencjalnie zainspirowanie do zmniejszenia odkładania spraw na później. Ta platforma wyświetla pozostały czas roku w miesiącach, dniach, godzinach i minutach, zachęcając odwiedzających do przemyślenia upływu czasu. Opracowany przy użyciu React i Tailwind CSS, projekt jest dostępny do eksploracji na GitHubie i dostępny na żywo na stronie internetowej.',
     descriptionShort:
-      "Shows the remaining time of the year in months, days and hours and minutes",
+      "'Pokazuje pozostały czas roku w miesiącach, dniach, godzinach i minutach.'",
     mainImg: "/project_images/mementomori.jpg",
     imgs: ["/project_images/mementomori.jpg"],
     githubLink: "https://github.com/Havir-S/mementomori",
@@ -225,8 +225,8 @@ const PROJECTS = [
     slug: "simpleServer",
     name: "File Archive",
     description:
-      "Allows all PCs connected to the local network to store data on the host.",
-    descriptionShort: "File archive for bricscad projects",
+      "Pozwala wszystkim komputerom podłączonym do lokalnej sieci przechowywać dane na hoście.'",
+    descriptionShort: "'Archiwum plików dla projektów bricscad.'",
     mainImg: "/project_images/simpleserver.jpg",
     imgs: ["/project_images/simpleserver.jpg"],
     githubLink:
@@ -241,15 +241,16 @@ const PROJECTS = [
       "mongodb",
     ],
   },
+
   {
     id: 11,
     category: "web-development",
     slug: "oldserver",
-    name: "Old Server - File Archive",
+    name: "Stary serwer - Archiwum plików",
     description:
-      "Allows PCs to share/store/archive FILES (on Local Connection)",
+      "Pozwala komputerom na udostępnianie/przechowywanie/archiwizowanie PLIKÓW (w sieci lokalnej)",
     descriptionShort:
-      "File archive for bricscad projects - older version; client + server",
+      "Archiwum plików dla projektów bricscad - starsza wersja; klient + serwer",
     mainImg: "/project_images/oldserver.jpg",
     imgs: ["/project_images/oldserver.jpg"],
     githubLink: [
@@ -272,9 +273,9 @@ const PROJECTS = [
     id: 12,
     category: "web-development",
     slug: "tictactoe",
-    name: "[2019] TIC-TAC-TOE with a (fake) chat",
-    description: "Old project for either FreeCodeCamp or Project Odin.",
-    descriptionShort: "Old project for either FreeCodeCamp or Project Odin.",
+    name: "[2019] Kółko i krzyżyk z (fałszywym) czatem",
+    description: "Stary projekt dla FreeCodeCamp lub Project Odin.",
+    descriptionShort: "Stary projekt dla FreeCodeCamp lub Project Odin.",
     mainImg: "/project_images/tictactoe.jpg",
     imgs: ["/project_images/tictactoe.jpg"],
     githubLink: "https://github.com/Havir-S/tic-tac-toe",
@@ -285,9 +286,9 @@ const PROJECTS = [
     id: 13,
     category: "web-development",
     slug: "battleships",
-    name: "[2019] Classic Battleship game",
-    description: "Old project for either FreeCodeCamp or Project Odin.",
-    descriptionShort: "First time using blender for a website",
+    name: "[2019] Klasyczna gra w statki",
+    description: "Stary projekt dla FreeCodeCamp lub Project Odin.",
+    descriptionShort: "Pierwsze użycie blendera do strony internetowej",
     mainImg: "/project_images/battleships.jpg",
     imgs: ["/project_images/battleships.jpg"],
     githubLink: "https://github.com/Havir-S/battleships-deployed",
@@ -298,9 +299,9 @@ const PROJECTS = [
     id: 14,
     category: "web-development",
     slug: "restaurant",
-    name: "[2019] Restaurant website",
-    description: "Old project for either FreeCodeCamp or Project Odin.",
-    descriptionShort: "Using blender for website's props",
+    name: "[2019] Strona internetowa restauracji",
+    description: "Stary projekt dla FreeCodeCamp lub Project Odin.",
+    descriptionShort: "Używanie blendera do rekwizytów strony internetowej",
     mainImg: "/project_images/restaurant.jpg",
     imgs: ["/project_images/restaurant.jpg"],
     githubLink: "https://github.com/Havir-S/restaurant-page-react",
@@ -311,9 +312,9 @@ const PROJECTS = [
     id: 15,
     category: "web-development",
     slug: "pomodoro",
-    name: "[2019] Pomodoro website",
-    description: "25 minutes of work - 5 minutes of break",
-    descriptionShort: "25 minutes of work - 5 minutes of break",
+    name: "[2019] Strona internetowa Pomodoro",
+    description: "25 minut pracy - 5 minut przerwy",
+    descriptionShort: "25 minut pracy - 5 minut przerwy",
     mainImg: "/project_images/pomodoro.jpg",
     imgs: ["/project_images/pomodoro.jpg"],
     githubLink: "https://github.com/Havir-S/pomodoro-havir",
@@ -324,9 +325,11 @@ const PROJECTS = [
     id: 16,
     category: "web-development",
     slug: "learnjapanese",
-    name: "[2019] Japanese learning website",
-    description: "Website I used to memorize words for japanese class.",
-    descriptionShort: "Website I used to memorize words for japanese class.",
+    name: "[2019] Strona do nauki japońskiego",
+    description:
+      "Strona, którą używałem do zapamiętywania słów na lekcjach japońskiego.",
+    descriptionShort:
+      "Strona, którą używałem do zapamiętywania słów na lekcjach japońskiego.",
     mainImg: "/project_images/jplearn.jpg",
     imgs: ["/project_images/jplearn.jpg"],
     githubLink: "https://github.com/Havir-S/jap_learn",
@@ -337,10 +340,10 @@ const PROJECTS = [
     id: 17,
     category: "3d-models",
     slug: "forest",
-    name: "3D Portfolio Website forest",
-    description: "Made for portfolio purposes.",
+    name: "Strona Portfolio 3D - las",
+    description: "Stworzone do celów portfolio.",
     descriptionShort:
-      "Blender scene turned into a looped animation for website's needs.",
+      "Scena Blendera zamieniona w animację do celów strony internetowej.",
     mainImg: "/project_images/forest8.png",
     imgs: [
       "/project_images/forest1.jpg",
@@ -363,9 +366,9 @@ const PROJECTS = [
     id: 18,
     category: "3d-models",
     slug: "shrine",
-    name: "Low-poly shrine",
-    description: "A shrine used for navigation on a website",
-    descriptionShort: "A shrine used for navigation on a website",
+    name: "Niskopoligonalny świątynia",
+    description: "Świątynia używana do nawigacji na stronie internetowej.",
+    descriptionShort: "Świątynia używana do nawigacji na stronie internetowej.",
     mainImg: "/project_images/shrine.jpg",
     imgs: [
       "/project_images/shrine.jpg",
@@ -383,10 +386,10 @@ const PROJECTS = [
     id: 19,
     category: "3d-models",
     slug: "castle-render",
-    name: "Castle Render",
+    name: "Render zamku",
     description:
-      "In this project, I have been experimenting within Blender to achieve a more realistic appearance. Trying my hands on material nodes, especially focusing on water.",
-    descriptionShort: "Testing photorealistic settings.",
+      "W tym projekcie eksperymentowałem w Blenderze, aby uzyskać bardziej realistyczny wygląd. Próbowałem różnych ustawień materiałów, szczególnie skupiając się na wodzie.",
+    descriptionShort: "Testowanie ustawień fotorealistycznych.",
     mainImg: "/project_images/castle.jfif",
     imgs: [
       "/project_images/castle1.jfif",
@@ -401,9 +404,9 @@ const PROJECTS = [
     id: 20,
     category: "3d-models",
     slug: "japanese-objects",
-    name: "Japanese props",
-    description: "Thinks I made for warmup.",
-    descriptionShort: "Things I made for warmup",
+    name: "Japońskie rekwizyty",
+    description: "Rzeczy, które stworzyłem jako rozgrzewka.",
+    descriptionShort: "Rzeczy, które stworzyłem jako rozgrzewka.",
     mainImg: "/project_images/japanese5.jfif",
     imgs: [
       "/project_images/japanese2.jfif",
@@ -420,9 +423,9 @@ const PROJECTS = [
     id: 21,
     category: "3d-models",
     slug: "2d-portfolio-props",
-    name: "2D Portfolio Props",
-    description: "Thinks I made for warmup.",
-    descriptionShort: "Things I made for warmup",
+    name: "Rekwizyty portfolio 2D",
+    description: "Rzeczy, które zrobiłem na rozgrzewkę.",
+    descriptionShort: "Rzeczy, które zrobiłem na rozgrzewkę",
     mainImg: "/project_images/LightPage14.jpg",
     imgs: [
       "/project_images/LightPage15.jpg",
@@ -445,8 +448,8 @@ const PROJECTS = [
     slug: "ichigo",
     name: "Ichigo",
     description:
-      "Back when I used to make characters for game use (like VRChat), I spotted a lot of people talking about one anime and the main character, and given that I was late to the party I decided to pick up the side quest, rather than the main mission, and so I went on to create the side character, rather than enter the race to create the main character late.",
-    descriptionShort: "Anime styled character",
+      "Kiedyś robiłem postacie do użytku w grach (np. VRChat), zauważyłem dużo ludzi, którzy rozmawiali o jednym anime i głównym bohaterze. Biorąc pod uwagę, że się spóźniłem na przyjęcie, postanowiłem zająć się zadaniami pobocznymi, zamiast głównym, i tak stworzyłem postać poboczną, zamiast wziąć udział w wyścigu o stworzenie głównej postaci późno.",
+    descriptionShort: "Postać w stylu anime",
     mainImg: "/project_images/ichigo.jpg",
     imgs: [
       "/project_images/ichigo2.jpg",
@@ -466,8 +469,8 @@ const PROJECTS = [
     slug: "ramiris",
     name: "Ramiris",
     description:
-      "Character from a show I watched. This time I've went 3 steps ahead and created a character that was foreshadowed, yet has not appeared on screen once. I picked up some source material and figured out everything myself.",
-    descriptionShort: "Anime styled character",
+      "Postać z programu, który oglądałem. Tym razem poszedłem trzy kroki naprzód i stworzyłem postać, która była zwiastowana, a jednak nie pojawiła się na ekranie ani razu. Zebrałem trochę materiałów źródłowych i wszystko samemu sobie rozgryzłem.",
+    descriptionShort: "Postać w stylu anime",
     mainImg: "/project_images/Ramiris1.jpg",
     imgs: [
       "/project_images/Ramiris1.jpg",
@@ -485,8 +488,8 @@ const PROJECTS = [
     slug: "rimuru",
     name: "Rimuru",
     description:
-      "Main character from a show I've watched. This is my first attempt on a anime-styled character. It's from the same series as the other model I've created - Ramiris.",
-    descriptionShort: "Anime styled character",
+      "Główny bohater z programu, który obejrzałem. To moja pierwsza próba stworzenia postaci w stylu anime. Jest z tej samej serii co inny model, który stworzyłem - Ramiris.",
+    descriptionShort: "Postać w stylu anime",
     mainImg: "/project_images/Rimuru3.jpg",
     imgs: [
       "/project_images/Rimuru.jpg",
@@ -505,8 +508,8 @@ const PROJECTS = [
     slug: "mirio",
     name: "Mirio",
     description:
-      "A Fallout-esque looking character which has caught my attention. Male anime characters have a completely different face structure from female characters, and until this character, I've never made a male character. So to top it off, I have also picked an unusual one.",
-    descriptionShort: "Anime styled character",
+      "Postać wyglądająca jak z gry Fallout, która przyciągnęła moją uwagę. Męskie postacie anime mają zupełnie inną strukturę twarzy niż postacie żeńskie, i do tej postaci nigdy nie stworzyłem postaci męskiej. Więc aby to urozmaicić, wybrałem nietypową postać.",
+    descriptionShort: "Postać w stylu anime",
     mainImg: "/project_images/Mirio3.png",
     imgs: [
       "/project_images/Mirio2.png",
@@ -523,8 +526,8 @@ const PROJECTS = [
     slug: "hayasaka",
     name: "Hayasaka",
     description:
-      "Character which I haven't finished. During the creation of this model, I've been frequently visiting a game called VRChat, which back then had some unimaginable issues with hackers/crashers. Essentially what happend was - some folks decided to fry my GPU and by doing so, the power surge got most of my pc, somehow including my hard drive, on which this model was. I don't have files for this work so it only stays here as an old memento. The pictures are only from the development stage.",
-    descriptionShort: "Anime styled character",
+      "Postać, której nie ukończyłem. Podczas tworzenia tego modelu często odwiedzałem grę o nazwie VRChat, która wtedy miała nieprawdopodobne problemy z hakerami/crasherami. W skrócie - jacyś ludzie postanowili spalić moją kartę graficzną, a przez to wiele rzeczy na moim komputerze, w tym moim dysku twardego, na którym były pliki z tym modelem. Nie mam plików do tej pracy, więc zostaje to tylko jako stare wspomnienie. Zdjęcia są tylko z etapu tworzenia.",
+    descriptionShort: "Postać w stylu anime",
     mainImg: "/project_images/Hayasaka.png",
     imgs: [
       "/project_images/Hayasaka2.jfif",
@@ -541,8 +544,8 @@ const PROJECTS = [
     slug: "shinon",
     name: "Shinon",
     description:
-      "First character I've ever made. Created by following a 20+ parts, each 30min long tutorial.",
-    descriptionShort: "Anime styled character",
+      "Pierwsza postać, którą kiedykolwiek stworzyłem. Utworzona poprzez wykonanie ponad 20 częściowych, każda trwająca 30 minut, samouczków.",
+    descriptionShort: "Postać w stylu anime",
     mainImg: "/project_images/sinon.jpg",
     imgs: ["/project_images/sinon.jpg"],
     githubLink: "",
@@ -553,10 +556,10 @@ const PROJECTS = [
     id: 28,
     category: "3d-models",
     slug: "learning-shapes",
-    name: "Shape practice",
+    name: "Ćwiczenia z kształtami",
     description:
-      "This is the stack of screenshots I didn't really want to put in separate posts, for various reasons. Some of those creations were used for HORROR PROJECTS (Collaboration with a map maker and Unity programmer friend for a VRChat event), COMEDY PROJECTS, for CHALLENGES and many more 'occasions'.",
-    descriptionShort: "Multitude of 3d objects in one post",
+      "To zestaw zrzutów ekranu, których nie chciałem umieszczać osobno z różnych powodów. Niektóre z tych tworów zostały użyte do PROJEKTÓW HORROROWYCH (Współpraca z twórcą mapy i programistą Unity dla wydarzenia w VRChat), PROJEKTÓW KOMEDIOWYCH, WYZWAŃ i wielu innych 'okazji'.",
+    descriptionShort: "Wiele obiektów 3D w jednym poście",
     mainImg: "/project_images/keyboard1.jpg",
     imgs: [
       "/project_images/shoe1.png",
@@ -580,8 +583,9 @@ const PROJECTS = [
     slug: "szafran-projekt-firma",
     name: "SZAFRAN PROJEKT",
     description:
-      "Well, this site went through many changes and redesigns, but never with a proper approach to design. I've started learning FIGMA after I found job offers for a web developer spot, but it required professional experience with design. So I started learning.",
-    descriptionShort: "Final design for the website, prepared in FIGMA",
+      "Ta strona przechodziła wiele zmian i przebudów, ale nigdy z właściwym podejściem do projektowania. Zacząłem uczyć się FIGMA po znalezieniu ofert pracy na stanowisko web developera, ale wymagało to profesjonalnego doświadczenia w projektowaniu. Tak więc zacząłem się uczyć.",
+    descriptionShort:
+      "Ostateczny projekt strony internetowej, przygotowany w FIGMA",
     mainImg: "/project_images/szafranfigma4.jpg",
     imgs: [
       "/project_images/szafranfigma3.jpg",
@@ -597,11 +601,11 @@ const PROJECTS = [
     id: 30,
     category: "figma-designs",
     slug: "asian-restaurant",
-    name: "Asian Restaurant",
+    name: "Azjatycka Restauracja",
     description:
-      "My favourite asian restaurant has a messy website, which loads images only after a second refresh. For no absolute reason. Mobile or PC. So hey, I figured, how difficult can making a better website be? Here's the starting design.",
+      "Moja ulubiona azjatycka restauracja ma bałaganiarską stronę internetową, która wczytuje obrazy dopiero po drugim odświeżeniu. Bez żadnego konkretnego powodu. Na telefonie lub komputerze. Zastanawiałem się, jak trudne może być stworzenie lepszej strony internetowej. Oto początkowy projekt.",
     descriptionShort:
-      "Idea inspired by a barely working website of my favourite asian restaurant",
+      "Pomysł zainspirowany ledwo działającą stroną mojej ulubionej azjatyckiej restauracji",
     mainImg: "/project_images/restaurante4.jpg",
     imgs: [
       "/project_images/restaurante3.jpg",
@@ -617,10 +621,10 @@ const PROJECTS = [
     id: 31,
     category: "figma-designs",
     slug: "winery",
-    name: "Winery internet shop",
+    name: "Sklep internetowy Winery",
     description:
-      "Prepared for my Vue.js project. The shopping part allows me to practive all the Vue concepts I need to learn and memorize, since I'm coming from React and even though javascript is the same, many concepts can be different. ",
-    descriptionShort: "Prepared for my Vue.js project",
+      "Przygotowany na potrzeby mojego projektu Vue.js. Dzięki części zakupowej mogę praktykować wszystkie koncepcje Vue, których potrzebuję się nauczyć i zapamiętać, ponieważ przechodzę z Reacta i mimo że język JavaScript jest taki sam, wiele koncepcji może być różnych.",
+    descriptionShort: "Przygotowany na potrzeby mojego projektu Vue.js",
     mainImg: "/project_images/winery1.jpg",
     imgs: [
       "/project_images/winery3.jpg",
@@ -636,11 +640,11 @@ const PROJECTS = [
     id: 32,
     category: "figma-designs",
     slug: "ecommerce-figma",
-    name: "Ecommerce website",
+    name: "Strona e-commerce",
     description:
-      "A website I've designed that I will use for my PHP learning session. Nothing is as good as simplicity. Simple and effective, and hopefully fits that 'capitalistic' look of a casual e-commerce page.",
+      "Strona, którą zaprojektowałem i którą wykorzystam w swojej sesji nauki PHP. Nic nie jest tak dobre jak prostota. Proste i skuteczne, i mam nadzieję, że pasuje do tego 'kapitalistycznego' wyglądu zwykłej strony e-commerce.",
     descriptionShort:
-      "A website I've designed that I will use for my PHP learning session.",
+      "Strona, którą zaprojektowałem i którą wykorzystam w swojej sesji nauki PHP",
     mainImg: "/project_images/ecommerce2.jpg",
     imgs: ["/project_images/ecommerce1.jpg", "/project_images/ecommerce2.jpg"],
     githubLink: "",
@@ -651,10 +655,10 @@ const PROJECTS = [
     id: 33,
     category: "scripts",
     slug: "map-maker",
-    name: "[Python] Script for making maps",
+    name: "[Python] Skrypt do tworzenia map",
     description:
-      "This little snippet of code (300+ lines of code) has saved me not minutes or hours. It has currently saved me weeks and months with how much it automates the mundane and boring processes. This script can be used with different types of maps, it stitches together small individual pieces of the map, it can also saturate the end image or delete certain colors from it. All automated, without a need for a manual input other than the settings.",
-    descriptionShort: "A life-saver in my recent work.",
+      "Ten mały fragment kodu (ponad 300 linii kodu) oszczędził mi nie tylko minut czy godzin. Obecnie oszczędził mi tygodnie i miesiące ze względu na to, jak bardzo automatyzuje nudne i monotonne procesy. Ten skrypt może być używany z różnymi typami map, łączy małe indywidualne fragmenty mapy, może także nasycać końcowy obraz lub usuwać określone kolory z niego. Wszystko zautomatyzowane, bez potrzeby ręcznego wprowadzania danych poza ustawieniami.",
+    descriptionShort: "Bohater w mojej ostatniej pracy.",
     mainImg: "/project_images/mapMaker1.jpg",
     imgs: ["/project_images/mapMaker1.jpg", "/project_images/mapMaker2.jpg"],
     githubLink: "",
@@ -665,11 +669,11 @@ const PROJECTS = [
     id: 34,
     category: "traffic-design",
     slug: "inventory-of-the-roads",
-    name: "Taking an inventory of the roads",
+    name: "Inwentaryzacja dróg",
     description:
-      "Includes preparing precise videos that highlight the current situation of the road as well the surrounding road signs. In some cases those videos can also be sold to other designers. Thus making them even more of a valuable resource.",
+      "Obejmuje przygotowanie precyzyjnych filmów, które podkreślają aktualną sytuację na drodze oraz otaczających znaków drogowych. W niektórych przypadkach te filmy mogą być także sprzedawane innym projektantom, co czyni je jeszcze bardziej wartościowymi.",
     descriptionShort:
-      "Videos like these are required for creating an up-to-date maps.",
+      "Filmy tego typu są niezbędne do tworzenia aktualnych map.",
     mainImg: "/project_images/bricscad9.jpg",
     imgs: [
       "/project_images/bricscad11.jpg",
@@ -685,11 +689,11 @@ const PROJECTS = [
     id: 35,
     category: "traffic-design",
     slug: "road-sign-inventory",
-    name: "Inventory of vertical and horizontal road signs ",
+    name: "Inwentaryzacja znaków drogowych pionowych i poziomych",
     description:
-      "Using pre-recorded videos of the roads as well as utilizing any map that can be useful in order to recreate the current situation on the road.",
+      "Wykorzystując wstępnie nagrane filmy z dróg oraz korzystając z jakiejkolwiek mapy, która może być przydatna do odtworzenia aktualnej sytuacji na drodze.",
     descriptionShort:
-      "Recreating the current road situation in AutoCAD/BricsCAD",
+      "Odtworzenie bieżącej sytuacji drogowej w AutoCADzie/BricsCADzie",
     mainImg: "/project_images/bricscad3.jpg",
     imgs: ["/project_images/bricscad2.jpg", "/project_images/bricscad3.jpg"],
     githubLink: "",
@@ -700,10 +704,10 @@ const PROJECTS = [
     id: 36,
     category: "traffic-design",
     slug: "traffic-solutions",
-    name: "Preparing traffic design solutions ",
+    name: "Projektowanie ruchu drogowego",
     description:
-      "With the template map filled with road signs, we can now access the situation, consult the technical conditions and provide the most efficient as well as most practical solutions to our given project. After it is finished, the printed version must be supplied and processed by all governing offices, as well as the main police department. ",
-    descriptionShort: "Ensuring our solutions comply with the law",
+      "Dzięki mapie wzorcowej wypełnionej znakami drogowymi możemy teraz ocenić sytuację, skonsultować warunki techniczne i zapewnić najbardziej efektywne oraz praktyczne rozwiązania dla naszego konkretnego projektu. Po zakończeniu musi być dostarczona i przetworzona przez wszystkie urzędy oraz główny departament policji.",
+    descriptionShort: "Zapewnienie zgodności rozwiązań z prawem",
     mainImg: "/project_images/bricscad.png",
     imgs: ["/project_images/bricscad.png", "/project_images/bricscad4.jpg"],
     githubLink: "",

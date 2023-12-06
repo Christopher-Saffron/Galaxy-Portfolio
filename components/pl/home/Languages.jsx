@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Languages() {
   return (
     <div className="test  my-3">
-      <p className=" textTitle mb-7">What languages do I speak?</p>
+      <p className=" textTitle mb-7">Jakimi językami się posługuję?</p>
       <div className="flex gap-5 text-base dark:text-textSub">
         <div className="knownLanguage">
           <Image
@@ -12,7 +12,7 @@ export default function Languages() {
             height={32}
             className="border dark:border-bgcolor shadow-md"
           />
-          <p>English</p>
+          <p>Angielski</p>
         </div>
         <div className="knownLanguage">
           <Image
@@ -21,7 +21,7 @@ export default function Languages() {
             height={32}
             className="border dark:border-bgcolor shadow-md"
           />
-          <p>Polish</p>
+          <p>Polski</p>
         </div>
         <div className="knownLanguage">
           <Image
@@ -30,7 +30,7 @@ export default function Languages() {
             height={32}
             className="border dark:border-bgcolor shadow-md"
           />
-          <p>Japanese</p>
+          <p>Japoński</p>
         </div>
       </div>
     </div>

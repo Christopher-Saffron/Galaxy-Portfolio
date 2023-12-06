@@ -3,32 +3,34 @@ import Image from "next/image";
 export default function History() {
   return (
     <div className="test  my-3">
-      <p className=" textTitle mb-7">History</p>
+      <p className=" textTitle mb-7">Historia</p>
       <div className=" font-catamaran text-base flex flex-col gap-3">
         <div className="flex  gap-8">
           <span className="dark:text-textSub3 font-lato font-bold">1999</span>
           <span className="font-catamaran ">
-            I was born in <span className="text-main">Cracow, Poland</span>
+            Urodziłem się w <span className="text-main">Krakowie, Polska</span>
           </span>
         </div>
         <div className="flex  gap-8">
           <span className="dark:text-textSub3 font-lato font-bold">2018</span>
           <span>
-            Officially began working as a Temporary{" "}
-            <span className="text-main">Traffic Management Designer</span>, as
-            well as started and paused studying Metallurgical Engineering at AGH
-            University of Science and Technology in Cracow.
+            Oficjalnie rozpocząłem pracę jako{" "}
+            <span className="text-main">
+              Projektant Tymczasowej Organizacji Ruchu{" "}
+            </span>
+            oraz rozpocząłem i zapauzowałem studia na kierunku Inżynieria Metali
+            na AGH w Krakowie.
           </span>
         </div>
         <div className="flex  gap-8">
           <span className="dark:text-textSub3 font-lato font-bold whitespace-nowrap">
-            2022 to present
+            2022 do teraz
           </span>
           <span>
-            Fully focusing on Traffic Management Designing in{" "}
-            <span className="text-main">SZAFRAN PROJEKT</span> as well as
-            learning and utilizing programming and design on the side, with the
-            goal of switching career paths to web development.
+            W pełni skupiam się na projektowaniu Zarządzania Ruchem w firmie{" "}
+            <span className="text-main">SZAFRAN PROJEKT</span>, a także uczę się
+            i wykorzystuję programowanie, w celu zmiany ścieżki zawodowej na web
+            development.
           </span>
         </div>
       </div>

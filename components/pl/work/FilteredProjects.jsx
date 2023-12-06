@@ -1,7 +1,7 @@
 "use client";
 import { Suspense, useState } from "react";
 import ProjectLink from "@/components/pl/work/ProjectLink";
-import PROJECTS from "@/data/data";
+import PROJECTS from "@/data/dataPL";
 import { useSearchParams } from "next/navigation";
 import NotFoundRocket from "@/components/pl/work/NotFoundRocket";
 
@@ -21,7 +21,7 @@ export default function filteredProjects() {
     <Suspense fallback={"Loading...."}>
       <div className="test">
         <div className="rocketBorder relative text-[24px]  dark:text-textSub2 font-bold pb-3 w-fit">
-          <span>Filtered Projects</span>
+          <span>Filtrowane Projekty</span>
         </div>
       </div>
       <div className="test  grid grid-cols-2 my-8 mb-12 gap-x-4 gap-y-24">

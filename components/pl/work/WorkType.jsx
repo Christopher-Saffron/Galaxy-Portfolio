@@ -4,7 +4,7 @@ export default function WorkType({ workType }) {
   console.log(workType);
   return (
     <div className="test">
-      <p className=" textTitle mb-7">My Work</p>
+      <p className=" textTitle mb-7">Moje prace</p>
       <div className="  select-none flex flex-wrap w-fit mx-auto justify-center font-bold items-center dark:textSub2">
         <WorkLink
           link={"web-development"}

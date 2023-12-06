@@ -58,6 +58,20 @@ export default function Offer() {
             editing
           </span>
         </div>
+        <div className="flex gap-8">
+          <span className="offerCategory">Image Editing</span>
+          <span>
+            For small adjustments and editing of photos and images, I use{" "}
+            <span className="text-main">Gimp</span>
+          </span>
+        </div>
+        <div className="flex gap-8">
+          <span className="offerCategory">Artificial Intelligence</span>
+          <span>
+            I use <span className="text-main">ChatGPT</span> and{" "}
+            <span className="text-main">Stable Diffusion</span>
+          </span>
+        </div>
       </div>
     </div>
   );

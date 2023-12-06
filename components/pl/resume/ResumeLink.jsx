@@ -29,7 +29,7 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
               alt=""
             />
             <span className="download-view-pdf hoverMain">
-              {showImgs ? "Hide Images" : "Preview"}
+              {showImgs ? "Schowaj" : "Pokaż"}
             </span>
           </div>
           <Link
@@ -37,7 +37,7 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
             className="flex items-center gap-2"
           >
             <Image src="/images/Download.svg" width={18} height={18} alt="" />
-            <span className="download-view-pdf hoverMain">Download pdf</span>
+            <span className="download-view-pdf hoverMain">Pobierz pdf</span>
           </Link>
         </div>
       </div>

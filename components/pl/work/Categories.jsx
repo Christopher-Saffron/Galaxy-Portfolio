@@ -6,27 +6,9 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Categories() {
-  // const containerRef = useRef(null);
-  // const [height, setHeight] = useState("auto");
   const router = useRouter();
   const pathName = usePathname();
   const [showCategories, setShowCategories] = useState(false);
-
-  // useEffect(() => {
-  //   if (containerRef.current) {
-  //     const resizeObserver = new ResizeObserver((entries) => {
-  //       console.log(entries);
-  //       const observedHeight = entries[0].contentRect.height;
-  //       setHeight(observedHeight);
-  //     });
-
-  //     resizeObserver.observe(containerRef.current);
-
-  //     return () => {
-  //       resizeObserver.disconnect();
-  //     };
-  //   }
-  // }, []);
 
   function handleCategories() {
     setShowCategories((prev) => !prev);
@@ -45,20 +27,10 @@ export default function Categories() {
 
   return (
     <div className="test">
-      {/* <p className=" textTitle mb-7">My Work</p>
-      <div className="  flex flex-wrap justify-center font-bold items-center textSub2">
-        <div className="mainWorkCategory mainWorkCategory-active">
-          <div className=" border-b-2 py-3 border-main">Web Development</div>
-        </div>
-        <div className="mainWorkCategory">3D Models</div>
-        <div className="mainWorkCategory">FIGMA Designs</div>
-        <div className="mainWorkCategory">Scripts</div>
-        <div className="mainWorkCategory">Traffic Design</div>
-      </div> */}
       <div className="my-4">
         <Checkbox2
           onChange={() => setShowCategories((prev) => !prev)}
-          text={"Show Categories?"}
+          text={"Pokaż kategorie?"}
         />
       </div>
       <AnimatePresence mode="wait">
@@ -68,14 +40,7 @@ export default function Categories() {
             animate={{ opacity: 1, scale: 1, height: "auto" }}
             exit={{ opacity: 0, scale: 1, height: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            // ref={containerRef}
           >
-            {/* <button
-              onClick={handleResetCategories}
-              className="mb-4 font-bold cursor-pointer  inline-block bg-main text-black py-2 px-3 rounded-lg"
-            >
-              Reset categories
-            </button> */}
             <CategoriesBox />
           </motion.div>
         )}
@@ -115,7 +80,7 @@ function CategoriesBox() {
   return (
     <div className=" flex flex-col bg-[#fafafa] transition duration-300 shadow-xl dark:shadow-none dark:bg-[#121111] w-full min-h-[400px] my-4 p-2 px-3 border-2 dark:border-transparent border-main rounded-lg dark:rounded-md">
       <p className="dark:text-textSub2 font-bold text-base py-1 border-b border-[#242424] ">
-        Categories
+        Kategorie
       </p>
       <div className="flex flex-wrap gap-7 mx-5 font-bold">
         <div className="  ">
@@ -170,7 +135,7 @@ function CategoriesBox() {
           </div>
         </div>
         <div className="  ">
-          <p className="text-main text-base my-2 ">Databases</p>
+          <p className="text-main text-base my-2 ">Bazy danych</p>
           <div className="category-boxes-holder">
             <div className="category-box flex flex-col gap-2">
               <Checkbox2 text={"MongoDB"} onChange={onChange} />
@@ -206,7 +171,7 @@ function CategoriesBox() {
           </div>
         </div>
         <div className="  ">
-          <p className="text-main text-base my-2 ">Additional</p>
+          <p className="text-main text-base my-2 ">Dodatkowe</p>
           <div className="category-boxes-holder">
             <div className="category-box flex flex-col gap-2">
               <Checkbox2 text={"GoogleAuth"} onChange={onChange} />

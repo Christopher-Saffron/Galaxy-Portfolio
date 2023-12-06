@@ -2,60 +2,73 @@ import Image from "next/image";
 
 export default function Offer() {
   return (
-    <div className="test  my-3">
-      <p className=" textTitle mb-7">What can I offer?</p>
-      <div className=" font-catamaran text-base font-bold flex flex-col gap-3">
-        <div className="flex  gap-8">
+    <div className="test my-3">
+      <p className="textTitle mb-7">Co mogę zaoferować?</p>
+      <div className="font-catamaran text-base font-bold flex flex-col gap-3">
+        <div className="flex gap-8">
           <span className="offerCategory">Front-end</span>
-          <span className="font-catamaran ">
-            Experience with{" "}
+          <span className="font-catamaran">
+            Doświadczenie z{" "}
             <span className="text-main">
-              React ( Redux, NEXT.JS, Tailwind), Vue, Typescript, Three.js
+              React (Redux, NEXT.JS, Tailwind), Vue, Typescript, Three.js
             </span>
           </span>
         </div>
-        <div className="flex  gap-8">
+        <div className="flex gap-8">
           <span className="offerCategory">Design</span>
           <span>
-            <span className="text-main">FIGMA</span> - For Logos, website
-            blueprints and SVG icons / drawings
+            <span className="text-main">FIGMA</span> - Do tworzenia logotypów,
+            szkiców stron internetowych oraz ikon / rysunków SVG
           </span>
         </div>
-        <div className="flex  gap-8">
+        <div className="flex gap-8">
           <span className="offerCategory">Back-end</span>
           <span>
-            <span className="text-main">Node.js with Express.js</span> to create
-            servers and run scripts on my machine. Soon I intend to learn PHP as
-            well.
+            <span className="text-main">Node.js z Express.js</span> do tworzenia
+            serwerów i uruchamiania skryptów na maszynach. Wkrótce planuję
+            nauczyć się również PHP.
           </span>
         </div>
-        <div className="flex  gap-8">
-          <span className="offerCategory">Databases</span>
+        <div className="flex gap-8">
+          <span className="offerCategory">Bazy danych</span>
           <span>
-            <span className="text-main">MongoDB, Firebase</span> and a little
-            bit of MySQL
+            <span className="text-main">MongoDB, Firebase</span> a także trochę
+            MySQL
           </span>
         </div>
-        <div className="flex  gap-8">
-          <span className="offerCategory">3D Modeling</span>
+        <div className="flex gap-8">
+          <span className="offerCategory">Modelowanie 3D</span>
           <span>
-            One of the best open-source projects out there -{" "}
+            Jeden z najlepszych projektów open-source -{" "}
             <span className="text-main">Blender</span>
           </span>
         </div>
-        <div className="flex  gap-8">
+        <div className="flex gap-8">
           <span className="offerCategory">AutoCAD</span>
           <span>
-            <span className="text-main">AutoCAD / BricsCAD</span> for traffic
-            management design
+            <span className="text-main">AutoCAD / BricsCAD</span> do
+            projektowania zarządzania ruchem drogowym
           </span>
         </div>
-        <div className="flex  gap-8">
-          <span className="offerCategory">Video editing</span>
+        <div className="flex gap-8">
+          <span className="offerCategory">Montaż wideo</span>
           <span>
-            <span className="text-main">Sony Vegas Pro</span> and{" "}
-            <span className="text-main">DaVinci Resolve</span> for quick video
-            editing
+            <span className="text-main">Sony Vegas Pro</span> oraz{" "}
+            <span className="text-main">DaVinci Resolve</span>
+          </span>
+        </div>
+        <div className="flex gap-8">
+          <span className="offerCategory">Edycja Obrazów</span>
+          <span>
+            Do poprawek i edycji zdjęć i obrazów używam{" "}
+            <span className="text-main">Gimp</span>
+          </span>
+        </div>
+        <div className="flex gap-8">
+          <span className="offerCategory">Sztuczna Inteligencja</span>
+          <span>
+            Używam <span className="text-main">ChatGPT</span> i{" "}
+            <span className="text-main">Stable Diffusion</span>
           </span>
         </div>
       </div>

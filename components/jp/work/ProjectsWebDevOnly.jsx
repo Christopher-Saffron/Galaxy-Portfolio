@@ -21,11 +21,11 @@ export default function ProjectsWebDevOnly() {
         </div>
       </div>
       <div className="test grid grid-cols-2 gap-5 my-8 mb-12 gap-x-4 gap-y-9 items-start">
-        {PROJECTS.filter((item) => item.category === "web-development").map(
-          (project) => (
+        {PROJECTS.slice(6, -1)
+          .filter((item) => item.category === "web-development")
+          .map((project) => (
             <ProjectLink key={project.id} project={project} />
-          )
-        )}
+          ))}
       </div>
     </Suspense>
   );
