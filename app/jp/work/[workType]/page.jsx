@@ -1,7 +1,7 @@
 import Projects from "@/components/jp/work/Projects";
 // import WorkType from "@/components/jp/work/WorkType";
 import WorkWebDevelopment from "@/components/jp/work/WorkWebDevelopment";
-import { WORKTYPES } from "@/data/data";
+import { WORKTYPES } from "@/data/dataJP";
 
 export default function Page({ params }) {
   return params.workType === "web-development" ? (

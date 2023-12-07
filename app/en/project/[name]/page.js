@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import PROJECTS from "@/data/data";
-import ImageGallery from "@/components/work/ImageGallery";
+import ImageGallery from "@/components/en/work/ImageGallery";
 
 export const dynamicParams = false; // true | false,
 export const revalidate = false;
@@ -20,14 +20,14 @@ export default function Page({ params }) {
       <div className="test flex items-center justify-start gap-4">
         <div className="flex items-center justify-center gap-2">
           <Link
-            href="/work/web-development"
+            href="/en/work/web-development"
             className="text-main text-base font-bold dark:font-medium"
           >
             Work
           </Link>
           <span className="dark:text-textSub2 font-bold text-base">{">"}</span>
           <Link
-            href={`/work/` + projectData.category}
+            href={`/en/work/` + projectData.category}
             className="text-main text-base font-bold dark:font-medium"
           >
             {projectData.category}

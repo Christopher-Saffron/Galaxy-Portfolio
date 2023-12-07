@@ -58,7 +58,7 @@ export default function Categories() {
       <div className="my-4">
         <Checkbox2
           onChange={() => setShowCategories((prev) => !prev)}
-          text={"Show Categories?"}
+          text={" カテゴリを表示しますか?"}
         />
       </div>
       <AnimatePresence mode="wait">
@@ -115,7 +115,7 @@ function CategoriesBox() {
   return (
     <div className=" flex flex-col bg-[#fafafa] transition duration-300 shadow-xl dark:shadow-none dark:bg-[#121111] w-full min-h-[400px] my-4 p-2 px-3 border-2 dark:border-transparent border-main rounded-lg dark:rounded-md">
       <p className="dark:text-textSub2 font-bold text-base py-1 border-b border-[#242424] ">
-        Categories
+        カテゴリー
       </p>
       <div className="flex flex-wrap gap-7 mx-5 font-bold">
         <div className="  ">
@@ -206,7 +206,7 @@ function CategoriesBox() {
           </div>
         </div>
         <div className="  ">
-          <p className="text-main text-base my-2 ">Additional</p>
+          <p className="text-main text-base my-2 ">追加</p>
           <div className="category-boxes-holder">
             <div className="category-box flex flex-col gap-2">
               <Checkbox2 text={"GoogleAuth"} onChange={onChange} />

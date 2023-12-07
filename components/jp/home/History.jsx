@@ -3,32 +3,36 @@ import Image from "next/image";
 export default function History() {
   return (
     <div className="test  my-3">
-      <p className=" textTitle mb-7">History</p>
+      <p className=" textTitle mb-7">
+        <ruby>
+          歴史<rt>れきし</rt>
+        </ruby>
+      </p>
       <div className=" font-catamaran text-base flex flex-col gap-3">
         <div className="flex  gap-8">
           <span className="dark:text-textSub3 font-lato font-bold">1999</span>
           <span className="font-catamaran ">
-            I was born in <span className="text-main">Cracow, Poland</span>
+            <span className="text-main">ポーランドのクラコウ</span>
+            で生まれました
           </span>
         </div>
         <div className="flex  gap-8">
           <span className="dark:text-textSub3 font-lato font-bold">2018</span>
+
           <span>
-            Officially began working as a Temporary{" "}
-            <span className="text-main">Traffic Management Designer</span>, as
-            well as started and paused studying Metallurgical Engineering at AGH
-            University of Science and Technology in Cracow.
+            正式には、一時的な
+            <span className="text-main">交通管理デザイナー</span>
+            として働き始め、また、クラクフのAGH科学技術大学で冶金工学の勉強を開始し、一時中断しました。
           </span>
         </div>
         <div className="flex  gap-8">
           <span className="dark:text-textSub3 font-lato font-bold whitespace-nowrap">
-            2022 to present
+            2022年から現在まで
           </span>
+
           <span>
-            Fully focusing on Traffic Management Designing in{" "}
-            <span className="text-main">SZAFRAN PROJEKT</span> as well as
-            learning and utilizing programming and design on the side, with the
-            goal of switching career paths to web development.
+            <span className="text-main">SZAFRAN PROJEKT</span>
+            におけるトラフィック管理の設計、およびプログラミングとデザインを側面から学び、活用することに完全に注力し、Web開発へのキャリアパスの切り替えを目標としています。
           </span>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import PROJECTS from "@/data/data";
+import PROJECTS from "@/data/dataJP";
 import ImageGallery from "@/components/jp/work/ImageGallery";
 
 export const dynamicParams = false; // true | false,
@@ -23,7 +23,7 @@ export default function Page({ params }) {
             href="/jp/work/web-development"
             className="text-main text-base font-bold dark:font-medium"
           >
-            Work
+            ポートフォリオ
           </Link>
           <span className="dark:text-textSub2 font-bold text-base">{">"}</span>
           <Link

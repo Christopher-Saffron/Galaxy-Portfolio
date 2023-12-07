@@ -27,16 +27,16 @@ export default function Nav() {
         </Link>
         <ul className="flex items-center gap-7 text-xl">
           <Link href="/jp/work/web-development" className=" link">
-            Work
+            ポートフォリオ
           </Link>
           <Link
             href="/"
             className=" link rounded-md cursor-pointer bg-main px-6 py-4 dark:text-black hover:text-white font-bold"
           >
-            Blog
+            ブログ
           </Link>
           <Link href="/jp/resume" className="link">
-            Resume
+            履歴書
           </Link>
         </ul>
       </div>

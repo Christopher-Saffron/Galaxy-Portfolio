@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import ProjectLink from "@/components/jp/work/ProjectLink";
-import PROJECTS from "@/data/data";
+import PROJECTS from "@/data/dataJP";
 
 export default function Projects({ category }) {
   return (

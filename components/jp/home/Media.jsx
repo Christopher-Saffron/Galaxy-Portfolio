@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Media() {
   return (
     <div className="test my-3 mb-12">
-      <p className=" textTitle mb-7">@ Media</p>
+      <p className=" textTitle mb-7">@ メディア</p>
       <div className="flex flex-col text-base gap-4">
         <div className="flex gap-8">
           <MediaLink text={"saff.christopher@gmail.com"} img={"email"} />
@@ -20,8 +20,8 @@ export default function Media() {
         </div>
       </div>
       <p className="text-[14px] mx-auto w-fit dark:text-textSub my-8">
-        I do not "own" any casual social media accounts. I visit those websites
-        solely for work related content.<span className="text-main">**</span>
+        カジュアルなソーシャルメディアアカウントを「所有」していません。私は仕事関連のコンテンツを目的としてのみこれらの
+        Web サイトにアクセスします。<span className="text-main">**</span>
       </p>
     </div>
   );

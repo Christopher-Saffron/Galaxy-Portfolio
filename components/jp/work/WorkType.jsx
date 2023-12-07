@@ -4,22 +4,22 @@ export default function WorkType({ workType }) {
   console.log(workType);
   return (
     <div className="test">
-      <p className=" textTitle mb-7">My Work</p>
+      <p className=" textTitle mb-7">ポートフォリオ</p>
       <div className="  select-none flex flex-wrap w-fit mx-auto justify-center font-bold items-center dark:textSub2">
         <WorkLink
           link={"web-development"}
-          text={"Web Development"}
+          text={"ウェブ開発"}
           workType={workType}
         />
-        <WorkLink link={"3d-models"} text={"3D Models"} workType={workType} />
+        <WorkLink link={"3d-models"} text={"3Dモデル"} workType={workType} />
 
         <WorkLink link={"figma-designs"} text={"FIGMA"} workType={workType} />
 
-        <WorkLink link={"scripts"} text={"Scripts"} workType={workType} />
+        <WorkLink link={"scripts"} text={"スクリプト"} workType={workType} />
 
         <WorkLink
           link={"traffic-design"}
-          text={"Traffic Design"}
+          text={"交通設計"}
           workType={workType}
         />
       </div>
