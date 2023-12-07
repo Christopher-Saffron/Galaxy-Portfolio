@@ -4,59 +4,32 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
-import { flushSync } from "react-dom";
+import useSavedLanguageSetting from "@/hooks/useSavedLanguageSetting";
 
 function Language() {
   const [showMenu, setShowMenu] = useState(false);
+  const [savedLanguage, setSavedLanguage] = useSavedLanguageSetting();
+  console.log(savedLanguage, setSavedLanguage("dope"));
   const [currentLanguage, setCurrentLanguage] = useState("en");
   const pathname = usePathname();
   const router = useRouter();
-  // const regex = /\/(pl|en|jp)\//;
   const regex = /\/(pl|en|jp)\/?/;
 
   function handleLanguageChange(lang) {
-    console.log(localStorage.getItem("saffronLang"), "and", lang);
-
     ////clicking the same option does nothing
     if (lang === localStorage.getItem("saffronLang")) {
       return;
     } else {
-      flushSync(() => {
-        localStorage.setItem("saffronLang", lang);
-        setCurrentLanguage(lang);
-      });
-      const newPathname = pathname.replace(regex, `/${lang}/`);
-      console.log(newPathname);
-
-      router.replace(newPathname);
+      languageChange(lang);
     }
   }
 
-  ////////////////////////////////////////////////////////////////////////////////////////////////
-  //////////////////////// CLICK OUTSIDE THE LANGUAGES TO CLOSE THE BOX
-  ////////////////////////////////////////////////////////////////////////////////////////////////
-  // useEffect(() => {
-  //   function handleClickOutside(e) {
-  //     console.log("what the fuck");
-  //     // console.log(e.target.classList);
-  //     console.log(showMenu, e.target.classList.contains("navLanguagesTab"));
-  //     if (showMenu && e.target.classList.contains("navLanguageTab") === false) {
-  //       console.log("closing it");
-  //       setShowMenu(false);
-  //     }
-  //   }
-
-  //   window.addEventListener("click", handleClickOutside);
-
-  //   return () => {
-  //     window.removeEventListener("click", handleClickOutside);
-  //   };
-  // }, []);
-
-  ////////////////////////////////////////////////////////////////////////////////////////////////
-  //////////////////////// CHECK FOR MANUAL PATH CHANGE
-  ////////////////////////////////////////////////////////////////////////////////////////////////
-
+  function languageChange(lang) {
+    localStorage.setItem("saffronLang", lang);
+    setCurrentLanguage(lang);
+    const newPathname = pathname.replace(regex, `/${lang}/`);
+    router.replace(newPathname);
+  }
   ////////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////// CHECK LOCAL STORAGE FOR ALREADY EXISTING LANGUAGE SETTINGS
   ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -70,44 +43,50 @@ function Language() {
       //////////////////////// ENGLISH
       /////////////////////////////
       if (navigator.language.includes("en")) {
-        flushSync(() => {
-          localStorage.setItem("saffronLang", "en");
-          setCurrentLanguage("en");
-        });
+        localStorage.setItem("saffronLang", "en");
+        setCurrentLanguage("en");
 
         /////////////////////////////
         //////////////////////// POLISH
         /////////////////////////////
       } else if (navigator.language.includes("pl")) {
-        flushSync(() => {
-          localStorage.setItem("saffronLang", "pl");
-          setCurrentLanguage("pl");
-        });
+        localStorage.setItem("saffronLang", "pl");
+        setCurrentLanguage("pl");
 
         /////////////////////////////
         //////////////////////// JAPANESE
         /////////////////////////////
       } else if (navigator.language.includes("ja")) {
-        flushSync(() => {
-          localStorage.setItem("saffronLang", "ja");
-          setCurrentLanguage("ja");
-        });
+        localStorage.setItem("saffronLang", "ja");
+        setCurrentLanguage("ja");
       } else {
         localStorage.setItem("saffronLang", "en");
         setCurrentLanguage("en");
       }
     } else {
       ///reocurring visit
+
       setCurrentLanguage(localStorage.getItem("saffronLang"));
     }
 
     /////////////////////////////
     //////////////////////// CHECK IF WE ARE USING THE PROPER LANGUAGE PAGE
     /////////////////////////////
-    const match = regex.exec("pathname");
+    const currentLang = localStorage.getItem("saffronLang");
+    const pattern = `\/${currentLang}\/?`;
+    const currentLanguageRegex = new RegExp(pattern);
+    // console.log("aaa", currentLanguageRegex);
+    const match = currentLanguageRegex.exec(pathname);
+    // console.log("aaa", match);
     if (match) {
-      const newPathname = pathname.replace(regex, `/${lang}/`);
-      router.replace(newPathname);
+      console.log("we are on the language THAT WE SHOULD BE");
+    } else {
+      console.log("we are NOT on the language we should be");
+      const newPathName = pathname.replace(
+        regex,
+        `/${localStorage.getItem("saffronLang")}/`
+      );
+      router.replace(newPathName);
     }
   }, []);
 
