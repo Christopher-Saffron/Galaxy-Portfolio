@@ -4,12 +4,10 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
-import useSavedLanguageSetting from "@/hooks/useSavedLanguageSetting";
+import useLanguageCheck from "@/hooks/useLanguageCheck";
 
 function Language() {
   const [showMenu, setShowMenu] = useState(false);
-  const [savedLanguage, setSavedLanguage] = useSavedLanguageSetting();
-  console.log(savedLanguage, setSavedLanguage("dope"));
   const [currentLanguage, setCurrentLanguage] = useState("en");
   const pathname = usePathname();
   const router = useRouter();
@@ -37,7 +35,7 @@ function Language() {
   useEffect(() => {
     //first visit
     if (!localStorage.getItem("saffronLang")) {
-      localStorage.setItem("saffronLang", navigator.language);
+      // localStorage.setItem("saffronLang", navigator.language);
 
       /////////////////////////////
       //////////////////////// ENGLISH
@@ -64,24 +62,15 @@ function Language() {
         setCurrentLanguage("en");
       }
     } else {
-      ///reocurring visit
-
       setCurrentLanguage(localStorage.getItem("saffronLang"));
     }
 
     /////////////////////////////
     //////////////////////// CHECK IF WE ARE USING THE PROPER LANGUAGE PAGE
     /////////////////////////////
-    const currentLang = localStorage.getItem("saffronLang");
-    const pattern = `\/${currentLang}\/?`;
-    const currentLanguageRegex = new RegExp(pattern);
-    // console.log("aaa", currentLanguageRegex);
-    const match = currentLanguageRegex.exec(pathname);
-    // console.log("aaa", match);
+    const match = useLanguageCheck(pathname);
     if (match) {
-      console.log("we are on the language THAT WE SHOULD BE");
     } else {
-      console.log("we are NOT on the language we should be");
       const newPathName = pathname.replace(
         regex,
         `/${localStorage.getItem("saffronLang")}/`

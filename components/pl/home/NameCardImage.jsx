@@ -7,6 +7,7 @@ export default function NameCardImage() {
       {/* <Image src="./images/EARTH.svg" fill /> */}
       <div className="relative w-[170px] mx-auto h-[170px]  rounded-full">
         <Image
+          alt=""
           src="/images/11.jpg"
           fill
           style={{ objectFit: "cover" }}

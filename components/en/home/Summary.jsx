@@ -27,7 +27,7 @@ export default function Summary() {
         className="summary-button w-fit duration-200 transition-all ease-in-out hover:bg-[#6dc4ec] hover:scale-[1.03] border-2 border-transparent shadow-md shadow-[#80c9ff] hover:border-[#4aabf3]  "
       >
         <span>See my work</span>
-        <Image src="/images/threearrows.svg" width={32} height={21} />
+        <Image src="/images/threearrows.svg" alt="" width={32} height={21} />
       </Link>
     </div>
   );

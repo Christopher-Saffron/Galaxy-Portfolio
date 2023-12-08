@@ -10,6 +10,7 @@ export default function Languages() {
             src="./images/flag_en.svg"
             width={32}
             height={32}
+            alt=""
             className="border dark:border-bgcolor shadow-md"
           />
           <p>English</p>
@@ -19,6 +20,7 @@ export default function Languages() {
             src="./images/flag_pl.svg"
             width={32}
             height={32}
+            alt=""
             className="border dark:border-bgcolor shadow-md"
           />
           <p>Polish</p>
@@ -28,6 +30,7 @@ export default function Languages() {
             src="./images/flag_jp.svg"
             width={32}
             height={32}
+            alt=""
             className="border dark:border-bgcolor shadow-md"
           />
           <p>Japanese</p>

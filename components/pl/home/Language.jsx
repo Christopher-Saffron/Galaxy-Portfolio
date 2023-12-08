@@ -8,8 +8,6 @@ function Language() {
   const [showMenu, setShowMenu] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState("en");
 
-  const menuRef = useRef(null);
-
   function handleLanguageChange(lang) {
     setCurrentLanguage(lang);
     localStorage.setItem("saffronLang", lang);

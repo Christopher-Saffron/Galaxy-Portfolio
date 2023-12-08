@@ -9,6 +9,7 @@ export default function NameCardImage() {
         <Image
           src="/images/11.jpg"
           fill
+          alt=""
           style={{ objectFit: "cover" }}
           className=" rounded-full"
         />
