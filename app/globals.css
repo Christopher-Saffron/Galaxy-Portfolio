@@ -132,3 +132,8 @@ body {
     @apply underline text-sm italic underline-offset-4 cursor-pointer whitespace-nowrap;
   }
 }
+
+/* //////////////////// ANIMATION */
+.animation-clouds {
+  background: linear-gradient(180deg, #062e54 0%, #1c5a96 33%, #2f8be3);
+}
