@@ -134,6 +134,17 @@ body {
 }
 
 /* //////////////////// ANIMATION */
+
+.animation-space1 {
+  background: linear-gradient(
+    180deg,
+    #01070d 30%,
+    #02101e 75%,
+    #04203a 90%,
+    #062e54 100%
+  );
+}
+
 .animation-clouds {
   background: linear-gradient(180deg, #062e54 0%, #1c5a96 33%, #2f8be3);
 }
