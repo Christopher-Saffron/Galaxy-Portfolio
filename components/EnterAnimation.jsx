@@ -26,58 +26,127 @@ export default function EnterAnimation() {
 
   return (
     <div className="w-full  border-2 border-green-500">
-      {/* // <div className="fixed top-0 left-0 w-screen h-screen border-2 border-green-500 z-20 scroll"> */}
+      {/* ////////////// PASKI ////////////// */}
+      <div className="fixed top-0 left-0 z-50 w-screen h-screen">
+        {/* <div className="absolute top-0 left-0 w-[10%] h-screen bg-black z-50 "></div>
+        <div className="absolute top-0 right-0 w-[10%] h-screen bg-black z-50 "></div> */}
+
+        <div className="absolute top-0 left-0 w-screen h-[10%] bg-black z-50 animate-pulse "></div>
+        <div className="absolute bottom-0 right-0 w-screen h-[10%] bg-black z-50 "></div>
+      </div>
 
       {/* ////////////// CLOUDS - THIRD SCREEN ////////////// */}
-      <div className="relative w-full h-[6645px] bg-[#01070D]">
-        {/* ////////////// MARS ////////////// */}
-        {/* <div className="absolute w-full h-[100%] max-h-[1200px] border-2 border-orange-500 bottom-[1100px] ">
+      <div className="relative w-full h-[5245px] bg-[#01070D]">
+        {/* ////////////// 4 TOP PLANET PATHS ////////////// */}
+        {/* <div className="absolute w-full   h-[100%] max-h-[1600px] border-2 border-blue-500 top-0 bg-4paths ">
           <Image
+            src={"/animation/4paths.svg"}
+            sizes={"100vw"}
+            width={0}
+            height={0}
+            className="w-full h-full absolute left-0 top-0 origin-top origin  "
+            alt=""
+          />
+        </div> */}
+        {/* <div className="absolute w-full   h-[100%] max-h-[1600px] border-2 border-blue-500 top-0 ">
+          <Image
+            src={"/animation/4paths.svg"}
+            sizes={"100vw"}
+            width={0}
+            height={0}
+            className="w-full h-full absolute left-0 top-0 origin-top origin  "
+            alt=""
+          />
+        </div> */}
+        {/* ////////////// SUN ////////////// */}
+        <div className="absolute w-[30%] overflow-hidden max-w-[95%] h-[100%]  border-2 border-orange-500 top-0 ">
+          <Image
+            src={"/animation/sun.svg"}
+            sizes={"100vw"}
+            width={0}
+            height={0}
+            className="w-auto absolute left-0 top-0"
+            alt=""
+          />
+        </div>
+        {/* ////////////// Venus ////////////// */}
+        <div className="absolute w-full max-w-[95%] h-[100%] max-h-[1400px] border-2 border-orange-500 bottom-[3400px] ">
+          {/* <Image
+            src={"/animation/pathVenus.svg"}
+            sizes={"100vw"}
+            width={0}
+            height={0}
+            className="w-full h-full max-h-[1270px] absolute left-0 top-0  "
+            alt=""
+          /> */}
+          <Image
+            src={"/animation/venus.svg"}
+            sizes={"100vw"}
+            width={0}
+            height={0}
+            className="w-auto h-[auto] absolute left-[15%] bottom-[14%]"
+            alt=""
+          />
+        </div>
+        {/* ////////////// EARTH ////////////// */}
+        <div className="absolute w-full h-[100%] max-h-[1500px] border-2 border-orange-500 bottom-[3050px] ">
+          {/* <Image
+            src={"/animation/pathEarth.svg"}
+            sizes={"100vw"}
+            width={0}
+            height={0}
+            className="w-full h-full max-h-[1470px] absolute left-0 top-0  "
+            alt=""
+          /> */}
+        </div>
+        {/* ////////////// MARS ////////////// */}
+        <div className="absolute w-full h-[100%] max-h-[1200px] border-2 border-orange-500 bottom-[2800px] ">
+          {/* <Image
             src={"/animation/pathMars.svg"}
             sizes={"100vw"}
             width={0}
             height={0}
             className="w-full h-full max-h-[1170px] absolute left-0 top-0  "
             alt=""
-          />
+          /> */}
           <Image
             src={"/animation/mars.svg"}
             sizes={"100vw"}
             width={0}
             height={0}
-            className="w-auto h-[auto] absolute right-[10%] bottom-[55%] "
+            className="w-auto h-[auto] absolute right-[15%] bottom-[55%]"
             alt=""
           />
-        </div> */}
+        </div>
         {/* ////////////// JUPITER ////////////// */}
-        <div className="absolute w-full h-[100%] max-h-[1200px] border-2 border-orange-500 bottom-[1100px] ">
-          <Image
+        <div className="absolute w-full h-[100%] max-h-[1200px] border-2 border-orange-500 bottom-[2200px] ">
+          {/* <Image
             src={"/animation/pathJupiter.svg"}
             sizes={"100vw"}
             width={0}
             height={0}
             className="w-full h-full max-h-[1100px] absolute left-0 top-0  "
             alt=""
-          />
+          /> */}
           <Image
             src={"/animation/jupiter.svg"}
             sizes={"100vw"}
             width={0}
             height={0}
-            className="w-auto h-[auto] absolute right-[10%] bottom-[55%] "
+            className="w-auto h-[auto] absolute left-[10%] bottom-[1%]"
             alt=""
           />
         </div>
         {/* ////////////// NEPTUNE ////////////// */}
         <div className="absolute w-full h-[100%] max-h-[1200px] border-2 border-orange-500 bottom-[1100px] ">
-          <Image
+          {/* <Image
             src={"/animation/pathNeptune.svg"}
             sizes={"100vw"}
             width={0}
             height={0}
             className="w-full h-full max-h-[1100px] absolute left-0 top-0  "
             alt=""
-          />
+          /> */}
           <Image
             src={"/animation/neptune.svg"}
             sizes={"100vw"}
@@ -89,14 +158,14 @@ export default function EnterAnimation() {
         </div>
         {/* ////////////// SATURN ////////////// */}
         <div className="absolute w-full h-[100%] max-h-[1200px] border-2 border-orange-500 bottom-0 ">
-          <Image
+          {/* <Image
             src={"/animation/pathSaturn.svg"}
             sizes={"100vw"}
             width={0}
             height={0}
             className="w-full h-full max-h-[890px] absolute left-0 top-0  "
             alt=""
-          />
+          /> */}
           <Image
             src={"/animation/saturn.svg"}
             sizes={"100vw"}
