@@ -10,7 +10,7 @@ import Media from "@/components/en/home/Media";
 import { AnimatePresence, motion, Spring } from "framer-motion";
 import Clouds from "@/components/en/Clouds";
 import FooterBreak from "@/components/en/FooterBreak";
-import EnterAnimation from "@/components/EnterAnimation";
+import EnterAnimation from "@/components/animation/EnterAnimation";
 
 export default function Home() {
   return (

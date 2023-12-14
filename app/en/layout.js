@@ -13,7 +13,7 @@ export default function Layout({ children }) {
       {/* <Nav />
       <Mainthreed /> */}
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
