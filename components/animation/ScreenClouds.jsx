@@ -8,8 +8,8 @@ export default function ScreenClouds() {
       <div className="relative w-full h-[7045px] animation-space1 overflow-hidden">
         <SlowMovingStarsBefore />
         <motion.div
-          // animate={{ y: 0 }}
-          whileInView={{ x: "6%", y: "-2%" }}
+          initial={{ x: "0%", y: "0%" }}
+          whileInView={{ x: "9%", y: "-2%" }}
           transition={{ duration: 3, delay: 1 }}
           className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
         >
@@ -120,7 +120,7 @@ export default function ScreenClouds() {
         </div>
         <motion.div
           // animate={{ y: 0 }}
-          whileInView={{ y: -200 }}
+          whileInView={{ y: -400 }}
           transition={{ duration: 3, delay: 1 }}
           className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
         >
@@ -137,7 +137,7 @@ export default function ScreenClouds() {
         </motion.div>
         <motion.div
           // animate={{ y: 0 }}
-          whileInView={{ y: -290 }}
+          whileInView={{ y: -440 }}
           transition={{ duration: 3, delay: 1 }}
           className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
         >
@@ -152,16 +152,23 @@ export default function ScreenClouds() {
             alt=""
           />
         </motion.div>
-        <Image
-          loading={"eager"}
-          priority={true}
-          src={"/animation/satellite1.svg"}
-          sizes={"100vw"}
-          width={0}
-          height={0}
-          className="w-auto h-[auto] absolute bottom-[1000px] left-48"
-          alt=""
-        />
+        <motion.div
+          // animate={{ y: 0 }}
+          whileInView={{ x: "-25%" }}
+          transition={{ duration: 3, delay: 1 }}
+          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+        >
+          <Image
+            loading={"eager"}
+            priority={true}
+            src={"/animation/satellite1.svg"}
+            sizes={"100vw"}
+            width={0}
+            height={0}
+            className="w-auto h-[auto] absolute bottom-[1000px] left-[30%]"
+            alt=""
+          />
+        </motion.div>
         <Image
           loading={"eager"}
           priority={true}

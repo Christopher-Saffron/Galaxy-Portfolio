@@ -61,7 +61,7 @@ export default function ScreenPlanets() {
       <motion.div
         whileInView={{ rotate: 15 }}
         transition={{ duration: 8 }}
-        className="absolute w-full origin-top-right  h-[100%] max-h-[1400px]  bottom-[3200px] "
+        className="absolute w-full origin-top-left  h-[100%] max-h-[1400px]  bottom-[3100px] "
       >
         {/* <Image
             src={"/animation/pathVenus.svg"}
@@ -78,15 +78,15 @@ export default function ScreenPlanets() {
           sizes={"100vw"}
           width={0}
           height={0}
-          className="w-auto h-[auto] absolute right-[30%] bottom-0"
+          className="w-auto h-[auto] absolute left-[30%] bottom-0"
           alt=""
         />
       </motion.div>
       {/* ////////////// Venus ////////////// */}
       <motion.div
-        whileInView={{ rotate: -15 }}
+        whileInView={{ rotate: -5 }}
         transition={{ duration: 8 }}
-        className="absolute w-full origin-top-right  h-[100%] max-h-[1400px]  bottom-[3250px] "
+        className="absolute w-full origin-top-left  h-[100%] max-h-[1400px]  bottom-[3250px] "
       >
         {/* <Image
             src={"/animation/pathVenus.svg"}
@@ -103,7 +103,7 @@ export default function ScreenPlanets() {
           sizes={"100vw"}
           width={0}
           height={0}
-          className="w-auto h-[auto] absolute left-[30%] bottom-0"
+          className="w-auto h-[auto] absolute left-[40%] bottom-0"
           alt=""
         />
       </motion.div>
@@ -120,9 +120,9 @@ export default function ScreenPlanets() {
         </div> */}
       {/* ////////////// MARS ////////////// */}
       <motion.div
-        whileInView={{ rotate: 25, x: "-25%" }}
+        whileInView={{ rotate: 15, x: "-10%" }}
         transition={{ duration: 8 }}
-        className="absolute origin-top-right w-full h-[100%] max-h-[1200px]  bottom-[2000px] "
+        className="absolute origin-top-left w-full h-[100%] max-h-[1200px]  bottom-[2000px] "
       >
         {/* <Image
             src={"/animation/pathMars.svg"}
@@ -139,15 +139,15 @@ export default function ScreenPlanets() {
           sizes={"100vw"}
           width={0}
           height={0}
-          className="w-auto h-[auto] absolute right-[19%] bottom-[40%]"
+          className="w-auto h-[auto] absolute left-[45%] "
           alt=""
         />
       </motion.div>
       {/* ////////////// JUPITER ////////////// */}
       <motion.div
-        whileInView={{ x: "15%", y: "5%", rotateZ: -5 }}
+        whileInView={{ x: "25%", y: "10%", rotateZ: -50 }}
         transition={{ duration: 8 }}
-        className="absolute w-full origin-top h-[100%] max-h-[1200px]  bottom-[2250px] "
+        className="absolute w-full origin-top-left h-[100%] max-h-[1200px]  bottom-[2250px] "
       >
         {/* <Image
             src={"/animation/pathJupiter.svg"}
@@ -164,15 +164,16 @@ export default function ScreenPlanets() {
           sizes={"100vw"}
           width={0}
           height={0}
-          className="w-auto h-[auto] absolute left-[10%] bottom-[1%]"
+          className="w-auto h-[auto] absolute left-[10%] bottom-0"
           alt=""
         />
       </motion.div>
       {/* ////////////// NEPTUNE ////////////// */}
       <motion.div
-        whileInView={{ x: "15%", y: "13%", rotateZ: -15 }}
+        initial={{ rotateZ: -35, x: "0%" }}
+        whileInView={{ rotateZ: 25, x: "-20%" }}
         transition={{ duration: 8 }}
-        className="absolute w-full h-[100%] max-h-[1200px]  bottom-[1100px] "
+        className="absolute w-full h-[100%] max-h-[1200px]  bottom-[1900px] "
       >
         {/* <Image
             src={"/animation/pathNeptune.svg"}
@@ -189,15 +190,16 @@ export default function ScreenPlanets() {
           sizes={"100vw"}
           width={0}
           height={0}
-          className="w-auto h-[auto] origin-top-right absolute left-[40%] bottom-[55%] "
+          className="w-auto h-auto origin-top-left absolute left-[55%] bottom-0 "
           alt=""
         />
       </motion.div>
       {/* ////////////// SATURN ////////////// */}
       <motion.div
-        whileInView={{ rotate: 15 }}
-        transition={{ duration: 8 }}
-        className="absolute w-full h-[100%] max-h-[1200px]  bottom-0 "
+        initial={{ rotateZ: -15, x: "15%", y: "-10%" }}
+        whileInView={{ rotateZ: 0, x: "40%", y: "-25%" }}
+        transition={{ duration: 2 }}
+        className="absolute w-full h-[100%] max-h-[1200px]  bottom-[1200px]  "
       >
         {/* <Image
             src={"/animation/pathSaturn.svg"}
@@ -214,7 +216,7 @@ export default function ScreenPlanets() {
           sizes={"100vw"}
           width={0}
           height={0}
-          className="w-auto h-[auto] absolute left-10% bottom-[18%] "
+          className="w-auto h-auto origin-top-left absolute left-[15%] bottom-0"
           alt=""
         />
       </motion.div>
