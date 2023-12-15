@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ScreenPlanets() {
   return (
-    <div className="relative w-full h-[3600px] bg-[#01070D] border-4 border-green-400 overflow-hidden">
+    <div className="relative w-full h-[3600px] bg-[#01070D]  overflow-hidden">
       {/* ////////////// 4 TOP PLANET PATHS ////////////// */}
       {/* <div className="absolute w-full   h-[100%] max-h-[1600px] border-2 border-blue-500 top-0 bg-4paths ">
           <Image

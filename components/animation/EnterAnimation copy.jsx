@@ -8,7 +8,6 @@ import ScreenClouds from "./ScreenClouds";
 import ScreenInitial from "./ScreenInitial";
 import ScreenMainRocket from "./ScreenMainRocket";
 import EvenIfYouMiss from "./EvenIfYouMiss";
-import { useRef } from "react";
 
 const mainPathVariant = {
   transition: {
@@ -32,22 +31,22 @@ export default function EnterAnimation() {
   //   });
 
   return (
-    <div className="w-full    top-0 left-0 z-50 ">
+    <div className="w-full  fixed  top-0 left-0 z-50 ">
       {/* <div className="w-full border border-red-500  fixed top-0 left-0 z-50 "></div> */}
       {/* ////////////// PASKI ////////////// */}
       {/* <Blackbars /> */}
+      <ScreenInitial />
 
       <motion.div
-        initial={{ y: "calc(-100% + 100vh)" }}
-        animate={{ y: "0%" }}
-        transition={{ duration: 6, delay: 2 }}
-        className="relative  h-full "
+        initial={{ y: "-100%", opacity: 0 }}
+        animate={{ y: "0%", opacity: 1 }}
+        transition={{ duration: 3, delay: 1 }}
+        className="relative h-full border-4 border-blue-500"
       >
         {/* ////////////// CLOUDS - THIRD SCREEN ////////////// */}
         {/* <ScreenPlanets /> */}
         {/* ////////////// CLOUDS - SECOND SCREEN ////////////// */}
         <ScreenClouds />
-        <ScreenInitial />
 
         {/* ////////////// THE INITIAL SCREEN ////////////// */}
       </motion.div>
