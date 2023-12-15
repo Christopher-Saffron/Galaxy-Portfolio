@@ -2,13 +2,14 @@
 
 import { animate, motion } from "framer-motion";
 import Image from "next/image";
-import Blackbars from "./Blackbars";
 import ScreenPlanets from "./ScreenPlanets";
 import ScreenClouds from "./ScreenClouds";
 import ScreenInitial from "./ScreenInitial";
 import ScreenMainRocket from "./ScreenMainRocket";
 import EvenIfYouMiss from "./EvenIfYouMiss";
 import { useRef } from "react";
+import Blackbars from "./Blackbars";
+import Preloading from "./Preloading";
 
 const mainPathVariant = {
   transition: {
@@ -32,19 +33,32 @@ export default function EnterAnimation() {
   //   });
 
   return (
-    <div className="w-full    top-0 left-0 z-50 ">
+    <div className="w-full   top-0 left-0 z-50 overflow-hidden ">
       {/* <div className="w-full border border-red-500  fixed top-0 left-0 z-50 "></div> */}
       {/* ////////////// PASKI ////////////// */}
-      {/* <Blackbars /> */}
-
+      <Blackbars />
+      <Preloading />
       <motion.div
-        initial={{ y: "calc(-100% + 100vh)" }}
-        animate={{ y: "0%" }}
-        transition={{ duration: 6, delay: 2 }}
-        className="relative  h-full "
+        initial={{ y: "100%" }}
+        animate={{
+          y: [
+            "calc(-100% + 100vh)",
+            "calc(0% + 100vh)",
+            "calc(-100% + 100vh)",
+            "calc(0% + 0vh)",
+          ],
+          scale: [0, 1],
+        }}
+        transition={{
+          duration: 16,
+          y: { delay: 0, duration: 15, times: [0, 0.1, 0.3, 1] },
+          scale: { duration: 2, delay: 0 },
+          // times: [0, 0.001, 0.01, 1],
+        }}
+        className="relative  h-full  "
       >
         {/* ////////////// CLOUDS - THIRD SCREEN ////////////// */}
-        {/* <ScreenPlanets /> */}
+        <ScreenPlanets />
         {/* ////////////// CLOUDS - SECOND SCREEN ////////////// */}
         <ScreenClouds />
         <ScreenInitial />
@@ -53,8 +67,8 @@ export default function EnterAnimation() {
       </motion.div>
 
       {/* ////////////// MAIN ROCKET ////////////// */}
-      {/* <ScreenMainRocket /> */}
-      {/* <EvenIfYouMiss /> */}
+      <ScreenMainRocket />
+      <EvenIfYouMiss />
     </div>
   );
 }

@@ -46,7 +46,7 @@ module.exports = {
         category: "20px",
       },
       backgroundImage: {
-        stars: "url('/public/animation/stars.svg')",
+        stars: "url('/animation/stars.svg')",
         "4paths": "url('/public/animation/4paths.svg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         lightsvg: "url('/public/cloudy0.svg')",

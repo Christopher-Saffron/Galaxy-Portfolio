@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function ScreenInitial() {
   return (
-    <div className="relative w-full h-screen  bg-white  ">
+    <div className=" w-full h-screen  bg-white z-[500]  ">
       <motion.div
         initial={{ y: 50, opacity: 0, scale: 0.9 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}

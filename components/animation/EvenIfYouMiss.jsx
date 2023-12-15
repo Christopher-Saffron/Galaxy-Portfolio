@@ -15,14 +15,14 @@ export default function EvenIfYouMiss() {
             d="M5.69727 0.294434L5.69725 254.794"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 1, delay: 7 }}
             stroke="#D1D1D1"
             strokeWidth="7"
           />
         </svg>
       </div>
       <motion.div
-        transition={{ duration: 1, delay: 1.5 }}
+        transition={{ duration: 1, delay: 7.5 }}
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 0 }}
         className=""
