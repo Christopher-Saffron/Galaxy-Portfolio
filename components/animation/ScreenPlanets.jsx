@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ScreenPlanets() {
   return (
-    <div className="relative w-full h-[3600px] bg-[#01070D] bg-stars bg-[length:400px_400px] overflow-hidden">
+    <div className="relative w-full h-[3100px] bg-[#01070D] bg-stars bg-[length:400px_400px] overflow-hidden">
       {/* ////////////// SLOW MOVING STARS////////////// */}
       <SlowMovingStars />
       {/* ////////////// 4 TOP PLANET PATHS ////////////// */}
@@ -61,7 +61,7 @@ export default function ScreenPlanets() {
       <motion.div
         whileInView={{ rotate: 15 }}
         transition={{ duration: 8 }}
-        className="absolute w-full origin-top-left  h-[100%] max-h-[1400px]  bottom-[3100px] "
+        className="absolute w-full origin-top-left  h-[100%] max-h-[1400px]  bottom-[2600px] "
       >
         {/* <Image
             src={"/animation/pathVenus.svg"}
@@ -86,7 +86,7 @@ export default function ScreenPlanets() {
       <motion.div
         whileInView={{ rotate: -5 }}
         transition={{ duration: 8 }}
-        className="absolute w-full origin-top-left  h-[100%] max-h-[1400px]  bottom-[3250px] "
+        className="absolute w-full origin-top-left  h-[100%] max-h-[1400px]  bottom-[2750px] "
       >
         {/* <Image
             src={"/animation/pathVenus.svg"}
@@ -122,7 +122,7 @@ export default function ScreenPlanets() {
       <motion.div
         whileInView={{ rotate: 15, x: "-10%" }}
         transition={{ duration: 8 }}
-        className="absolute origin-top-left w-full h-[100%] max-h-[1200px]  bottom-[2000px] "
+        className="absolute origin-top-left w-full h-[100%] max-h-[1200px]  bottom-[1500px] "
       >
         {/* <Image
             src={"/animation/pathMars.svg"}
@@ -147,7 +147,7 @@ export default function ScreenPlanets() {
       <motion.div
         whileInView={{ x: "25%", y: "10%", rotateZ: -50 }}
         transition={{ duration: 8 }}
-        className="absolute w-full origin-top-left h-[100%] max-h-[1200px]  bottom-[2250px] "
+        className="absolute w-full origin-top-left h-[100%] max-h-[1200px]  bottom-[1750px] "
       >
         {/* <Image
             src={"/animation/pathJupiter.svg"}
@@ -173,7 +173,7 @@ export default function ScreenPlanets() {
         initial={{ rotateZ: -35, x: "0%" }}
         whileInView={{ rotateZ: 25, x: "-20%" }}
         transition={{ duration: 8 }}
-        className="absolute w-full h-[100%] max-h-[1200px]  bottom-[1900px] "
+        className="absolute w-full h-[100%] max-h-[1200px]  bottom-[1400px] "
       >
         {/* <Image
             src={"/animation/pathNeptune.svg"}
@@ -199,7 +199,7 @@ export default function ScreenPlanets() {
         initial={{ rotateZ: -15, x: "15%", y: "-10%" }}
         whileInView={{ rotateZ: 0, x: "40%", y: "-25%" }}
         transition={{ duration: 2 }}
-        className="absolute w-full h-[100%] max-h-[1200px]  bottom-[1200px]  "
+        className="absolute w-full h-[100%] max-h-[1200px]  bottom-[700px]  "
       >
         {/* <Image
             src={"/animation/pathSaturn.svg"}

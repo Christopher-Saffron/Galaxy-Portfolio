@@ -9,13 +9,13 @@ export default function Blackbars() {
       <motion.div
         initial={{ y: "-100%" }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="absolute top-0 left-0 w-screen h-[10%] bg-black z-50  "
       ></motion.div>
       <motion.div
         initial={{ y: "100%" }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="absolute bottom-0 right-0 w-screen h-[10%] bg-black z-50 "
       ></motion.div>
     </div>

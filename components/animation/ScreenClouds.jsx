@@ -5,13 +5,21 @@ import { motion } from "framer-motion";
 export default function ScreenClouds() {
   return (
     <>
-      <div className="relative w-full h-[7045px] animation-space1 overflow-hidden">
+      {/* /////////// DIV 1 ////////////// */}
+      {/* /////////// DIV 1 ////////////// */}
+      {/* /////////// DIV 1 ////////////// */}
+      {/* <motion.div
+        animate={{ y: "-100%" }}
+        transition={{ duration: 5 }}
+        className="absolute z-100 w-screen h-fit "
+      > */}
+      <div className="relative w-full h-[5525px] border-4 border-blue-500 animation-space1 overflow-hidden">
         <SlowMovingStarsBefore />
         <motion.div
           initial={{ x: "0%", y: "0%" }}
           whileInView={{ x: "9%", y: "-2%" }}
           transition={{ duration: 3, delay: 1 }}
-          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+          className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
             loading={"eager"}
@@ -24,7 +32,7 @@ export default function ScreenClouds() {
             alt=""
           />
         </motion.div>
-        <div className="absolute w-full h-fit bottom-[3700px] overflow-hidden">
+        <div className="absolute w-full h-fit bottom-[3000px] overflow-hidden">
           <div>
             <Image
               loading={"eager"}
@@ -41,7 +49,7 @@ export default function ScreenClouds() {
             // animate={{ y: 0 }}
             whileInView={{ x: "-90%", y: "20%" }}
             transition={{ duration: 5, delay: 1 }}
-            className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+            className="absolute bottom-0 left-0 w-full h-full "
           >
             <Image
               loading={"eager"}
@@ -58,7 +66,7 @@ export default function ScreenClouds() {
             // animate={{ y: 0 }}
             whileInView={{ x: "-90%", y: "20%" }}
             transition={{ duration: 4, delay: 1 }}
-            className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+            className="absolute bottom-0 left-0 w-full h-full "
           >
             <Image
               loading={"eager"}
@@ -75,7 +83,7 @@ export default function ScreenClouds() {
             // animate={{ y: 0 }}
             whileInView={{ x: "-90%", y: "20%" }}
             transition={{ duration: 3, delay: 1 }}
-            className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+            className="absolute bottom-0 left-0 w-full h-full "
           >
             <Image
               loading={"eager"}
@@ -104,7 +112,7 @@ export default function ScreenClouds() {
             // animate={{ y: 0 }}
             whileInView={{ x: "5%" }}
             transition={{ duration: 3, delay: 1 }}
-            className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+            className="absolute bottom-0 left-0 w-full h-full "
           >
             <Image
               loading={"eager"}
@@ -122,7 +130,7 @@ export default function ScreenClouds() {
           // animate={{ y: 0 }}
           whileInView={{ y: -400 }}
           transition={{ duration: 3, delay: 1 }}
-          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+          className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
             loading={"eager"}
@@ -139,7 +147,7 @@ export default function ScreenClouds() {
           // animate={{ y: 0 }}
           whileInView={{ y: -440 }}
           transition={{ duration: 3, delay: 1 }}
-          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+          className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
             loading={"eager"}
@@ -156,7 +164,7 @@ export default function ScreenClouds() {
           // animate={{ y: 0 }}
           whileInView={{ x: "-25%" }}
           transition={{ duration: 3, delay: 1 }}
-          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+          className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
             loading={"eager"}
@@ -180,12 +188,15 @@ export default function ScreenClouds() {
           alt=""
         />
       </div>
-      <div className="relative w-full h-[2542px] border-4 border-orange-500 animation-clouds">
+      {/* /////////// DIV 2 ////////////// */}
+      {/* /////////// DIV 2 ////////////// */}
+      {/* /////////// DIV 2 ////////////// */}
+      <div className="relative w-full h-[2042px] border-4 border-red-500 animation-clouds">
         <motion.div
           // animate={{ y: 0 }}
           whileInView={{ x: 80 }}
           transition={{ duration: 3, delay: 1 }}
-          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+          className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
             loading={"eager"}
@@ -212,7 +223,7 @@ export default function ScreenClouds() {
           // animate={{ y: 0 }}
           whileInView={{ x: 40 }}
           transition={{ duration: 3, delay: 1 }}
-          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+          className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
             loading={"eager"}
@@ -229,7 +240,7 @@ export default function ScreenClouds() {
           // animate={{ y: 0 }}
           whileInView={{ y: 30 }}
           transition={{ duration: 1, delay: 1 }}
-          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+          className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
             loading={"eager"}
@@ -242,11 +253,11 @@ export default function ScreenClouds() {
             alt=""
           />
         </motion.div>
-        <motion.div
+        {/* <motion.div
           // animate={{ y: 0 }}
           whileInView={{ y: 40 }}
           transition={{ duration: 1, delay: 1 }}
-          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+          className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
             loading={"eager"}
@@ -263,7 +274,7 @@ export default function ScreenClouds() {
           // animate={{ y: 0 }}
           whileInView={{ y: 80 }}
           transition={{ duration: 1, delay: 1 }}
-          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+          className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
             loading={"eager"}
@@ -280,7 +291,7 @@ export default function ScreenClouds() {
           // animate={{ y: 0 }}
           whileInView={{ y: 190 }}
           transition={{ duration: 1, delay: 1 }}
-          className="absolute bottom-0 left-0 w-full h-full border-4 border-pink-500"
+          className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
             loading={"eager"}
@@ -292,8 +303,9 @@ export default function ScreenClouds() {
             className="w-auto h-auto absolute bottom-0 left-0"
             alt=""
           />
-        </motion.div>
+        </motion.div> */}
       </div>
+      {/* </motion.div> */}
     </>
   );
 }

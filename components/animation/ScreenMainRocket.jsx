@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function ScreenMainRocket() {
   return (
-    <div className=" w-screen fixed left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2">
+    <div className=" w-screen fixed left-1/2 top-[55%] z-[11] -translate-x-1/2 -translate-y-1/2">
       <motion.div
         initial={{ x: 0, y: 0, scale: 1 }}
         animate={{
@@ -18,7 +18,7 @@ export default function ScreenMainRocket() {
           ease: "easeInOut",
           repeat: Infinity,
         }}
-        className="relative border border-red-500"
+        className="relative "
       >
         <motion.div
           initial={{ scaleX: 1 }}

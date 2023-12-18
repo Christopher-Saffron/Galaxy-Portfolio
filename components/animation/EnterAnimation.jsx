@@ -33,42 +33,73 @@ export default function EnterAnimation() {
   //   });
 
   return (
-    <div className="w-full   top-0 left-0 z-50 overflow-hidden ">
-      {/* <div className="w-full border border-red-500  fixed top-0 left-0 z-50 "></div> */}
-      {/* ////////////// PASKI ////////////// */}
-      <Blackbars />
-      <Preloading />
+    <div className="  w-screen h-screen  top-0 left-0   bg-white ">
+      <ScreenInitial />
+
       <motion.div
-        initial={{ y: "100%" }}
+        // initial={{ y: "calc(0% + -100vh)" }}
         animate={{
           y: [
-            "calc(-100% + 100vh)",
-            "calc(0% + 100vh)",
-            "calc(-100% + 100vh)",
-            "calc(0% + 0vh)",
+            "calc(-100% + 0vh)",
+            // "calc(-40% + 0vh)",
+            // "calc(-30% + 0vh)",
+            "calc(0% + -100vh)",
           ],
-          scale: [0, 1],
         }}
         transition={{
-          duration: 16,
-          y: { delay: 0, duration: 15, times: [0, 0.1, 0.3, 1] },
-          scale: { duration: 2, delay: 0 },
-          // times: [0, 0.001, 0.01, 1],
+          duration: 22,
+          delay: 2.15,
+          // ease: "ease",
+          // times: [0, 0.3, 0.5, 1],
         }}
-        className="relative  h-full  "
+        className="border-4 border-green-500"
       >
-        {/* ////////////// CLOUDS - THIRD SCREEN ////////////// */}
         <ScreenPlanets />
-        {/* ////////////// CLOUDS - SECOND SCREEN ////////////// */}
         <ScreenClouds />
-        <ScreenInitial />
-
-        {/* ////////////// THE INITIAL SCREEN ////////////// */}
       </motion.div>
 
-      {/* ////////////// MAIN ROCKET ////////////// */}
       <ScreenMainRocket />
-      <EvenIfYouMiss />
     </div>
   );
 }
+
+// return (
+//   <div className="w-full   top-0 left-0 z-[100] overflow-hidden bg-white ">
+//     {/* <div className="w-full border border-red-500  fixed top-0 left-0 z-50 "></div> */}
+//     {/* ////////////// PASKI ////////////// */}
+//     {/* <Blackbars /> */}
+//     {/* <Preloading /> */}
+//     <motion.div
+//       // initial={{ y: "100%" }}
+//       animate={{
+//         y: [
+//           // "calc(-100% + 100vh)",
+//           // "calc(0% + 100vh)",
+//           "calc(-100% + 100vh)",
+//           "calc(0% + 0vh)",
+//         ],
+//         // scale: [0, 0.5],
+//       }}
+//       transition={{
+//         duration: 16,
+//         // y: { delay: 0, duration: 15, times: [0, 0.1, 0.3, 1] },
+//         y: { delay: 2, duration: 15 },
+//         // scale: { duration: 0.001, delay: 0 },
+//         // times: [0, 0.001, 0.002, 1],
+//       }}
+//       className="relative  h-full z-100  "
+//     >
+//       {/* ////////////// CLOUDS - THIRD SCREEN ////////////// */}
+//       {/* <ScreenPlanets /> */}
+//       {/* ////////////// CLOUDS - SECOND SCREEN ////////////// */}
+//       <ScreenClouds />
+//       <ScreenInitial />
+//       {/* ////////////// THE INITIAL SCREEN ////////////// */}
+//     </motion.div>
+//     <ScreenMainRocket />
+
+//     {/* ////////////// MAIN ROCKET ////////////// */}
+//     {/* <ScreenMainRocket /> */}
+//     {/* <EvenIfYouMiss /> */}
+//   </div>
+// );
