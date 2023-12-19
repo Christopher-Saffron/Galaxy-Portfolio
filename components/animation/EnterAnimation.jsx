@@ -10,6 +10,7 @@ import EvenIfYouMiss from "./EvenIfYouMiss";
 import { useRef } from "react";
 import Blackbars from "./Blackbars";
 import Preloading from "./Preloading";
+import AmongTheStars from "./AmongTheStars";
 
 const mainPathVariant = {
   transition: {
@@ -33,9 +34,8 @@ export default function EnterAnimation() {
   //   });
 
   return (
-    <div className="  w-screen h-screen  top-0 left-0   bg-white ">
+    <motion.div className="   w-screen h-screen  top-0 left-0   bg-white ">
       <ScreenInitial />
-
       <motion.div
         // initial={{ y: "calc(0% + -100vh)" }}
         animate={{
@@ -43,23 +43,27 @@ export default function EnterAnimation() {
             "calc(-100% + 0vh)",
             // "calc(-40% + 0vh)",
             // "calc(-30% + 0vh)",
+            // "calc(-5% + -100vh)",
             "calc(0% + -100vh)",
           ],
         }}
         transition={{
           duration: 22,
-          delay: 2.15,
-          // ease: "ease",
-          // times: [0, 0.3, 0.5, 1],
+          delay: 2.3,
+          // ease: "linear",
+          // times: [0, 0.95, 1],
         }}
-        className="border-4 border-green-500"
+        className="overflow-hidden"
       >
         <ScreenPlanets />
         <ScreenClouds />
       </motion.div>
 
       <ScreenMainRocket />
-    </div>
+      <EvenIfYouMiss />
+      <AmongTheStars />
+      {/* <Blackbars /> */}
+    </motion.div>
   );
 }
 
@@ -67,7 +71,9 @@ export default function EnterAnimation() {
 //   <div className="w-full   top-0 left-0 z-[100] overflow-hidden bg-white ">
 //     {/* <div className="w-full border border-red-500  fixed top-0 left-0 z-50 "></div> */}
 //     {/* ////////////// PASKI ////////////// */}
-//     {/* <Blackbars /> */}
+{
+  /* <Blackbars /> */
+}
 //     {/* <Preloading /> */}
 //     <motion.div
 //       // initial={{ y: "100%" }}

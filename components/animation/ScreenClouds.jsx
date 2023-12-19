@@ -13,12 +13,12 @@ export default function ScreenClouds() {
         transition={{ duration: 5 }}
         className="absolute z-100 w-screen h-fit "
       > */}
-      <div className="relative w-full h-[5525px] border-4 border-blue-500 animation-space1 overflow-hidden">
+      <div className="relative w-full h-[5525px]  animation-space1 overflow-hidden">
         <SlowMovingStarsBefore />
         <motion.div
           initial={{ x: "0%", y: "0%" }}
           whileInView={{ x: "9%", y: "-2%" }}
-          transition={{ duration: 3, delay: 1 }}
+          transition={{ duration: 6 }}
           className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
@@ -48,7 +48,7 @@ export default function ScreenClouds() {
           <motion.div
             // animate={{ y: 0 }}
             whileInView={{ x: "-90%", y: "20%" }}
-            transition={{ duration: 5, delay: 1 }}
+            transition={{ duration: 8, delay: 1 }}
             className="absolute bottom-0 left-0 w-full h-full "
           >
             <Image
@@ -65,7 +65,7 @@ export default function ScreenClouds() {
           <motion.div
             // animate={{ y: 0 }}
             whileInView={{ x: "-90%", y: "20%" }}
-            transition={{ duration: 4, delay: 1 }}
+            transition={{ duration: 7, delay: 1 }}
             className="absolute bottom-0 left-0 w-full h-full "
           >
             <Image
@@ -82,7 +82,7 @@ export default function ScreenClouds() {
           <motion.div
             // animate={{ y: 0 }}
             whileInView={{ x: "-90%", y: "20%" }}
-            transition={{ duration: 3, delay: 1 }}
+            transition={{ duration: 6, delay: 1 }}
             className="absolute bottom-0 left-0 w-full h-full "
           >
             <Image
@@ -110,8 +110,8 @@ export default function ScreenClouds() {
           />
           <motion.div
             // animate={{ y: 0 }}
-            whileInView={{ x: "5%" }}
-            transition={{ duration: 3, delay: 1 }}
+            whileInView={{ x: "7%" }}
+            transition={{ duration: 5 }}
             className="absolute bottom-0 left-0 w-full h-full "
           >
             <Image
@@ -128,8 +128,8 @@ export default function ScreenClouds() {
         </div>
         <motion.div
           // animate={{ y: 0 }}
-          whileInView={{ y: -400 }}
-          transition={{ duration: 3, delay: 1 }}
+          whileInView={{ y: "-8%" }}
+          transition={{ duration: 9 }}
           className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
@@ -145,8 +145,8 @@ export default function ScreenClouds() {
         </motion.div>
         <motion.div
           // animate={{ y: 0 }}
-          whileInView={{ y: -440 }}
-          transition={{ duration: 3, delay: 1 }}
+          whileInView={{ y: "-7%" }}
+          transition={{ duration: 9 }}
           className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
@@ -163,7 +163,7 @@ export default function ScreenClouds() {
         <motion.div
           // animate={{ y: 0 }}
           whileInView={{ x: "-25%" }}
-          transition={{ duration: 3, delay: 1 }}
+          transition={{ duration: 6 }}
           className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
@@ -191,11 +191,11 @@ export default function ScreenClouds() {
       {/* /////////// DIV 2 ////////////// */}
       {/* /////////// DIV 2 ////////////// */}
       {/* /////////// DIV 2 ////////////// */}
-      <div className="relative w-full h-[2042px] border-4 border-red-500 animation-clouds">
+      <div className="relative w-full h-[2042px]  animation-clouds">
         <motion.div
           // animate={{ y: 0 }}
-          whileInView={{ x: 80 }}
-          transition={{ duration: 3, delay: 1 }}
+          whileInView={{ x: "15%" }}
+          transition={{ duration: 5, delay: 1 }}
           className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image
@@ -221,8 +221,8 @@ export default function ScreenClouds() {
         </motion.div>
         <motion.div
           // animate={{ y: 0 }}
-          whileInView={{ x: 40 }}
-          transition={{ duration: 3, delay: 1 }}
+          whileInView={{ x: "10%" }}
+          transition={{ duration: 6 }}
           className="absolute bottom-0 left-0 w-full h-full "
         >
           <Image

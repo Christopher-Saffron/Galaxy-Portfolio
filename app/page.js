@@ -15,7 +15,7 @@ export default function Home() {
   return (
     // <AnimatePresence mode="wait">
     <>
-      <main className="main-grid transition duration-200 shadow-md  bg-white dark:bg-bgcolor px-3 max-w-fit mx-auto">
+      <main className="main-grid transition duration-200 shadow-md  bg-white dark:bg-bgcolor  px-3 max-w-fit mx-auto">
         {/* <main className="main-grid transition duration-200 shadow-md dark:shadow-main bg-white dark:bg-bgcolor px-3 max-w-fit mx-auto"></main> */}
         <Title />
         <NameCard />

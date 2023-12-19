@@ -34,7 +34,7 @@ export default function ScreenPlanets() {
         // whileInView={{ scale: 1.03, x: "45%", y: "-45%", rotateZ: 63 }}
         initial={{ x: "-45%", y: "-40%", rotateZ: 0 }}
         whileInView={{ scale: 1.03, x: "-45%", y: "-40%", rotateZ: -33 }}
-        transition={{ duration: 6 }}
+        transition={{ duration: 11 }}
         className="absolute w-full h-full max-h-[1200px] max-w-[1200px] origin-center  overflow-hidden   left-0 -translate-x-[45%]  -translate-y-[45%]   "
       >
         <Image
@@ -60,7 +60,7 @@ export default function ScreenPlanets() {
       {/* ////////////// MERCURY ////////////// */}
       <motion.div
         whileInView={{ rotate: 15 }}
-        transition={{ duration: 8 }}
+        transition={{ duration: 11 }}
         className="absolute w-full origin-top-left  h-[100%] max-h-[1400px]  bottom-[2600px] "
       >
         {/* <Image
@@ -85,7 +85,7 @@ export default function ScreenPlanets() {
       {/* ////////////// Venus ////////////// */}
       <motion.div
         whileInView={{ rotate: -5 }}
-        transition={{ duration: 8 }}
+        transition={{ duration: 11 }}
         className="absolute w-full origin-top-left  h-[100%] max-h-[1400px]  bottom-[2750px] "
       >
         {/* <Image
@@ -121,7 +121,7 @@ export default function ScreenPlanets() {
       {/* ////////////// MARS ////////////// */}
       <motion.div
         whileInView={{ rotate: 15, x: "-10%" }}
-        transition={{ duration: 8 }}
+        transition={{ duration: 11 }}
         className="absolute origin-top-left w-full h-[100%] max-h-[1200px]  bottom-[1500px] "
       >
         {/* <Image
@@ -146,7 +146,7 @@ export default function ScreenPlanets() {
       {/* ////////////// JUPITER ////////////// */}
       <motion.div
         whileInView={{ x: "25%", y: "10%", rotateZ: -50 }}
-        transition={{ duration: 8 }}
+        transition={{ duration: 11 }}
         className="absolute w-full origin-top-left h-[100%] max-h-[1200px]  bottom-[1750px] "
       >
         {/* <Image
@@ -172,7 +172,7 @@ export default function ScreenPlanets() {
       <motion.div
         initial={{ rotateZ: -35, x: "0%" }}
         whileInView={{ rotateZ: 25, x: "-20%" }}
-        transition={{ duration: 8 }}
+        transition={{ duration: 11 }}
         className="absolute w-full h-[100%] max-h-[1200px]  bottom-[1400px] "
       >
         {/* <Image
@@ -198,7 +198,7 @@ export default function ScreenPlanets() {
       <motion.div
         initial={{ rotateZ: -15, x: "15%", y: "-10%" }}
         whileInView={{ rotateZ: 0, x: "40%", y: "-25%" }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 5 }}
         className="absolute w-full h-[100%] max-h-[1200px]  bottom-[700px]  "
       >
         {/* <Image
