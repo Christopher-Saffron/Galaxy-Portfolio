@@ -6,7 +6,7 @@ export default function EvenIfYouMiss() {
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
       transition={{ delay: 16, duration: 1 }}
-      className="fixed flex  items-center gap-5 top-1/2 -translate-y-1/2 right-[15%] z-50  font-catamaran text-[#D1D1D1] font-bold text-center text-[64px]  tracking-tight leading-[130%]"
+      className="fixed flex  items-center gap-5 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 lg:left-auto lg:right-[15%] z-50  font-catamaran text-[#D1D1D1] font-bold text-center text-[64px]  tracking-tight leading-[130%]"
     >
       <div className=" ">
         <svg
@@ -21,6 +21,7 @@ export default function EvenIfYouMiss() {
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
             transition={{ duration: 1, delay: 10 }}
+            className="hidden lg:block"
             stroke="#D1D1D1"
             strokeWidth="7"
           />

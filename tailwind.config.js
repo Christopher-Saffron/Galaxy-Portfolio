@@ -47,9 +47,9 @@ module.exports = {
       },
       backgroundImage: {
         stars: "url('/animation/stars.svg')",
-        "4paths": "url('/public/animation/4paths.svg')",
+        "4paths": "url('/animation/4paths.svg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        lightsvg: "url('/public/cloudy0.svg')",
+        lightsvg: "url('/cloudy0.svg')",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },

@@ -1,69 +1,89 @@
 "use client";
 
-import { animate, motion } from "framer-motion";
-import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
+// import Image from "next/image";
 import ScreenPlanets from "./ScreenPlanets";
 import ScreenClouds from "./ScreenClouds";
 import ScreenInitial from "./ScreenInitial";
 import ScreenMainRocket from "./ScreenMainRocket";
 import EvenIfYouMiss from "./EvenIfYouMiss";
-import { useRef } from "react";
+// import { useRef } from "react";
 import Blackbars from "./Blackbars";
-import Preloading from "./Preloading";
+// import Preloading from "./Preloading";
 import AmongTheStars from "./AmongTheStars";
+import Skip from "./Skip";
+import { useState } from "react";
+import useMobileDetect from "@/hooks/useMobileDetect";
+import useCheckIfAnimationPlayed from "@/hooks/useCheckIfAnimationPlayed";
 
-const mainPathVariant = {
-  transition: {
-    duration: 2,
-    delay: 2,
-  },
-  variants: {
-    visible: {
-      pathLength: 1,
-    },
-    hidden: {
-      pathLength: 0,
-    },
-  },
-};
+// const mainPathVariant = {
+//   transition: {
+//     duration: 2,
+//     delay: 2,
+//   },
+//   variants: {
+//     visible: {
+//       pathLength: 1,
+//     },
+//     hidden: {
+//       pathLength: 0,
+//     },
+//   },
+// };
 
 export default function EnterAnimation() {
+  const { isDesktop: isDesktopCheck } = useMobileDetect();
+  const [isAnimating, setIsAnimating] = useState(isDesktopCheck());
+  const x = useCheckIfAnimationPlayed();
+
+  // const desktopCheck = useMobileDetect();
+  // const [isAnimating, setIsAnimating] = useState(desktopCheck.isDesktop());
+
   //   animate(0, 100, {
   //     onUpdate: (latest) => console.log(latest),
   //     duration: 3,
   //   });
 
   return (
-    <motion.div className="   w-screen h-screen  top-0 left-0   bg-white ">
-      <ScreenInitial />
-      <motion.div
-        // initial={{ y: "calc(0% + -100vh)" }}
-        animate={{
-          y: [
-            "calc(-100% + 0vh)",
-            // "calc(-40% + 0vh)",
-            // "calc(-30% + 0vh)",
-            // "calc(-5% + -100vh)",
-            "calc(0% + -100vh)",
-          ],
-        }}
-        transition={{
-          duration: 22,
-          delay: 2.3,
-          // ease: "linear",
-          // times: [0, 0.95, 1],
-        }}
-        className="overflow-hidden"
-      >
-        <ScreenPlanets />
-        <ScreenClouds />
-      </motion.div>
+    <AnimatePresence>
+      {isAnimating && (
+        <motion.div
+          exit={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
+          className=" overflow-hidden  w-screen h-screen  top-0 left-0 z-[100] fixed bg-white "
+        >
+          <ScreenInitial />
+          <motion.div
+            // initial={{ y: "calc(0% + -100vh)" }}
+            animate={{
+              y: [
+                "calc(-100% + 0vh)",
+                // "calc(-40% + 0vh)",
+                // "calc(-30% + 0vh)",
+                // "calc(-5% + -100vh)",
+                "calc(0% + -100vh)",
+              ],
+            }}
+            transition={{
+              duration: 22,
+              delay: 2.3,
+              // ease: "linear",
+              // times: [0, 0.95, 1],
+            }}
+            className="overflow-hidden"
+          >
+            <ScreenPlanets />
+            <ScreenClouds />
+          </motion.div>
 
-      <ScreenMainRocket />
-      <EvenIfYouMiss />
-      <AmongTheStars />
-      {/* <Blackbars /> */}
-    </motion.div>
+          <ScreenMainRocket />
+          <EvenIfYouMiss />
+          <AmongTheStars />
+          <Blackbars setIsAnimating={setIsAnimating} />
+          <Skip setIsAnimating={setIsAnimating} />
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
 

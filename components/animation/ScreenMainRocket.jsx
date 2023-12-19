@@ -22,7 +22,6 @@ export default function ScreenMainRocket() {
             scale: [1, 1.05, 0.95, 1, 1.02, 0.98, 1],
           }}
           transition={{
-            //   delay: 1,
             duration: 10,
             ease: "easeInOut",
             repeat: Infinity,
@@ -40,8 +39,6 @@ export default function ScreenMainRocket() {
               width={0}
               height={0}
               sizes="100vw"
-              //   style={{ width: "auto", height: "416px" }} // optional
-              // className=" w-auto h-[416px] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               className=" w-auto px-28 absolute left-1/2  -translate-x-1/2 "
               alt=""
             />
@@ -52,13 +49,34 @@ export default function ScreenMainRocket() {
             transition={{ duration: 0.8, delay: 1, ease: "linear", repeat: 10 }}
             className="relative"
           >
+            <motion.div
+              animate={{
+                rotate: [0, 3, -3, 7, -7, 0],
+                scaleY: [2, 1],
+                scale: [1, 0],
+              }}
+              transition={{
+                repeat: Infinity,
+                duration: 10,
+                scaleY: { duration: 5, repeat: 0 },
+                scale: { duration: 6, repeat: 0, delay: 5 },
+              }}
+              className=" origin-top"
+            >
+              <Image
+                src="/animation/rocketFire.svg"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className=" w-auto top-full px-28 absolute left-1/2 -translate-x-1/2 "
+                alt=""
+              />
+            </motion.div>
             <Image
               src="/animation/rocketMiddle.svg"
               width={0}
               height={0}
               sizes="100vw"
-              //   style={{ width: "auto", height: "416px" }} // optional
-              // className=" w-auto h-[416px] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               className=" w-auto  px-28 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               alt=""
             />
