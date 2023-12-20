@@ -33,8 +33,12 @@ import useCheckIfAnimationPlayed from "@/hooks/useCheckIfAnimationPlayed";
 
 export default function EnterAnimation() {
   const { isDesktop: isDesktopCheck } = useMobileDetect();
-  const [isAnimating, setIsAnimating] = useState(isDesktopCheck());
-  const x = useCheckIfAnimationPlayed();
+  const isAnimationAlreadySeen = useCheckIfAnimationPlayed();
+  const notSeenAndIsDesktop = Boolean(
+    isAnimationAlreadySeen === false && isDesktopCheck()
+  );
+  console.log("ddddd", notSeenAndIsDesktop);
+  const [isAnimating, setIsAnimating] = useState(true);
 
   // const desktopCheck = useMobileDetect();
   // const [isAnimating, setIsAnimating] = useState(desktopCheck.isDesktop());

@@ -1,6 +1,13 @@
 "use client";
+
 export default function useCheckIfAnimationPlayed() {
-  const wasPlayed = sessionStorage.getItem("isAnimationPlayed");
+  let wasPlayed;
+  if (sessionStorage.getItem("isAnimationPlayed") === null) {
+    wasPlayed = false;
+    sessionStorage.setItem("isAnimationPlayed", true);
+  } else {
+    wasPlayed = true;
+  }
   console.log(wasPlayed);
-  return "ding";
+  return wasPlayed;
 }
