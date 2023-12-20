@@ -23,7 +23,7 @@ export default function Home() {
         <Media />
       </main>
       <FooterBreak height={6} />
-      <EnterAnimation />
+      {/* <EnterAnimation /> */}
       {/* <Clouds /> */}
     </>
   );
