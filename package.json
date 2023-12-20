@@ -13,7 +13,8 @@
     "next": "13.5.6",
     "react": "^18",
     "react-dom": "^18",
-    "react-medium-image-zoom": "^5.1.8"
+    "react-medium-image-zoom": "^5.1.8",
+    "three": "^0.159.0"
   },
   "devDependencies": {
     "autoprefixer": "^10",

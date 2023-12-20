@@ -1,7 +1,7 @@
 import Footer from "@/components/en/Footer";
-import Mainthreed from "@/components/Mainthreed";
+import MilkyWay from "@/components/MilkyWay";
 import Nav from "@/components/en/Nav";
-
+import NoSsr from "@/components/no-ssr";
 export const metadata = {
   title: "Christopher Saffron Portfolio",
   description: "Web development and Traffic Management",
@@ -11,7 +11,9 @@ export default function Layout({ children }) {
   return (
     <>
       <Nav />
-      <Mainthreed />
+      <NoSsr>
+        <MilkyWay />
+      </NoSsr>
       {children}
       <Footer />
     </>
