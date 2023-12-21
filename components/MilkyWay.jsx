@@ -122,7 +122,7 @@ const MilkyWay = () => {
   return (
     <div
       ref={refContainer}
-      className="default-grid-holder  relative mx-auto mt-5 md:w-[900px] h-[400px]  items-center justify-center flex overflow-hidden"
+      className="default-grid-holder  relative mx-auto mt-5 lg:w-[900px] h-[200px] md:h-[300px] lg:h-[400px]  items-center justify-center flex overflow-hidden"
     >
       {loading && <p>SPINNER GOES BRRR</p>}
       {/* <Image

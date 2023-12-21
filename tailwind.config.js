@@ -15,6 +15,7 @@ module.exports = {
         sm: "200px",
         md: "500px",
         lg: "860px",
+        for3d: "600px",
       },
       colors: {
         main: "#CD482B",

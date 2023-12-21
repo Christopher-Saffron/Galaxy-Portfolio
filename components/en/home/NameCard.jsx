@@ -16,11 +16,11 @@ export default function NameCard() {
           />
         </div>
       </div>
-      <div className="default-grid-item saffron my-4 lg:my-0 flex flex-col items-start justify-center lg:h-[170px]">
+      <div className="default-grid-item saffron lg:my-0 flex flex-col items-start justify-center lg:h-[170px]">
         <h2 className=" text-[24px] md:text-[42px] mx-auto md:mx-0 lg:text-[56px] font-bold text-black dark:text-textMain">
           Christopher Saffr<span className="on">on</span>
         </h2>
-        <h4 className=" text-base  mx-auto md:mx-0 font-catamaran text-gray-800 dark:text-[#939292] lg:text-[24px]">
+        <h4 className=" text-base  mx-auto lg:mx-0 font-catamaran text-gray-800 dark:text-[#939292] lg:text-[24px]">
           Full-stack Developer / BricsCAD Designer
         </h4>
       </div>
