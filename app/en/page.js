@@ -12,10 +12,11 @@ import EnterAnimation from "@/components/animation/EnterAnimation";
 export default function Home() {
   return (
     <>
-      <main className="main-grid transition duration-200 shadow-md  bg-white dark:bg-bgcolor px-3 max-w-fit mx-auto ">
+      <main className="default-grid-holder transition duration-200 shadow-md  bg-white dark:bg-bgcolor px-3 max-w-fit mx-auto ">
         <Title />
+
         <NameCard />
-        <NameCardImage />
+        {/* <NameCardImage /> */}
         <Summary />
         <History />
         <Offer />

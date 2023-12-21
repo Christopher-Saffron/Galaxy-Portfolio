@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function History() {
   return (
-    <div className="test  my-3">
+    <div className="default-grid-item my-3">
       <p className=" textTitle mb-7">History</p>
-      <div className=" font-catamaran text-base flex flex-col gap-3">
-        <div className="flex  gap-8">
+      <div className=" font-catamaran text-[16px] md:text-base flex flex-col gap-3">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-8">
           <span className="dark:text-textSub3 font-lato font-bold">1999</span>
           <span className="font-catamaran ">
             I was born in <span className="text-main">Cracow, Poland</span>
           </span>
         </div>
-        <div className="flex  gap-8">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-8">
           <span className="dark:text-textSub3 font-lato font-bold">2018</span>
           <span>
             Officially began working as a Temporary{" "}
@@ -20,7 +20,7 @@ export default function History() {
             University of Science and Technology in Cracow.
           </span>
         </div>
-        <div className="flex  gap-8">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-8">
           <span className="dark:text-textSub3 font-lato font-bold whitespace-nowrap">
             2022 to present
           </span>

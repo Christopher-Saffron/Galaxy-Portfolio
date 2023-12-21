@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Summary() {
   return (
-    <div className="test">
+    <div className="default-grid-item">
       <p className=" textTitle">Professional summary</p>
-      <p className=" font-catamaran text-base">
+      <p className=" font-catamaran text-[16px] md:text-base text-justify">
         Passion for{" "}
         <span className="text-main dark:text-textSub3">
           work, learning and freedom to create

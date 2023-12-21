@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
-      <body className="font-lato  bg-[url('../public/cloudy0.svg')] overflow-x-hidden bg-contain bg-bottom bg-no-repeat dark:text-textSub dark:bg-bgcolor transition all duration-500">
+      <body className="font-lato  overflow-x-hidden bg-contain bg-bottom bg-no-repeat dark:text-textSub dark:bg-bgcolor transition all duration-500">
         {children}
       </body>
     </html>

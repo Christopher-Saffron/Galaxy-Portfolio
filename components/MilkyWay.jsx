@@ -26,11 +26,19 @@ const MilkyWay = () => {
   const [scene] = useState(new THREE.Scene());
   const [_controls, setControls] = useState();
 
+  const handleWindowResize = useCallback(() => {
+    const { current: container } = refContainer;
+    if (container && renderer) {
+      const scW = container.clientWidth;
+      const scH = container.clientHeight;
+
+      renderer.setSize(scW, scW);
+    }
+  }, [renderer]);
+
   useEffect(() => {
     const { current: container } = refContainer;
     if (container && !renderer) {
-      console.log("ding");
-
       const scW = container.clientWidth;
       const scH = container.clientHeight;
 
@@ -39,8 +47,8 @@ const MilkyWay = () => {
         alpha: true,
       });
       renderer.setPixelRatio(window.devicePixelRatio);
-      renderer.setSize(scW, scH);
-      renderer.outputEncoding = THREE.sRGBEncoding;
+      renderer.setSize(scW, scW);
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
       container.appendChild(renderer.domElement);
       setRenderer(renderer);
 
@@ -57,8 +65,8 @@ const MilkyWay = () => {
       camera.lookAt(target);
       setCamera(camera);
 
-      const ambientLight = new THREE.AmbientLight(0xcccc, 1);
-      scene.add(ambientLight);
+      // const ambientLight = new THREE.AmbientLight(0xcccc, 1);
+      // scene.add(ambientLight);
 
       const controls = new OrbitControls(camera, renderer.domElement);
       controls.autoRotate = true;
@@ -104,10 +112,17 @@ const MilkyWay = () => {
     }
   }, []);
 
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize, false);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize, false);
+    };
+  }, [renderer, handleWindowResize]);
+
   return (
     <div
       ref={refContainer}
-      className="w-[840px] border-4 border-red-500 relative mx-auto mt-5  h-[400px] col-span-full items-center justify-center flex overflow-hidden"
+      className="default-grid-holder  relative mx-auto mt-5 md:w-[900px] h-[400px]  items-center justify-center flex overflow-hidden"
     >
       {loading && <p>SPINNER GOES BRRR</p>}
       {/* <Image

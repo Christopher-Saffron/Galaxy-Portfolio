@@ -8,6 +8,14 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      gridTemplateColumns: {
+        main: "repeat(10, 60px)",
+      },
+      screens: {
+        sm: "200px",
+        md: "500px",
+        lg: "860px",
+      },
       colors: {
         main: "#CD482B",
         main2: "#4AABF3",

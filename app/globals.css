@@ -28,14 +28,6 @@ body {
   gap: 0 20px;
 }
 
-.main-grid {
-  display: grid;
-  grid-template-columns: repeat(10, 60px);
-  gap: 0 20px;
-  /* border: 2px solid white; */
-  margin-top: 15px;
-}
-
 .on {
   background: -webkit-linear-gradient(#ff4a21, #cd482b);
   -webkit-background-clip: text;
@@ -54,19 +46,37 @@ body {
   backdrop-filter: blur(10px);
 }
 
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  gap: 0 20px;
+  margin-top: 15px;
+}
+
 @layer components {
-  .link {
-    @apply text-black hover:text-main  dark:text-[#BBBBBB] py-3 dark:hover:text-white cursor-pointer  transition duration-200;
+  .default-grid-holder {
+    @apply grid grid-cols-10 lg:grid-cols-main gap-x-0 lg:gap-x-5 mt-4 justify-end;
   }
+
+  .default-grid-item {
+    @apply col-span-full px-5 my-1 lg:my-0 lg:px-0;
+  }
+
   .test {
     @apply col-span-full;
   }
+
+  .link {
+    @apply text-black hover:text-main  dark:text-[#BBBBBB] py-3 dark:hover:text-white cursor-pointer  transition duration-200;
+  }
+
   .saffron {
-    @apply col-span-7;
+    @apply col-span-full lg:col-span-7 mx-auto text-center;
   }
   .planet {
-    @apply col-span-3;
+    @apply col-span-full lg:col-span-3;
   }
+
   .modeChangeBackground {
     @apply relative border-2 rounded-[24px] w-[72px] h-[37px] transition-[border] hover:border-main overflow-hidden;
   }
@@ -80,7 +90,7 @@ body {
     @apply flex gap-2 text-lg w-fit bg-[#ff482B] hover:bg-main  dark:bg-[#2B2B2B] my-2 mx-auto items-center py-1 px-2 rounded-md dark:hover:bg-[#464545] dark:hover:border-[#747474] border dark:border-[#2B2B2B] transition duration-100;
   }
   .textTitle {
-    @apply font-lato text-[24px] dark:text-textSub2 font-bold py-2 border-b-4 border-main w-fit mb-3;
+    @apply font-lato text-[20px]  mx-auto md:mx-0 md:text-[24px] dark:text-textSub2 font-bold py-2 border-b-4 border-main text-center md:text-left w-full md:w-fit mb-6 md:mb-3;
   }
   .summary-button {
     @apply bg-main2 text-black font-bold text-base flex justify-center items-center gap-3 px-6 py-4 rounded-lg mx-auto my-12;
