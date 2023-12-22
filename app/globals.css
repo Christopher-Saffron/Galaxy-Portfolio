@@ -106,7 +106,7 @@ body {
 
   /* ////// WORKS */
   .mainWorkCategory {
-    @apply text-[20px] text-category border-l text-gray-700 dark:text-textSub border-[#424242] first-of-type:border-none px-6 cursor-pointer;
+    @apply text-category lg:border-l text-gray-700 dark:text-textSub border-[#424242]  lg:first-of-type:border-none px-6 cursor-pointer;
   }
 
   .mainWorkCategory-active {

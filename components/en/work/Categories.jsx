@@ -45,17 +45,7 @@ export default function Categories() {
 
   return (
     <div className="test">
-      {/* <p className=" textTitle mb-7">My Work</p>
-      <div className="  flex flex-wrap justify-center font-bold items-center textSub2">
-        <div className="mainWorkCategory mainWorkCategory-active">
-          <div className=" border-b-2 py-3 border-main">Web Development</div>
-        </div>
-        <div className="mainWorkCategory">3D Models</div>
-        <div className="mainWorkCategory">FIGMA Designs</div>
-        <div className="mainWorkCategory">Scripts</div>
-        <div className="mainWorkCategory">Traffic Design</div>
-      </div> */}
-      <div className="my-4">
+      <div className="my-4 w-fit mx-auto lg:mx-0">
         <Checkbox2
           onChange={() => setShowCategories((prev) => !prev)}
           text={"Show Categories?"}
@@ -68,14 +58,7 @@ export default function Categories() {
             animate={{ opacity: 1, scale: 1, height: "auto" }}
             exit={{ opacity: 0, scale: 1, height: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            // ref={containerRef}
           >
-            {/* <button
-              onClick={handleResetCategories}
-              className="mb-4 font-bold cursor-pointer  inline-block bg-main text-black py-2 px-3 rounded-lg"
-            >
-              Reset categories
-            </button> */}
             <CategoriesBox />
           </motion.div>
         )}
