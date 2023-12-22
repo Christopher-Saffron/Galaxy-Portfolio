@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Inter&family=Lato:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -55,7 +55,7 @@ body {
 
 @layer components {
   .default-grid-holder {
-    @apply grid grid-cols-10 lg:grid-cols-main gap-x-0 lg:gap-x-5 mt-4 justify-end;
+    @apply grid grid-cols-10 lg:grid-cols-main gap-x-0 lg:gap-x-5 justify-end;
   }
 
   .default-grid-item {

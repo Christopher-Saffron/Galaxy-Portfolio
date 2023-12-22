@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function WorkType({ workType }) {
   console.log(workType);
   return (
-    <div className="test">
+    <div className="default-grid-item">
       <p className=" textTitle mb-7">My Work</p>
       <div className="  select-none flex flex-wrap w-fit mx-auto justify-center font-bold items-center dark:textSub2">
         <WorkLink

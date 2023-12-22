@@ -8,7 +8,7 @@ import ProjectsWebDevOnly from "@/components/en/work/ProjectsWebDevOnly";
 export default function WorkWebDevelopment() {
   const searchParams = useSearchParams();
 
-  // Check if there are any parameters
+  // Check if there are any parameters, if there are, show filtered only, if not, show default projects gallery
   const hasParams = searchParams && searchParams.toString().trim() !== "";
   return (
     <>

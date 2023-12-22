@@ -47,7 +47,8 @@ module.exports = {
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
-        catamaran: ["Catamaran", "Tahoma"],
+        catamaran: ["Inter", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       fontSize: {
         title: "32px",
