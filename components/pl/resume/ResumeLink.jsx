@@ -33,7 +33,7 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
             </span>
           </div>
           <Link
-            href={`http://localhost:3000/api/${downloadLink}`}
+            href={`${process.env.NEXT_PUBLIC_API_URL}/api/${downloadLink}`}
             className="flex items-center gap-2"
           >
             <Image src="/images/Download.svg" width={18} height={18} alt="" />
