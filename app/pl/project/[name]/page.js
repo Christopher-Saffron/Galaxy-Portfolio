@@ -16,23 +16,27 @@ export default function Page({ params }) {
   );
 
   return (
-    <main className="main-grid max-w-fit mx-auto">
-      <div className="test flex items-center justify-start gap-4">
+    <main className="default-grid-holder max-w-fit mx-auto">
+      <div className="default-grid-item flex items-center justify-start gap-4">
         <div className="flex items-center justify-center gap-2">
           <Link
             href="/pl/work/web-development"
-            className="text-main text-base font-bold dark:font-medium"
+            className="text-main text-base font-bold dark:font-medium hidden md:block"
           >
             Moje Prace
           </Link>
-          <span className="dark:text-textSub2 font-bold text-base">{">"}</span>
+          <span className="dark:text-textSub2 font-bold text-base hidden lg:block">
+            {">"}
+          </span>
           <Link
             href={`/pl/work/` + projectData.category}
-            className="text-main text-base font-bold dark:font-medium"
+            className="text-main text-base font-bold dark:font-medium hidden lg:block"
           >
             {projectData.category}
           </Link>
-          <span className="dark:text-textSub2 font-bold text-base">{">"}</span>
+          <span className="dark:text-textSub2 font-bold text-base hidden md:block">
+            {">"}
+          </span>
           <span className="dark:text-textSub2 font-bold text-2xl">
             {projectData.name}
           </span>
@@ -46,14 +50,14 @@ export default function Page({ params }) {
         </div>
       </div>
       <p
-        className={`test indent-8  dark:text-textSub2 w-full font-catamaran font-bold ${
+        className={`default-grid-item indent-8  dark:text-textSub2 w-full font-catamaran font-bold ${
           showLinks ? "mt-4" : "mt-4 mb-6"
         }`}
       >
         {projectData.description}
       </p>
       <div
-        className={`test projectLinksIndent my-5 mb-10 gap-4 flex flex-col justify-center ${
+        className={`default-grid-item projectLinksIndent my-5 mb-10 gap-4 flex flex-col justify-center ${
           showLinks ? "" : "hidden"
         }`}
       >
@@ -96,7 +100,7 @@ export default function Page({ params }) {
       </div>
       <Link
         href={projectData.websiteLink}
-        className=" relative col-span-full w-4/5 h-[400px] mx-auto projectLoad skeleton-shine cursor-pointer transition duration-200 ease-in-out opacity-80 hover:opacity-100 hover:scale-[1.04]"
+        className=" relative col-span-full w-4/5 h-[200px] md:h-[250px] lg:h-[400px] mx-auto projectLoad skeleton-shine cursor-pointer transition duration-200 ease-in-out opacity-80 hover:opacity-100 hover:scale-[1.04]"
       >
         <Image
           className="rounded-lg shadow-2xl"
@@ -106,29 +110,11 @@ export default function Page({ params }) {
           style={{ objectFit: "cover" }}
         />
       </Link>
-      <div className=" relative col-span-full w-2/5 min-h-[40px] mx-auto my-6 p-3 text-center  ">
+      <div className=" relative col-span-full md:w-2/5 min-h-[40px] mx-auto mb-3 lg:mb-6 p-3 text-center  ">
         {projectData.descriptionShort}
       </div>
 
       <ImageGallery images={projectData.imgs} />
-      {/* <div className="flex flex-wrap  w-full col-span-full justify-evenly gap-y-9 items-center mb-16">
-        {projectData.imgs.length > 1 &&
-          projectData.imgs.map((item, i) => (
-            <div
-              key={i}
-              className=" relative projectSecondaryImg  projectLoad skeleton-shine  shadow-lg"
-            >
-              <Image
-                src={item}
-                fill
-                style={{ objectFit: "cover" }}
-                className="rounded-lg"
-              />
-            </div>
-          ))}
-      </div> */}
-
-      {/* <div className=" relative col-span-full w-2/5 h-[40px] mx-auto projectLoad skeleton-shine "></div> */}
     </main>
   );
 }

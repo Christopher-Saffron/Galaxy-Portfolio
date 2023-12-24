@@ -6,27 +6,9 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Categories() {
-  // const containerRef = useRef(null);
-  // const [height, setHeight] = useState("auto");
   const router = useRouter();
   const pathName = usePathname();
   const [showCategories, setShowCategories] = useState(false);
-
-  // useEffect(() => {
-  //   if (containerRef.current) {
-  //     const resizeObserver = new ResizeObserver((entries) => {
-  //       console.log(entries);
-  //       const observedHeight = entries[0].contentRect.height;
-  //       setHeight(observedHeight);
-  //     });
-
-  //     resizeObserver.observe(containerRef.current);
-
-  //     return () => {
-  //       resizeObserver.disconnect();
-  //     };
-  //   }
-  // }, []);
 
   function handleCategories() {
     setShowCategories((prev) => !prev);

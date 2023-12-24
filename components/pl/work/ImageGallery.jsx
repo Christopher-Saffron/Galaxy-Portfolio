@@ -6,36 +6,18 @@ export default function ImageGallery({ images }) {
     <div className="flex flex-wrap  w-full col-span-full justify-evenly gap-y-9 items-center mb-16">
       {images.length > 1 &&
         images.map((item, i) => (
-          <>
-            {/* //////////////////////////////// ZOOM DOES NOT TAKE IN ANY CLASSES - OR OVERRIDES THEM */}
-            <Zoom className="relative w-full h-full ">
-              <div
-                key={i}
-                className=" relative projectSecondaryImg  projectLoad   shadow-lg hidden sm:block "
-              >
-                <Image
-                  src={item}
-                  fill
-                  alt=""
-                  style={{ objectFit: "cover" }}
-                  className="rounded-lg"
-                />
-              </div>
-            </Zoom>
-            {/* ////////////////////// TEMPORARY FIX FOR MOBILE - POSSIBLE MANUAL ZOOM - NO NEED FOR CODE */}
-            <div
-              key={i}
-              className=" relative projectSecondaryImg  projectLoad   shadow-lg block sm:hidden"
-            >
+          <Zoom className="relative w-full h-full " key={i}>
+            <div className=" relative projectSecondaryImg  projectLoad skeleton-shine  shadow-lg hidden sm:block ">
               <Image
                 src={item}
-                alt=""
                 fill
+                alt=""
+                sizes="20vw"
                 style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>
-          </>
+          </Zoom>
         ))}
     </div>
   );

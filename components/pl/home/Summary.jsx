@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Summary() {
   return (
-    <div className="test">
+    <div className="default-grid-item">
       <p className="textTitle">Podsumowanie zawodowe</p>
-      <p className="font-catamaran text-base">
+      <p className="font-catamaran text-[16px] md:text-base text-justify">
         Pasja do{" "}
         <span className="text-main dark:text-textSub3">
           pracy, nauki i swobody tworzenia

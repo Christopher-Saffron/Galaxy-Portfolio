@@ -15,19 +15,20 @@ export default function ProjectLink({ project }) {
         href={`/pl/project/${project.slug}`}
         className={`flex group flex-col items-center justify-center cursor-pointer transition duration-200 ease-in-out opacity-95 dark:opacity-80 hover:opacity-100 hover:scale-[1.03] `}
       >
-        <div className=" projectLoad h-[200px] w-full ">
+        <div className=" projectLoad h-[200px]  w-full max-w-[400px] lg:max-w-none ">
           <Image
             src={project.mainImg}
             fill
+            sizes="20vw"
             className="rounded-2xl duration-500 group-hover:rounded-sm"
             style={{ objectFit: "cover" }}
             alt={project.slug}
           />
         </div>
-        <div className=" text-center pt-3 w-2/3 text-2xl font-bold font-catamaran text-black dark:text-textMain transition duration-200 group-hover:text-main">
+        <div className=" text-center pt-3 lg:w-2/3 text-lg md:text-2xl font-bold font-catamaran text-black dark:text-textMain transition duration-200 group-hover:text-main">
           {project.name}
         </div>
-        <div className=" text-center w-5/6 tracking-wider text-gray-900 font-bold dark:font-medium dark:text-textSub3">
+        <div className=" text-center lg:w-5/6 tracking-wider text-[14px] md:text-[16px] text-gray-900 font-bold dark:font-medium dark:text-textSub3">
           {project.descriptionShort}
         </div>
       </Link>

@@ -19,12 +19,12 @@ export default function filteredProjects() {
 
   return (
     <Suspense fallback={"Loading...."}>
-      <div className="test">
+      <div className="default-grid-item">
         <div className="rocketBorder relative text-[24px]  dark:text-textSub2 font-bold pb-3 w-fit">
           <span>Filtered Projects</span>
         </div>
       </div>
-      <div className="test  grid grid-cols-2 my-8 mb-12 gap-x-4 gap-y-24">
+      <div className="default-grid-item  grid grid-cols-2 my-8 mb-12 gap-x-4 gap-y-24">
         {filteredProjects.map((project) => (
           <ProjectLink key={project.id} project={project} />
         ))}
