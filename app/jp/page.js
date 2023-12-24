@@ -1,14 +1,10 @@
 import Title from "@/components/jp/home/Title";
 import NameCard from "@/components/jp/home/NameCard";
-import NameCardImage from "@/components/jp/home/NameCardImage";
 import Summary from "@/components/jp/home/Summary";
 import History from "@/components/jp/home/History";
 import Offer from "@/components/jp/home/Offer";
 import Languages from "@/components/jp/home/Languages";
 import Media from "@/components/jp/home/Media";
-
-import { AnimatePresence, motion, Spring } from "framer-motion";
-import Clouds from "@/components/jp/Clouds";
 import FooterBreak from "@/components/jp/FooterBreak";
 
 export default function Home() {

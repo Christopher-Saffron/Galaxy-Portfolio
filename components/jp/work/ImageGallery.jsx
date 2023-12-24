@@ -8,33 +8,18 @@ export default function ImageGallery({ images }) {
         images.map((item, i) => (
           <>
             {/* //////////////////////////////// ZOOM DOES NOT TAKE IN ANY CLASSES - OR OVERRIDES THEM */}
-            <Zoom className="relative w-full h-full ">
-              <div
-                key={i}
-                className=" relative projectSecondaryImg  projectLoad   shadow-lg hidden sm:block "
-              >
+            <Zoom className="relative w-full h-full " key={i}>
+              <div className=" relative projectSecondaryImg  projectLoad skeleton-shine  shadow-lg hidden sm:block ">
                 <Image
                   src={item}
                   fill
                   alt=""
+                  sizes="20vw"
                   style={{ objectFit: "cover" }}
                   className="rounded-lg"
                 />
               </div>
             </Zoom>
-            {/* ////////////////////// TEMPORARY FIX FOR MOBILE - POSSIBLE MANUAL ZOOM - NO NEED FOR CODE */}
-            <div
-              key={i}
-              className=" relative projectSecondaryImg  projectLoad   shadow-lg block sm:hidden"
-            >
-              <Image
-                src={item}
-                alt=""
-                fill
-                style={{ objectFit: "cover" }}
-                className="rounded-lg"
-              />
-            </div>
           </>
         ))}
     </div>

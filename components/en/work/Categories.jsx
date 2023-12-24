@@ -44,7 +44,7 @@ export default function Categories() {
   }
 
   return (
-    <div className="test">
+    <div className="default-grid-item">
       <div className="my-4 w-fit mx-auto lg:mx-0">
         <Checkbox2
           onChange={() => setShowCategories((prev) => !prev)}

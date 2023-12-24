@@ -20,19 +20,6 @@ export default function ImageGallery({ images }) {
                 />
               </div>
             </Zoom>
-            {/* ////////////////////// TEMPORARY FIX FOR MOBILE - POSSIBLE MANUAL ZOOM - NO NEED FOR CODE */}
-            {/* <div
-              key={i}
-              className=" relative projectSecondaryImg  projectLoad skeleton-shine  shadow-lg block sm:hidden"
-            >
-              <Image
-                src={item}
-                alt=""
-                fill
-                style={{ objectFit: "cover" }}
-                className="rounded-lg"
-              />
-            </div> */}
           </>
         ))}
     </div>

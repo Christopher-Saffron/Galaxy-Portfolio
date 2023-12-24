@@ -12,7 +12,7 @@ export default function Resume() {
           </p>
         </div>
         <Resumes />
-        <div className="test md:mt-20">
+        <div className="default-grid-item md:mt-20">
           <RocketAnimation />
         </div>
       </main>

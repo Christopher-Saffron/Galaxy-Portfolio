@@ -12,9 +12,7 @@ export default function Home() {
     <>
       <main className="default-grid-holder transition duration-200 shadow-md  bg-white dark:bg-bgcolor px-3 max-w-fit mx-auto ">
         <Title />
-
         <NameCard />
-        {/* <NameCardImage /> */}
         <Summary />
         <History />
         <Offer />
@@ -22,8 +20,6 @@ export default function Home() {
         <Media />
       </main>
       <FooterBreak height={6} />
-      {/* <EnterAnimation /> */}
-      {/* <Clouds /> */}
     </>
   );
 }

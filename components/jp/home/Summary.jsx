@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Summary() {
   return (
-    <div className="test">
+    <div className="default-grid-item">
       <p className=" textTitle">専門的な概要</p>
 
-      <p className=" font-catamaran text-base">
+      <p className=" font-catamaran text-[16px] md:text-base text-justify">
         「仕事、学び、創造する自由」に情熱を持っています。{" "}
         <span className="text-main dark:text-textSub3">
           思考を形にするための、自由な創造活動をします。

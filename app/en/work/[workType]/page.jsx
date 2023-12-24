@@ -1,5 +1,4 @@
 import Projects from "@/components/en/work/Projects";
-// import WorkType from "@/components/en/work/WorkType";
 import WorkWebDevelopment from "@/components/en/work/WorkWebDevelopment";
 import { WORKTYPES } from "@/data/data";
 

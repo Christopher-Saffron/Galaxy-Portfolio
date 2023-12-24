@@ -4,8 +4,6 @@ export default function NameCard() {
   return (
     <>
       <div className="default-grid-item planet relative block lg:hidden">
-        {/* // <div className="test planet relative"></div> */}
-        {/* <Image src="./images/EARTH.svg" fill /> */}
         <div className="relative w-[170px] mx-auto h-[170px]  rounded-full ">
           <Image
             src="/images/11.jpg"
@@ -25,8 +23,6 @@ export default function NameCard() {
         </h4>
       </div>
       <div className="default-grid-item planet relative hidden lg:block">
-        {/* // <div className="test planet relative"></div> */}
-        {/* <Image src="./images/EARTH.svg" fill /> */}
         <div className="relative w-[170px] mx-auto h-[170px]  rounded-full ">
           <Image
             src="/images/11.jpg"

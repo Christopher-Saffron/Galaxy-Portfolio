@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Languages() {
   return (
-    <div className="test  my-3">
+    <div className="default-grid-item  my-3">
       <p className=" textTitle mb-7">何語を話せますか?</p>
-      <div className="flex gap-5 text-base dark:text-textSub">
+      <div className="flex flex-wrap justify-center md:justify-normal gap-5 text-base dark:text-textSub">
         <div className="knownLanguage">
           <Image
             src="./images/flag_en.svg"

@@ -53,15 +53,6 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
             </div>
           </Zoom>
         ))}
-
-      {/* <div className="w-full h-[800px] relative border border-blue-500">
-        <Image
-          src="/portfolio/pl1.jpg"
-          alt=""
-          fill
-          style={{ objectFit: "contain" }}
-        />
-      </div> */}
     </div>
   );
 }

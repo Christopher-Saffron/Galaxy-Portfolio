@@ -15,10 +15,10 @@ export default function WorkWebDevelopment() {
       {" "}
       <Categories />
       {/* <NotFoundRocket /> */}
-      <div className={`test ${hasParams ? "" : "hidden"}`}>
+      <div className={`default-grid-item ${hasParams ? "" : "hidden"}`}>
         <FilteredProjects />
       </div>
-      <div className={`test ${hasParams ? "hidden" : ""}`}>
+      <div className={`default-grid-item ${hasParams ? "hidden" : ""}`}>
         <ProjectsWebDevOnly />
       </div>
     </>

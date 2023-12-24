@@ -44,7 +44,6 @@ export default function Nav() {
         </div>
         <div className=" w-fit  items-center gap-5 hidden lg:flex">
           <NavThemeChangev2 />
-          {/* border-[#414141] */}
           <div className="border h-[30px] border-main" />
           <Language />
         </div>
