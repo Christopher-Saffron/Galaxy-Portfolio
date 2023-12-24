@@ -8,13 +8,12 @@ export function loadGLTFModel(
   const { receiveShadow, castShadow } = options;
   return new Promise((resolve, reject) => {
     const loader = new GLTFLoader();
-    console.log(loader);
 
     loader.load(
       glbPath,
       (gltf) => {
         const obj = gltf.scene;
-        obj.name = "milkyway";
+        obj.name = "solar_system";
         obj.position.y = 0;
         obj.position.x = 0;
         obj.receiveShadow = receiveShadow;

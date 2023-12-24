@@ -73,7 +73,7 @@ const MilkyWay = () => {
       controls.target = target;
       setControls(controls);
 
-      loadGLTFModel(scene, "/MilkyWay.glb", {
+      loadGLTFModel(scene, "/models/spaceTest.glb", {
         receiveShadow: false,
         castShadow: false,
       }).then(() => {

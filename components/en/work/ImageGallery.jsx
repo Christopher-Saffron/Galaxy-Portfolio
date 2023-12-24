@@ -14,6 +14,7 @@ export default function ImageGallery({ images }) {
                   src={item}
                   fill
                   alt=""
+                  sizes="20vw"
                   style={{ objectFit: "cover" }}
                   className="rounded-lg"
                 />

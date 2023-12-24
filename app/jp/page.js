@@ -13,13 +13,10 @@ import FooterBreak from "@/components/jp/FooterBreak";
 
 export default function Home() {
   return (
-    // <AnimatePresence mode="wait">
     <>
-      <main className="main-grid transition duration-200 shadow-md  bg-white dark:bg-bgcolor px-3 max-w-fit mx-auto">
-        {/* <main className="main-grid transition duration-200 shadow-md dark:shadow-main bg-white dark:bg-bgcolor px-3 max-w-fit mx-auto"></main> */}
+      <main className="default-grid-holder transition duration-200 shadow-md  bg-white dark:bg-bgcolor px-3 max-w-fit mx-auto ">
         <Title />
         <NameCard />
-        <NameCardImage />
         <Summary />
         <History />
         <Offer />
@@ -27,8 +24,6 @@ export default function Home() {
         <Media />
       </main>
       <FooterBreak height={6} />
-      {/* <Clouds /> */}
     </>
-    // </AnimatePresence>
   );
 }
