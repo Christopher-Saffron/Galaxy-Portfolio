@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="h-screen border border-red-500 flex flex-col justify-center">
+    <div className="h-screen flex flex-col justify-center">
       <div className=" -mt-[150px]">
         <MilkyWay />
       </div>
