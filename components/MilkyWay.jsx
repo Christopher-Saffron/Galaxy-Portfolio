@@ -15,7 +15,7 @@ const MilkyWay = () => {
   const [loading, setLoading] = useState(true);
   const [renderer, setRenderer] = useState();
   const [_camera, setCamera] = useState();
-  const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0));
+  const [target] = useState(new THREE.Vector3(-0.5, 0, 0));
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
       20 * Math.sin(0.2 * Math.PI),
@@ -78,7 +78,6 @@ const MilkyWay = () => {
         castShadow: false,
       }).then(() => {
         animate();
-        console.log("ding");
         setLoading(false);
       });
 

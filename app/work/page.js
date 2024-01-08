@@ -1,14 +1,7 @@
 "use client";
-import FooterBreak from "@/components/FooterBreak";
-import History from "@/components/History";
-import NameCard from "@/components/NameCard";
-import Categories from "@/components/work/Categories";
-import FilteredProjects from "@/components/work/FilteredProjects";
-import NotFoundRocket from "@/components/work/NotFoundRocket";
 import Projects from "@/components/work/Projects";
 import WorkType from "@/components/work/WorkType";
 import WorkWebDevelopment from "@/components/work/WorkWebDevelopment";
-import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 export default function Page() {
