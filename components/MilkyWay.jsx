@@ -52,7 +52,7 @@ const MilkyWay = () => {
       container.appendChild(renderer.domElement);
       setRenderer(renderer);
 
-      const scale = scH * 0.05 + 4.8;
+      const scale = scH * 0.04;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -65,7 +65,7 @@ const MilkyWay = () => {
       camera.lookAt(target);
       setCamera(camera);
 
-      // const ambientLight = new THREE.AmbientLight(0xcccc, 1);
+      // const ambientLight = new THREE.AmbientLight(0xcccc, 10);
       // scene.add(ambientLight);
 
       const controls = new OrbitControls(camera, renderer.domElement);
@@ -73,11 +73,12 @@ const MilkyWay = () => {
       controls.target = target;
       setControls(controls);
 
-      loadGLTFModel(scene, "/models/spaceTest.glb", {
+      loadGLTFModel(scene, "/models/NEW-PLANETS.glb", {
         receiveShadow: false,
         castShadow: false,
       }).then(() => {
         animate();
+        console.log("ding");
         setLoading(false);
       });
 
@@ -90,7 +91,7 @@ const MilkyWay = () => {
 
         if (frame <= 100) {
           const p = initialCameraPosition;
-          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
+          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 2;
 
           camera.position.y = 10;
           camera.position.x =
@@ -124,15 +125,11 @@ const MilkyWay = () => {
       ref={refContainer}
       className="default-grid-holder  relative mx-auto mt-5 lg:w-[900px] h-[200px] md:h-[300px] lg:h-[400px]  items-center justify-center flex overflow-hidden"
     >
-      {loading && (
-        <div className="default-grid-holder mx-auto mt-5 lg:w-[900px] h-[200px] md:h-[300px] lg:h-[400px]"></div>
-      )}
-      {/* <Image
-        src="/images/galaxy.png"
-        alt=""
-        fill={true}
-        style={{ objectFit: "cover" }}
-      /> */}
+      {/* {loading && (
+        <div className="default-grid-holder border-2 border-red-500 mx-auto  w-full h-[200px] md:h-[300px] lg:h-[400px]">
+          aaa
+        </div>
+      )} */}
     </div>
   );
 };
