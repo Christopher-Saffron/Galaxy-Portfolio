@@ -62,7 +62,7 @@ export default function Hamburger() {
                   HOME
                 </Link>
                 <Link
-                  href="/en"
+                  href="https://bloghavir.vercel.app/"
                   className=" rounded-md cursor-pointer bg-main px-16 py-2 dark:text-black hover:text-white "
                   onClick={() => setIsOpen(false)}
                 >

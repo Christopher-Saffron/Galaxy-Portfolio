@@ -32,7 +32,7 @@ export default function Nav() {
               ポートフォリオ
             </Link>
             <Link
-              href="/"
+              href="https://bloghavir.vercel.app/"
               className=" link rounded-md cursor-pointer bg-main px-6 py-4 dark:text-black hover:text-white font-bold"
             >
               ブログ
