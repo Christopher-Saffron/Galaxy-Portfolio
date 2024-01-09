@@ -32,13 +32,13 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
               {showImgs ? "Schowaj" : "Pokaż"}
             </span>
           </div>
-          <Link
+          {/* <Link
             href={`https://www.christophersaffron.com/api/${downloadLink}`}
             className="flex items-center gap-2"
           >
             <Image src="/images/Download.svg" width={18} height={18} alt="" />
             <span className="download-view-pdf hoverMain">Pobierz pdf</span>
-          </Link>
+          </Link> */}
         </div>
       </div>
       {showImgs &&

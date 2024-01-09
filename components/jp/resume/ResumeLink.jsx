@@ -32,7 +32,7 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
               {showImgs ? "画像を隠す" : "プレビュー"}
             </span>
           </div>
-          <Link
+          {/* <Link
             href={`https://www.christophersaffron.com/api/${downloadLink}`}
             className="flex items-center gap-2"
           >
@@ -40,7 +40,7 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
             <span className="download-view-pdf hoverMain">
               PDFをダウンロード
             </span>
-          </Link>
+          </Link> */}
         </div>
       </div>
       {showImgs &&
