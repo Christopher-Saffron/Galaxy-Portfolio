@@ -10,13 +10,22 @@ export default function Media() {
           <MediaLink text={"+(48) 789 133 788"} img={"phone"} style={"cover"} />
         </div>
         <div className="flex flex-wrap flex-col md:flex-row gap-8">
-          <MediaLink text={"@krzysztofszafrann"} img={"facebook"} />
+          <MediaLink
+            text={"@krzysztofszafrann"}
+            img={"facebook"}
+            link={"https://www.facebook.com/krzysztofszafrann/"}
+          />
           <MediaLink
             text={"@szafran-krzysztof"}
             img={"linkedin"}
             style={"cover"}
+            link={"www.linkedin.com/in/szafran-krzysztof"}
           />
-          <MediaLink text={"@Havir-S"} img={"github"} />
+          <MediaLink
+            text={"@Havir-S"}
+            img={"github"}
+            link={"https://github.com/Havir-S"}
+          />
         </div>
       </div>
       <p className="text-[14px] text-center md:text-left mx-auto w-fit dark:text-textSub my-8">
