@@ -19,7 +19,7 @@ export default function ProjectLink({ project }) {
           <Image
             src={project.mainImg}
             fill
-            // sizes="20vw"
+            sizes="20vw"
             // loading="eager"
             className="rounded-2xl duration-500 group-hover:rounded-sm"
             style={{ objectFit: "cover" }}
