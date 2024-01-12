@@ -424,8 +424,8 @@ const PROJECTS = [
     category: "3d-models",
     slug: "2d-portfolio-props",
     name: "Rekwizyty portfolio 2D",
-    description: "Rzeczy, które zrobiłem na rozgrzewkę.",
-    descriptionShort: "Rzeczy, które zrobiłem na rozgrzewkę",
+    description: "Obiekty wykorzystane do sceny na stronie do portfolio.",
+    descriptionShort: "Obiekty wykorzystane do sceny na stronie do portfolio",
     mainImg: "/project_images/lightPage14.jpg",
     imgs: [
       "/project_images/lightPage15.jpg",
@@ -450,7 +450,7 @@ const PROJECTS = [
     description:
       "Kiedyś robiłem postacie do użytku w grach (np. VRChat), zauważyłem dużo ludzi, którzy rozmawiali o jednym anime i głównym bohaterze. Biorąc pod uwagę, że się spóźniłem na przyjęcie, postanowiłem zająć się zadaniami pobocznymi, zamiast głównym, i tak stworzyłem postać poboczną, zamiast wziąć udział w wyścigu o stworzenie głównej postaci późno.",
     descriptionShort: "Postać w stylu anime",
-    mainImg: "/project_images/ichigo.jpg",
+    mainImg: "/project_images/Ichigo.jpg",
     imgs: [
       "/project_images/Ichigo2.jpg",
       "/project_images/Ichigo4.jpg",

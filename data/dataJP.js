@@ -447,7 +447,7 @@ const PROJECTS = [
     description:
       "ゲーム (VRChat など) で使用するキャラクターを作成していたとき、多くの人が 1 つのアニメとその主人公について話していることに気づきました。パーティに遅刻したこともあり、メインクエストではなくサイドクエストを進めようと思い、遅れてメインキャラクター作成レースには参加せず、サブキャラクターを作成しました。",
     descriptionShort: "アニメ風のキャラクター",
-    mainImg: "/project_images/ichigo.jpg",
+    mainImg: "/project_images/Ichigo.jpg",
     imgs: [
       "/project_images/Ichigo2.jpg",
       "/project_images/Ichigo4.jpg",
