@@ -6,7 +6,7 @@ export default function Resumes() {
   return (
     <div className=" col-span-full lg:col-start-2 lg:col-end-9 flex flex-col ">
       <ResumeLink
-        previewImgs={["/portfolio/pl1.png", "/portfolio/pl2.png"]}
+        previewImgs={["/portfolio/test1.png", "/portfolio/test2.png"]}
         downloadLink={"Krzysztof_Szafran_Resume_PL_28-07-2023.pdf"}
         fileName={"Krzysztof Szafran CV PL"}
       />
