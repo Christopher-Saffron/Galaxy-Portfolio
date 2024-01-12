@@ -425,7 +425,7 @@ const PROJECTS = [
       "Objects used in a small 2D Project that used to serve as my portfolio.",
     descriptionShort:
       "Objects used in a small 2D Project that used to serve as my portfolio",
-    mainImg: "/project_images/LightPage14.jpg",
+    mainImg: "/project_images/japanese2.jfif",
     imgs: [
       "/project_images/LightPage15.jpg",
       "/project_images/LightPage16.jpg",
