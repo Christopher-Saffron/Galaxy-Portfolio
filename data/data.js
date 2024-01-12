@@ -402,7 +402,7 @@ const PROJECTS = [
     category: "3d-models",
     slug: "japanese-objects",
     name: "Japanese props",
-    description: "Thinks I made for warmup.",
+    description: "Things I made for warmup.",
     descriptionShort: "Things I made for warmup",
     mainImg: "/project_images/japanese5.jfif",
     imgs: [
@@ -421,8 +421,10 @@ const PROJECTS = [
     category: "3d-models",
     slug: "2d-portfolio-props",
     name: "2D Portfolio Props",
-    description: "Thinks I made for warmup.",
-    descriptionShort: "Things I made for warmup",
+    description:
+      "Objects used in a small 2D Project that used to serve as my portfolio.",
+    descriptionShort:
+      "Objects used in a small 2D Project that used to serve as my portfolio",
     mainImg: "/project_images/LightPage14.jpg",
     imgs: [
       "/project_images/LightPage15.jpg",
