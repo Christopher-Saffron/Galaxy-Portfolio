@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function WorkType({ workType }) {
-  console.log(workType);
   return (
     <div className="default-grid-item">
       <p className=" textTitle mb-7">Moje prace</p>

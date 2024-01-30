@@ -7,8 +7,9 @@ import "@/styles/project.css";
 import "@/styles/resume.css";
 
 export const metadata = {
-  title: "Christopher Saffron Portfolio",
-  description: "Web development and Traffic Management",
+  icons: {
+    icon: "favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
