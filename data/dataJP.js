@@ -126,8 +126,8 @@ const PROJECTS = [
   {
     id: 4,
     category: "web-development",
-    slug: "portfolio3d",
-    name: "Portfolio 3D",
+    slug: "3d-shrine",
+    name: "3D Shrine",
     description:
       "最初にこのサイトを Blender スキルのショーケースとして設計したとき、ブラウザーの厳しい制限に遭遇しました。ユーザーにサイトにアクセスするために 50 MB の大きなファイルをダウンロードさせるのは現実的ではないと思われました。そこで、ファイル サイズを大幅に削減し、元のビジョンのローポリ バージョンを作成することにしました。私のポートフォリオのこの部分では、React Three Fiber を利用した Three.js を使用して、私の創造的な能力を反映したブラウザー フレンドリーな 3D ショーを表示します。GitHub でコードをチェックして、私の 3D ポートフォリオのライブ バージョンを体験してください。",
     descriptionShort:

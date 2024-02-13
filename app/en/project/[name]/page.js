@@ -66,7 +66,7 @@ export default function Page({ params }) {
           className="flex  gap-4 items-center cursor-pointer"
         >
           <div className="projectLink">
-            {projectData.websiteLink.length > 0 && "GITHUB"}
+            {projectData.websiteLink.length > 0 && "LIVE"}
           </div>
           <div className="text-main font-catamaran underline">
             {projectData.websiteLink}

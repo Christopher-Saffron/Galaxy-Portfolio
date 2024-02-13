@@ -127,12 +127,12 @@ const PROJECTS = [
   {
     id: 4,
     category: "web-development",
-    slug: "portfolio3d",
-    name: "Portfolio 3D",
+    slug: "3dshrine",
+    name: "3D Shrine",
     description:
       "Kiedy początkowo projektowałem tę stronę jako prezentację moich umiejętności w Blenderze, napotkałem surowe ograniczenia przeglądarki. Próba zmuszenia użytkowników do pobrania pokaźnego pliku o wielkości 50 MB, aby uzyskać dostęp do strony, wydawała się niepraktyczna. Dlatego postanowiłem znacznie zmniejszyć rozmiar pliku i stworzyć wersję low-poly mojej pierwotnej wizji. Ta część mojego portfolio wykorzystuje Three.js, wspierany przez React Three Fiber, aby zaprezentować pokaz 3D przyjazny dla przeglądarek, który nadal odzwierciedla moje zdolności twórcze. Sprawdź kod na GitHubie i doświadcz wersji na żywo mojego portfolio 3D.'",
     descriptionShort:
-      "'Część 3D portfolio, która wykorzystuje Three.js z pomocą React Three Fiber.'",
+      "Strona która wykorzystuje Three.js oraz React Three Fiber.",
     mainImg: "/project_images/preview-3dportfolio.jpg",
     imgs: ["/project_images/preview-3dportfolio.jpg"],
     githubLink: "https://github.com/Havir-S/portfolio3d",
