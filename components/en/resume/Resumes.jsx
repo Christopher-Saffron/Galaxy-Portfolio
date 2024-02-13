@@ -11,7 +11,7 @@ export default function Resumes() {
         fileName={"Krzysztof Szafran CV PL"}
       />
       <ResumeLink
-        previewImgs={["/portfolio/en1.png", "/portfolio/en2.png"]}
+        previewImgs={["/portfolio/en1.png"]}
         downloadLink={"Krzysztof_Szafran_Resume_EN_28-07-2023.pdf"}
         fileName={"Christopher Saffron CV EN"}
       />
