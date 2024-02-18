@@ -89,7 +89,12 @@ export default function Hamburger() {
               </div>
 
               <div className="relative flex gap-6">
-                <div className="cursor-pointer hover:scale-105 transition duration-100 fill-black dark:fill-white hover:fill-main">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://www.facebook.com/krzysztofszafrann/"
+                  className="cursor-pointer hover:scale-105 transition duration-100 fill-black dark:fill-white hover:fill-main"
+                >
                   <svg
                     width="60"
                     height="60"
@@ -106,8 +111,13 @@ export default function Hamburger() {
                       fill="inherit"
                     />
                   </svg>
-                </div>
-                <div className="cursor-pointer hover:scale-105 transition duration-100 fill-black dark:fill-white hover:fill-main">
+                </a>
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="www.linkedin.com/in/szafran-krzysztof"
+                  className="cursor-pointer hover:scale-105 transition duration-100 fill-black dark:fill-white hover:fill-main"
+                >
                   <svg
                     width="60"
                     height="60"
@@ -120,8 +130,13 @@ export default function Hamburger() {
                       fill="inherit"
                     />
                   </svg>
-                </div>
-                <div className="cursor-pointer hover:scale-105 transition duration-100 fill-black dark:fill-white hover:fill-main">
+                </a>
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://github.com/Havir-S"
+                  className="cursor-pointer hover:scale-105 transition duration-100 fill-black dark:fill-white hover:fill-main"
+                >
                   <svg
                     width="60"
                     height="60"
@@ -134,7 +149,7 @@ export default function Hamburger() {
                       fill="inherit"
                     />
                   </svg>
-                </div>
+                </a>
               </div>
             </div>
             <div
