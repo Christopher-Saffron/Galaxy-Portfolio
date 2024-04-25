@@ -51,16 +51,16 @@ const PROJECTS = [
   {
     id: 1,
     category: "web-development",
-    slug: "airbnb",
-    name: "AirBnB",
+    slug: "nippon-air",
+    name: "Nippon Air",
     description:
-      "Projekt 'AirBnB' eksploruje praktyczne implementacje, wykorzystując strukturę Airbnb do symulacji metod płatności, integracji map, baz danych oraz podstawowego użycia modeli 3D. Wykorzystując technologie takie jak React, MongoDB, Paypal, Stripe i inne, prezentuje te funkcjonalności w akcji. Sprawdź projekt na GitHubie i doświadcz jego funkcji na żywo na stronie internetowej.",
+      "Projekt 'Nippon Air' eksploruje praktyczne implementacje, wykorzystując strukturę Airbnb do symulacji metod płatności, integracji map, baz danych oraz podstawowego użycia modeli 3D. Wykorzystując technologie takie jak React, MongoDB, Paypal, Stripe i inne, prezentuje te funkcjonalności w akcji. Sprawdź projekt na GitHubie i doświadcz jego funkcji na żywo na stronie internetowej.",
     descriptionShort:
-      "AirBnB z modelami 3D, STRIPE i Paypal, mapami, logowaniem i rezerwacją",
+      "Nippon Air z modelami 3D, STRIPE i Paypal, mapami, logowaniem i rezerwacją",
     mainImg: "/project_images/airbnb.jpg",
     imgs: ["/project_images/airbnb.jpg"],
-    githubLink: "https://github.com/Havir-S/havirbnb",
-    websiteLink: "https://havirbnb.vercel.app/",
+    githubLink: "https://github.com/Christopher-Saffron/NipponAir-ONLINE-MARKETPLACE",
+    websiteLink: "https://nipponair.vercel.app/",
     technology: [
       "react",
       "blender",
