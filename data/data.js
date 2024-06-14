@@ -52,9 +52,9 @@ const PROJECTS = [
     id: 1,
     category: "web-development",
     slug: "nippon-air",
-    name: "NipponAir",
+    name: "Nippon Air",
     description:
-      "'NipponAir' project explores practical implementations using Airbnb's structure to simulate payment methods, map integration, databases, and basic 3D model usage. Utilizing technologies such as React, MongoDB, Paypal, Stripe, and more, it showcases these functionalities in action. Check out the project on GitHub and experience its features live on the website.",
+      "'Nippon Air' project is an Online Marketplace inspired by AirBnb. Includes payment methods, map integration, databases, and basic 3D model usage. Utilizing technologies such as React, MongoDB, Paypal, Stripe, and more, it showcases these functionalities in action.",
     descriptionShort:
       "NipponAir is an Online Marketplace with 3d-models, STRIPE and Paypal, maps, login and reservation",
     mainImg: "/project_images/nipponair0.png",
