@@ -51,16 +51,17 @@ const PROJECTS = [
   {
     id: 1,
     category: "web-development",
-    slug: "airbnb",
-    name: "AirBnB",
+    slug: "nippon-air",
+    name: "NipponAir",
     description:
-      "'AirBnB' project explores practical implementations using Airbnb's structure to simulate payment methods, map integration, databases, and basic 3D model usage. Utilizing technologies such as React, MongoDB, Paypal, Stripe, and more, it showcases these functionalities in action. Check out the project on GitHub and experience its features live on the website.",
+      "'NipponAir' project explores practical implementations using Airbnb's structure to simulate payment methods, map integration, databases, and basic 3D model usage. Utilizing technologies such as React, MongoDB, Paypal, Stripe, and more, it showcases these functionalities in action. Check out the project on GitHub and experience its features live on the website.",
     descriptionShort:
-      "AirBnB with 3d-models, STRIPE and Paypal, maps, login and reservation",
-    mainImg: "/project_images/airbnb.jpg",
-    imgs: ["/project_images/airbnb.jpg"],
-    githubLink: "https://github.com/Havir-S/havirbnb",
-    websiteLink: "https://havirbnb.vercel.app/",
+      "NipponAir is an Online Marketplace with 3d-models, STRIPE and Paypal, maps, login and reservation",
+    mainImg: "/project_images/nipponair0.png",
+    imgs: ["/project_images/nipponair0.png"],
+    githubLink:
+      "https://github.com/Christopher-Saffron/NipponAir-ONLINE-MARKETPLACE",
+    websiteLink: "https://nipponair.vercel.app/",
     technology: [
       "react",
       "blender",
@@ -81,16 +82,15 @@ const PROJECTS = [
   {
     id: 2,
     category: "web-development",
-    slug: "insta",
-    name: "Instagram",
+    slug: "socialsphere",
+    name: "SocialSphere",
     description:
-      "'Instagram' project integrates Next.js authentication with Firebase for managing user data and files. Built on React and Next.js, it offers a streamlined user experience. Explore the project's code on GitHub and interact with its functionalities on the live website.",
-    descriptionShort:
-      "Instagram utilizing next-auth with firebase for files + users.",
-    mainImg: "/project_images/insta.jpg",
-    imgs: ["/project_images/insta.jpg"],
-    githubLink: "https://github.com/Havir-S/instagram-v2",
-    websiteLink: "https://instagram-v2-phi.vercel.app/",
+      "'Social Sphere' is a social media website. Project integrates Next.js authentication with Firebase for managing user data and files. Built on React and Next.js, it offers a streamlined user experience. Explore the project's code on GitHub and interact with its functionalities on the live website.",
+    descriptionShort: "Social media website",
+    mainImg: "/project_images/socialsphere1.png",
+    imgs: ["/project_images/socialsphere1.png"],
+    githubLink: "https://github.com/Christopher-Saffron/Social-Sphere",
+    websiteLink: "https://social-sphere-christopher-saffron.vercel.app/",
     technology: [
       "react",
       "nextjs",

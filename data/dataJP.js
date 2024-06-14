@@ -50,16 +50,17 @@ const PROJECTS = [
   {
     id: 1,
     category: "web-development",
-    slug: "airbnb",
-    name: "AirBnB",
+    slug: "nippon-air",
+    name: "NipponAir",
     description:
-      "「AirBnB」プロジェクトでは、Airbnb フレームワークを使用して、支払い方法、地図統合、データベース、3D モデルの基本的な使用法をシミュレートし、実用的な実装を検討しています。React、MongoDB、Paypal、Stripe などのテクノロジーを使用して、これらの機能が実際に動作していることを示します。GitHub でプロジェクトをチェックし、Web サイトでその機能をライブで体験してください。",
+      "「NipponAir」プロジェクトでは、Airbnb フレームワークを使用して、支払い方法、地図統合、データベース、3D モデルの基本的な使用法をシミュレートし、実用的な実装を検討しています。React、MongoDB、Paypal、Stripe などのテクノロジーを使用して、これらの機能が実際に動作していることを示します。GitHub でプロジェクトをチェックし、Web サイトでその機能をライブで体験してください。",
     descriptionShort:
-      "3D モデル、STRIPE と Paypal、地図、ログインと予約を備えた AirBnB",
-    mainImg: "/project_images/airbnb.jpg",
-    imgs: ["/project_images/airbnb.jpg"],
-    githubLink: "https://github.com/Havir-S/havirbnb",
-    websiteLink: "https://havirbnb.vercel.app/",
+      "3D モデル、STRIPE と Paypal、地図、ログインと予約を備えた NipponAir",
+    mainImg: "/project_images/nipponair0.png",
+    imgs: ["/project_images/nipponair0.png"],
+    githubLink:
+      "https://github.com/Christopher-Saffron/NipponAir-ONLINE-MARKETPLACE",
+    websiteLink: "https://nipponair.vercel.app/",
     technology: [
       "react",
       "blender",
@@ -80,16 +81,16 @@ const PROJECTS = [
   {
     id: 2,
     category: "web-development",
-    slug: "insta",
-    name: "Instagram",
+    slug: "socialsphere",
+    name: "SocialSphere",
     description:
-      "「Instagram」プロジェクトは、Next.js 認証を Firebase と統合して、ユーザー データとファイルを管理します。React と Next.js に基づいて構築されており、最適化されたユーザー エクスペリエンスを提供します。GitHub でプロジェクトのコードを探索し、Web サイト上のライブ機能を使用してください。",
+      "「Social Sphere」プロジェクトは、Next.js 認証を Firebase と統合して、ユーザー データとファイルを管理します。React と Next.js に基づいて構築されており、最適化されたユーザー エクスペリエンスを提供します。GitHub でプロジェクトのコードを探索し、Web サイト上のライブ機能を使用してください。",
     descriptionShort:
-      "Instagram はファイルとユーザーに対して Firebase で next-auth を使用しています",
-    mainImg: "/project_images/insta.jpg",
-    imgs: ["/project_images/insta.jpg"],
-    githubLink: "https://github.com/Havir-S/instagram-v2",
-    websiteLink: "https://instagram-v2-phi.vercel.app/",
+      "Social Sphere はファイルとユーザーに対して Firebase で next-auth を使用しています",
+    mainImg: "/project_images/socialsphere1.png",
+    imgs: ["/project_images/socialsphere1.png"],
+    githubLink: "https://github.com/Christopher-Saffron/Social-Sphere",
+    websiteLink: "https://social-sphere-christopher-saffron.vercel.app/",
     technology: [
       "react",
       "nextjs",
@@ -573,6 +574,30 @@ const PROJECTS = [
     githubLink: "",
     websiteLink: "",
     technology: ["blender", "gimp"],
+  },
+  {
+    id: 37,
+    category: "figma-designs",
+    slug: "nippon-air",
+    name: "Nippon Air",
+    description:
+      "暇なときに、このデザインを日本航空の Web サイトに実装してみます",
+    descriptionShort: "旅行、飛行、そして住居。楽しみのためのプロジェクト",
+    mainImg: "/project_images/nipponair1.jpg",
+    imgs: [
+      "/project_images/nipponair12.png",
+      "/project_images/nipponair1.jpg",
+      "/project_images/nipponair3.jpg",
+      "/project_images/nipponair4.jpg",
+      "/project_images/nipponair5.jpg",
+      "/project_images/nipponair6.jpg",
+      "/project_images/nipponair7.jpg",
+      "/project_images/nipponair8.jpg",
+      "/project_images/nipponair10.jpg",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: [],
   },
   {
     id: 29,

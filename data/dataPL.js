@@ -51,16 +51,17 @@ const PROJECTS = [
   {
     id: 1,
     category: "web-development",
-    slug: "airbnb",
-    name: "AirBnB",
+    slug: "nippon-air",
+    name: "NipponAir",
     description:
-      "Projekt 'AirBnB' eksploruje praktyczne implementacje, wykorzystując strukturę Airbnb do symulacji metod płatności, integracji map, baz danych oraz podstawowego użycia modeli 3D. Wykorzystując technologie takie jak React, MongoDB, Paypal, Stripe i inne, prezentuje te funkcjonalności w akcji. Sprawdź projekt na GitHubie i doświadcz jego funkcji na żywo na stronie internetowej.",
+      "Projekt 'NipponAir' eksploruje praktyczne implementacje, wykorzystując strukturę Airbnb do symulacji metod płatności, integracji map, baz danych oraz podstawowego użycia modeli 3D. Wykorzystując technologie takie jak React, MongoDB, Paypal, Stripe i inne, prezentuje te funkcjonalności w akcji.",
     descriptionShort:
-      "AirBnB z modelami 3D, STRIPE i Paypal, mapami, logowaniem i rezerwacją",
-    mainImg: "/project_images/airbnb.jpg",
-    imgs: ["/project_images/airbnb.jpg"],
-    githubLink: "https://github.com/Havir-S/havirbnb",
-    websiteLink: "https://havirbnb.vercel.app/",
+      "NipponAir to strona zajmująca się hotelarstwem. Wykorzystuje modele 3D, STRIPE i Paypal, mapy i GoogleAuth.",
+    mainImg: "/project_images/nipponair0.png",
+    imgs: ["/project_images/nipponair0.png"],
+    githubLink:
+      "https://github.com/Christopher-Saffron/NipponAir-ONLINE-MARKETPLACE",
+    websiteLink: "https://nipponair.vercel.app/",
     technology: [
       "react",
       "blender",
@@ -81,16 +82,15 @@ const PROJECTS = [
   {
     id: 2,
     category: "web-development",
-    slug: "insta",
-    name: "Instagram",
+    slug: "socialsphere",
+    name: "SocialSphere",
     description:
-      "'Projekt 'Instagram' integruje uwierzytelnianie Next.js z Firebase w celu zarządzania danymi użytkownika i plikami. Zbudowany w oparciu o React i Next.js, oferuje zoptymalizowane doświadczenie użytkownika. Zapoznaj się z kodem projektu na GitHubie i korzystaj z jego funkcji na żywo na stronie internetowej.'",
-    descriptionShort:
-      "'Instagram wykorzystujący next-auth z firebase dla plików + użytkowników.'",
-    mainImg: "/project_images/insta.jpg",
-    imgs: ["/project_images/insta.jpg"],
-    githubLink: "https://github.com/Havir-S/instagram-v2",
-    websiteLink: "https://instagram-v2-phi.vercel.app/",
+      "Projekt 'SocialSphere' integruje uwierzytelnianie Next.js z Firebase w celu zarządzania danymi użytkownika i plikami. Zbudowany w oparciu o React i Next.js, oferuje zoptymalizowane doświadczenie użytkownika. Zapoznaj się z kodem projektu na GitHubie i korzystaj z jego funkcji na żywo na stronie internetowej.",
+    descriptionShort: "Strona social media próbująca odwzorować Instagram.",
+    mainImg: "/project_images/socialsphere1.png",
+    imgs: ["/project_images/socialsphere1.png"],
+    githubLink: "https://github.com/Christopher-Saffron/Social-Sphere",
+    websiteLink: "https://social-sphere-christopher-saffron.vercel.app/",
     technology: [
       "react",
       "nextjs",
@@ -106,7 +106,7 @@ const PROJECTS = [
     slug: "amazon",
     name: "Amazon",
     description:
-      "'Projekt 'Amazon' prezentuje integrację pozornego interfejsu API z funkcjonalnością STRIPE, tworząc symulację doświadczenia podobnego do Amazon. Opracowany przy użyciu React, Next.js, Tailwind CSS, Google Auth, Firebase, React-Redux i Stripe do płatności, projekt ten podkreśla implementację funkcji handlu detalicznego online. Odkryj jego kod na GitHubie i eksploruj funkcje na żywo na stronie internetowej.'",
+      "Projekt 'Amazon' prezentuje integrację pozornego interfejsu API z funkcjonalnością STRIPE, tworząc symulację doświadczenia podobnego do Amazon. Opracowany przy użyciu React, Next.js, Tailwind CSS, Google Auth, Firebase, React-Redux i Stripe do płatności, projekt ten podkreśla implementację funkcji handlu detalicznego online. Odkryj jego kod na GitHubie i eksploruj funkcje na żywo na stronie internetowej.",
     descriptionShort: "'Kopia Amazona, aby podkreślić funkcjonalność STRIPE.'",
     mainImg: "/project_images/amazon.jpg",
     imgs: ["/project_images/amazon.jpg"],
@@ -130,7 +130,7 @@ const PROJECTS = [
     slug: "3dshrine",
     name: "3D Shrine",
     description:
-      "Kiedy początkowo projektowałem tę stronę jako prezentację moich umiejętności w Blenderze, napotkałem surowe ograniczenia przeglądarki. Próba zmuszenia użytkowników do pobrania pokaźnego pliku o wielkości 50 MB, aby uzyskać dostęp do strony, wydawała się niepraktyczna. Dlatego postanowiłem znacznie zmniejszyć rozmiar pliku i stworzyć wersję low-poly mojej pierwotnej wizji. Ta część mojego portfolio wykorzystuje Three.js, wspierany przez React Three Fiber, aby zaprezentować pokaz 3D przyjazny dla przeglądarek, który nadal odzwierciedla moje zdolności twórcze. Sprawdź kod na GitHubie i doświadcz wersji na żywo mojego portfolio 3D.'",
+      "Kiedy początkowo projektowałem tę stronę jako prezentację moich umiejętności w Blenderze, napotkałem surowe ograniczenia przeglądarki. Próba zmuszenia użytkowników do pobrania pokaźnego pliku o wielkości 50 MB, aby uzyskać dostęp do strony, była niemałym problemem. Z tego właśnie powodu, postanowiłem znacznie zmniejszyć rozmiar pliku i stworzyć wersję low-poly mojej pierwotnej wizji. Ta część mojego portfolio wykorzystuje Three.js, wspierany przez React Three Fiber, aby zaprezentować pokaz 3D przyjazny dla przeglądarek, który nadal odzwierciedla moje zdolności twórcze.",
     descriptionShort:
       "Strona która wykorzystuje Three.js oraz React Three Fiber.",
     mainImg: "/project_images/preview-3dportfolio.jpg",
@@ -576,6 +576,30 @@ const PROJECTS = [
     githubLink: "",
     websiteLink: "",
     technology: ["blender", "gimp"],
+  },
+  {
+    id: 37,
+    category: "figma-designs",
+    slug: "nippon-air",
+    name: "Nippon Air",
+    description:
+      "W wolnej chwili zamierzam próbować wdrożyć ten design na stronę Nippon Air.",
+    descriptionShort: "Podróże, Samoloty i hotele. Przyszły design Nippon Air!",
+    mainImg: "/project_images/nipponair1.jpg",
+    imgs: [
+      "/project_images/nipponair12.png",
+      "/project_images/nipponair1.jpg",
+      "/project_images/nipponair3.jpg",
+      "/project_images/nipponair4.jpg",
+      "/project_images/nipponair5.jpg",
+      "/project_images/nipponair6.jpg",
+      "/project_images/nipponair7.jpg",
+      "/project_images/nipponair8.jpg",
+      "/project_images/nipponair10.jpg",
+    ],
+    githubLink: "",
+    websiteLink: "",
+    technology: [],
   },
   {
     id: 29,
