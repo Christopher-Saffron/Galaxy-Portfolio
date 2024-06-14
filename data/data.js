@@ -579,8 +579,8 @@ const PROJECTS = [
   {
     id: 37,
     category: "figma-designs",
-    slug: "nippon-air",
-    name: "Nippon Air",
+    slug: "nippon-air-new-design",
+    name: "Nippon Air New Design",
     description:
       "This project will soon replace my Airbnb website. The older website was created without any designing tools. I'll be replacing all of them in my free time!",
     descriptionShort: "Traveling, Flying and Housing. A project for fun!",

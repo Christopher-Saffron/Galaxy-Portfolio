@@ -580,8 +580,8 @@ const PROJECTS = [
   {
     id: 37,
     category: "figma-designs",
-    slug: "nippon-air",
-    name: "Nippon Air",
+    slug: "nippon-air-new-design",
+    name: "Nippon Air Nowy Design",
     description:
       "W wolnej chwili zamierzam próbować wdrożyć ten design na stronę Nippon Air.",
     descriptionShort: "Podróże, Samoloty i hotele. Przyszły design Nippon Air!",

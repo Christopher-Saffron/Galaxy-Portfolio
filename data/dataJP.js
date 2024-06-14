@@ -578,8 +578,8 @@ const PROJECTS = [
   {
     id: 37,
     category: "figma-designs",
-    slug: "nippon-air",
-    name: "Nippon Air",
+    slug: "nippon-air-new-design",
+    name: "Nippon Air New Design",
     description:
       "暇なときに、このデザインを日本航空の Web サイトに実装してみます",
     descriptionShort: "旅行、飛行、そして住居。楽しみのためのプロジェクト",
