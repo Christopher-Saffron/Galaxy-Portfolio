@@ -24,33 +24,6 @@ const PROJECTS = [
   {
     id: 0,
     category: "web-development",
-    slug: "szafranprojekt",
-    name: "SZAFRAN PROJEKT",
-    description:
-      "'SZAFRAN PROJEKT' jest oficjalną stroną internetową firmy zajmującej się projektowaniem zarządzania ruchem drogowym. Wykorzystując technologie takie jak React, Node.js, MongoDB i inne, strona demonstruje ich ekspertyzę w planowaniu ruchu i wdrażaniu projektów. Obejrzyj ich prace na GitHubie i doświadcz rozwiązań na żywo na ich stronie internetowej.",
-    descriptionShort:
-      "Oficjalna strona dla firmy projektującej zarządzanie ruchem drogowym",
-    mainImg: "/project_images/szafranprojektnextjs.jpg",
-    imgs: [
-      "/project_images/szafranprojektnextjs.jpg",
-      "/project_images/szafranprojekt2.jpg",
-    ],
-    githubLink: "https://github.com/Havir-S/szafranprojekt-nextjs",
-    websiteLink: "https://szafranprojekt-nextjs.vercel.app/",
-    technology: [
-      "react",
-      "nodejs",
-      "mongodb",
-      "gimp",
-      "scss",
-      "gsap",
-      "mui",
-      "vercel",
-    ],
-  },
-  {
-    id: 1,
-    category: "web-development",
     slug: "nippon-air",
     name: "NipponAir",
     description:
@@ -80,7 +53,7 @@ const PROJECTS = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     category: "web-development",
     slug: "socialsphere",
     name: "SocialSphere",
@@ -101,7 +74,7 @@ const PROJECTS = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     category: "web-development",
     slug: "amazon",
     name: "Amazon",
@@ -125,7 +98,7 @@ const PROJECTS = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     category: "web-development",
     slug: "3dshrine",
     name: "3D Shrine",
@@ -140,7 +113,7 @@ const PROJECTS = [
     technology: ["react", "scss", "gimp", "blender", "threejs", "vercel"],
   },
   {
-    id: 5,
+    id: 4,
     category: "web-development",
     slug: "portfolio2d",
     name: "Portfolio 2D",
@@ -152,6 +125,33 @@ const PROJECTS = [
     githubLink: "https://github.com/Havir-S/portfolio2d",
     websiteLink: "https://portfolio2d.vercel.app/",
     technology: ["react", "gimp", "blender", "scss", "vercel"],
+  },
+  {
+    id: 5,
+    category: "web-development",
+    slug: "szafranprojekt",
+    name: "SZAFRAN PROJEKT",
+    description:
+      "'SZAFRAN PROJEKT' jest oficjalną stroną internetową firmy zajmującej się projektowaniem zarządzania ruchem drogowym. Wykorzystując technologie takie jak React, Node.js, MongoDB i inne, strona demonstruje ich ekspertyzę w planowaniu ruchu i wdrażaniu projektów. Obejrzyj ich prace na GitHubie i doświadcz rozwiązań na żywo na ich stronie internetowej.",
+    descriptionShort:
+      "Oficjalna strona dla firmy projektującej zarządzanie ruchem drogowym",
+    mainImg: "/project_images/szafranprojektnextjs.jpg",
+    imgs: [
+      "/project_images/szafranprojektnextjs.jpg",
+      "/project_images/szafranprojekt2.jpg",
+    ],
+    githubLink: "https://github.com/Havir-S/szafranprojekt-nextjs",
+    websiteLink: "https://szafranprojekt-nextjs.vercel.app/",
+    technology: [
+      "react",
+      "nodejs",
+      "mongodb",
+      "gimp",
+      "scss",
+      "gsap",
+      "mui",
+      "vercel",
+    ],
   },
   {
     id: 6,

@@ -24,33 +24,6 @@ const PROJECTS = [
   {
     id: 0,
     category: "web-development",
-    slug: "szafranprojekt",
-    name: "SZAFRAN PROJEKT",
-    description:
-      "'SZAFRAN PROJEKT' is the official website of a traffic management design company. Using technologies such as React, Node.js, MongoDB, and more, the site demonstrates their expertise in traffic planning and design implementation. Explore their work on GitHub and experience their solutions live on their website.",
-    descriptionShort:
-      "Official website for a traffic management designing company",
-    mainImg: "/project_images/szafranprojektnextjs.jpg",
-    imgs: [
-      "/project_images/szafranprojektnextjs.jpg",
-      "/project_images/szafranprojekt2.jpg",
-    ],
-    githubLink: "https://github.com/Havir-S/szafranprojekt-nextjs",
-    websiteLink: "https://szafranprojekt-nextjs.vercel.app/",
-    technology: [
-      "react",
-      "nodejs",
-      "mongodb",
-      "gimp",
-      "scss",
-      "gsap",
-      "mui",
-      "vercel",
-    ],
-  },
-  {
-    id: 1,
-    category: "web-development",
     slug: "nippon-air",
     name: "Nippon Air",
     description:
@@ -80,7 +53,7 @@ const PROJECTS = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     category: "web-development",
     slug: "socialsphere",
     name: "SocialSphere",
@@ -101,7 +74,7 @@ const PROJECTS = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     category: "web-development",
     slug: "amazon",
     name: "Amazon",
@@ -125,7 +98,7 @@ const PROJECTS = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     category: "web-development",
     slug: "3d-shrine",
     name: "3D Shrine",
@@ -140,7 +113,7 @@ const PROJECTS = [
     technology: ["react", "scss", "gimp", "blender", "threejs", "vercel"],
   },
   {
-    id: 5,
+    id: 4,
     category: "web-development",
     slug: "portfolio2d",
     name: "Portfolio 2D",
@@ -152,6 +125,33 @@ const PROJECTS = [
     githubLink: "https://github.com/Havir-S/portfolio2d",
     websiteLink: "https://portfolio2d.vercel.app/",
     technology: ["react", "gimp", "blender", "scss", "vercel"],
+  },
+  {
+    id: 5,
+    category: "web-development",
+    slug: "szafranprojekt",
+    name: "SZAFRAN PROJEKT",
+    description:
+      "'SZAFRAN PROJEKT' is the official website of a traffic management design company. Using technologies such as React, Node.js, MongoDB, and more, the site demonstrates their expertise in traffic planning and design implementation. Explore their work on GitHub and experience their solutions live on their website.",
+    descriptionShort:
+      "Official website for a traffic management designing company",
+    mainImg: "/project_images/szafranprojektnextjs.jpg",
+    imgs: [
+      "/project_images/szafranprojektnextjs.jpg",
+      "/project_images/szafranprojekt2.jpg",
+    ],
+    githubLink: "https://github.com/Havir-S/szafranprojekt-nextjs",
+    websiteLink: "https://szafranprojekt-nextjs.vercel.app/",
+    technology: [
+      "react",
+      "nodejs",
+      "mongodb",
+      "gimp",
+      "scss",
+      "gsap",
+      "mui",
+      "vercel",
+    ],
   },
   {
     id: 6,
