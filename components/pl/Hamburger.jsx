@@ -134,7 +134,7 @@ export default function Hamburger() {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://github.com/Havir-S"
+                  href="https://github.com/Christopher-Saffron"
                   className="cursor-pointer hover:scale-105 transition duration-100 fill-black dark:fill-white hover:fill-main"
                 >
                   <svg
