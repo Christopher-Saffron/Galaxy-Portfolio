@@ -6,7 +6,7 @@ import Hamburger from "./Hamburger";
 
 export default function Nav() {
   return (
-    <nav className=" dark:bg-bgcolor2 bg-[#fcf3f1]  duration-300  p-5  z-10 border-b-4 dark:border-bgcolor2 border-main shadow-xl ">
+    <nav className=" dark:bg-bgcolor2 bg-[#ffffff]  duration-300  p-5  z-10 border-b-4 dark:border-bgcolor2 border-main shadow-xl ">
       <div className="flex items-center justify-between px-6 lg:px-0 lg:justify-evenly  ">
         <div className="flex gap-[60px]">
           <Link href="/jp">
