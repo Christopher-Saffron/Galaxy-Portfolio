@@ -76,6 +76,51 @@ const PROJECTS = [
   {
     id: 2,
     category: "web-development",
+    slug: "chit-chat-app",
+    name: "Chit Chat App",
+    description:
+      "Allows users to upload and receive text and image messages in real time without the need to refresh the page. All thanks to the snapshot functionality of Firebase.",
+    descriptionShort: "Real time chat app",
+    mainImg: "/project_images/chitchat0.png",
+    imgs: [
+      "/project_images/chitchat0.png",
+      "/project_images/chitchat1.png",
+      "/project_images/chitchat2.png",
+      "/project_images/chitchat3.png",
+    ],
+    githubLink:
+      "https://github.com/Christopher-Saffron/chit-chat-MESSAGING-APP",
+    websiteLink: "https://chitchatapp-saffron.vercel.app/",
+    technology: [
+      "react",
+      "tailwind",
+      "typescript",
+      "nextjs",
+      "recoil",
+      "firebase",
+      "googleauth",
+      "vercel",
+    ],
+  },
+
+  {
+    id: 3,
+    category: "web-development",
+    slug: "3d-shrine",
+    name: "3D Shrine",
+    description:
+      "When I initially designed this page as a showcase for my Blender skills, I encountered strict browser limitations. Attempting to have users download a hefty 50MB file just to access the website seemed impractical. Thus, I opted to significantly reduce the file size and create a low-poly version of my original vision. This section of my portfolio employs Three.js, complemented by React Three Fiber, to present a 3D showcase that's browser-friendly and still reflects my creative capabilities. Check out the code on GitHub and experience the live version of my 3D portfolio.",
+    descriptionShort:
+      "Website that utilizes Three.js with help from React Three Fiber",
+    mainImg: "/project_images/preview-3dportfolio.jpg",
+    imgs: ["/project_images/preview-3dportfolio.jpg"],
+    githubLink: "https://github.com/Havir-S/portfolio3d",
+    websiteLink: "https://christophersaffron-3d.vercel.app/",
+    technology: ["react", "scss", "gimp", "blender", "threejs", "vercel"],
+  },
+  {
+    id: 4,
+    category: "web-development",
     slug: "amazon",
     name: "Amazon",
     description:
@@ -96,35 +141,6 @@ const PROJECTS = [
       "payments",
       "vercel",
     ],
-  },
-  {
-    id: 3,
-    category: "web-development",
-    slug: "3d-shrine",
-    name: "3D Shrine",
-    description:
-      "When I initially designed this page as a showcase for my Blender skills, I encountered strict browser limitations. Attempting to have users download a hefty 50MB file just to access the website seemed impractical. Thus, I opted to significantly reduce the file size and create a low-poly version of my original vision. This section of my portfolio employs Three.js, complemented by React Three Fiber, to present a 3D showcase that's browser-friendly and still reflects my creative capabilities. Check out the code on GitHub and experience the live version of my 3D portfolio.",
-    descriptionShort:
-      "Website that utilizes Three.js with help from React Three Fiber",
-    mainImg: "/project_images/preview-3dportfolio.jpg",
-    imgs: ["/project_images/preview-3dportfolio.jpg"],
-    githubLink: "https://github.com/Havir-S/portfolio3d",
-    websiteLink: "https://christophersaffron-3d.vercel.app/",
-    technology: ["react", "scss", "gimp", "blender", "threejs", "vercel"],
-  },
-  {
-    id: 4,
-    category: "web-development",
-    slug: "portfolio2d",
-    name: "Portfolio 2D",
-    description:
-      "Portfolio created with React's power. Inspired by a bunch of japanese views that I have recreated in Blender.",
-    descriptionShort: "Old 2D portfolio",
-    mainImg: "/project_images/portfoliolight2.jpg",
-    imgs: ["/project_images/portfoliolight2.jpg"],
-    githubLink: "https://github.com/Havir-S/portfolio2d",
-    websiteLink: "https://portfolio2d.vercel.app/",
-    technology: ["react", "gimp", "blender", "scss", "vercel"],
   },
   {
     id: 5,
@@ -155,6 +171,20 @@ const PROJECTS = [
   },
   {
     id: 6,
+    category: "web-development",
+    slug: "portfolio2d",
+    name: "Portfolio 2D",
+    description:
+      "Portfolio created with React's power. Inspired by a bunch of japanese views that I have recreated in Blender.",
+    descriptionShort: "Old 2D portfolio",
+    mainImg: "/project_images/portfoliolight2.jpg",
+    imgs: ["/project_images/portfoliolight2.jpg"],
+    githubLink: "https://github.com/Havir-S/portfolio2d",
+    websiteLink: "https://portfolio2d.vercel.app/",
+    technology: ["react", "gimp", "blender", "scss", "vercel"],
+  },
+  {
+    id: 38,
     category: "web-development",
     slug: "hulu",
     name: "Hulu",

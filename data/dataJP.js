@@ -77,6 +77,51 @@ const PROJECTS = [
   {
     id: 2,
     category: "web-development",
+    slug: "chit-chat-app",
+    name: "Chit Chat App",
+    description:
+      "ユーザーは、ページを更新することなく、テキスト メッセージや画像メッセージをリアルタイムでアップロードおよび受信できます。これはすべて、Firebase のスナップショット機能のおかげです。",
+    descriptionShort: "リアルタイムチャットアプリ ",
+    mainImg: "/project_images/chitchat0.png",
+    imgs: [
+      "/project_images/chitchat0.png",
+      "/project_images/chitchat1.png",
+      "/project_images/chitchat2.png",
+      "/project_images/chitchat3.png",
+    ],
+    githubLink:
+      "https://github.com/Christopher-Saffron/chit-chat-MESSAGING-APP",
+    websiteLink: "https://chitchatapp-saffron.vercel.app/",
+    technology: [
+      "react",
+      "tailwind",
+      "typescript",
+      "nextjs",
+      "recoil",
+      "firebase",
+      "googleauth",
+      "vercel",
+    ],
+  },
+  {
+    id: 3,
+    category: "web-development",
+    slug: "3d-shrine",
+    name: "3D Shrine",
+    description:
+      "最初にこのサイトを Blender スキルのショーケースとして設計したとき、ブラウザーの厳しい制限に遭遇しました。ユーザーにサイトにアクセスするために 50 MB の大きなファイルをダウンロードさせるのは現実的ではないと思われました。そこで、ファイル サイズを大幅に削減し、元のビジョンのローポリ バージョンを作成することにしました。私のポートフォリオのこの部分では、React Three Fiber を利用した Three.js を使用して、私の創造的な能力を反映したブラウザー フレンドリーな 3D ショーを表示します。GitHub でコードをチェックして、私の 3D ポートフォリオのライブ バージョンを体験してください。",
+    descriptionShort:
+      "React Three Fiber で Three.js を使用する 3D ポートフォリオの一部。",
+    mainImg: "/project_images/preview-3dportfolio.jpg",
+    imgs: ["/project_images/preview-3dportfolio.jpg"],
+    githubLink: "https://github.com/Havir-S/portfolio3d",
+    websiteLink: "https://christophersaffron-3d.vercel.app/",
+    technology: ["react", "scss", "gimp", "blender", "threejs", "vercel"],
+  },
+
+  {
+    id: 4,
+    category: "web-development",
     slug: "amazon",
     name: "Amazon",
     description:
@@ -97,35 +142,6 @@ const PROJECTS = [
       "payments",
       "vercel",
     ],
-  },
-  {
-    id: 3,
-    category: "web-development",
-    slug: "3d-shrine",
-    name: "3D Shrine",
-    description:
-      "最初にこのサイトを Blender スキルのショーケースとして設計したとき、ブラウザーの厳しい制限に遭遇しました。ユーザーにサイトにアクセスするために 50 MB の大きなファイルをダウンロードさせるのは現実的ではないと思われました。そこで、ファイル サイズを大幅に削減し、元のビジョンのローポリ バージョンを作成することにしました。私のポートフォリオのこの部分では、React Three Fiber を利用した Three.js を使用して、私の創造的な能力を反映したブラウザー フレンドリーな 3D ショーを表示します。GitHub でコードをチェックして、私の 3D ポートフォリオのライブ バージョンを体験してください。",
-    descriptionShort:
-      "React Three Fiber で Three.js を使用する 3D ポートフォリオの一部。",
-    mainImg: "/project_images/preview-3dportfolio.jpg",
-    imgs: ["/project_images/preview-3dportfolio.jpg"],
-    githubLink: "https://github.com/Havir-S/portfolio3d",
-    websiteLink: "https://christophersaffron-3d.vercel.app/",
-    technology: ["react", "scss", "gimp", "blender", "threejs", "vercel"],
-  },
-  {
-    id: 4,
-    category: "web-development",
-    slug: "portfolio2d",
-    name: "Portfolio 2D",
-    description:
-      "React の機能を使用して作成されたポートフォリオ。日本の景色からインスピレーションを得て、Blender で再現しました。",
-    descriptionShort: "「ポートフォリオ 2D を見つめる」",
-    mainImg: "/project_images/portfoliolight2.jpg",
-    imgs: ["/project_images/portfoliolight2.jpg"],
-    githubLink: "https://github.com/Havir-S/portfolio2d",
-    websiteLink: "https://portfolio2d.vercel.app/",
-    technology: ["react", "gimp", "blender", "scss", "vercel"],
   },
   {
     id: 5,
@@ -155,6 +171,20 @@ const PROJECTS = [
   },
   {
     id: 6,
+    category: "web-development",
+    slug: "portfolio2d",
+    name: "Portfolio 2D",
+    description:
+      "React の機能を使用して作成されたポートフォリオ。日本の景色からインスピレーションを得て、Blender で再現しました。",
+    descriptionShort: "「ポートフォリオ 2D を見つめる」",
+    mainImg: "/project_images/portfoliolight2.jpg",
+    imgs: ["/project_images/portfoliolight2.jpg"],
+    githubLink: "https://github.com/Havir-S/portfolio2d",
+    websiteLink: "https://portfolio2d.vercel.app/",
+    technology: ["react", "gimp", "blender", "scss", "vercel"],
+  },
+  {
+    id: 38,
     category: "web-development",
     slug: "hulu",
     name: "Hulu",
