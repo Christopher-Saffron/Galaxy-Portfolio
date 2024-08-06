@@ -5,13 +5,13 @@ import ResumeLink from "@/components/jp/resume/ResumeLink";
 export default function Resumes() {
   return (
     <div className=" col-span-full lg:col-start-2 lg:col-end-9 flex flex-col ">
-      <ResumeLink
+      {/* <ResumeLink
         previewImgs={["/portfolio/test1.png", "/portfolio/test2.png"]}
         downloadLink={"Krzysztof_Szafran_Resume_PL_28-07-2023.pdf"}
         fileName={"Krzysztof Szafran CV PL"}
-      />
+      /> */}
       <ResumeLink
-        previewImgs={["/portfolio/en1.png"]}
+        previewImgs={["/portfolio/default_cv.png"]}
         downloadLink={"Krzysztof_Szafran_Resume_EN_28-07-2023.pdf"}
         fileName={"Christopher Saffron CV EN"}
       />

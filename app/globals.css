@@ -139,7 +139,7 @@ body {
     @apply transition duration-100 hover:text-main;
   }
   .download-view-pdf {
-    @apply underline text-sm italic underline-offset-4 cursor-pointer whitespace-nowrap;
+    @apply underline block  text-sm italic underline-offset-4 cursor-pointer whitespace-nowrap;
   }
 }
 

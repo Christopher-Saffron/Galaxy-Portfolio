@@ -19,7 +19,7 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
         <div className="flex ml-2 md:ml-0 gap-4 md:gap-6 ">
           <div
             onClick={() => setShowImgs((n) => !n)}
-            className={`flex items-center gap-2`}
+            className={`flex items-center gap-1 ml-3`}
           >
             <Image
               className={`${showImgs && "hidden"}`}

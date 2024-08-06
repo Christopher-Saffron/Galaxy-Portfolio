@@ -1,13 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Zoom from "react-medium-image-zoom";
 
 export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
   const [showImgs, setShowImgs] = useState(false);
   return (
-    <div className=" flex flex-col">
+    <div className="  flex flex-col">
       <div className="py-3 border-b-2 border-gray-300 dark:border-[#1A1A1A] w-full  flex flex-col md:flex-row justify-between ">
         <div
           className="resumeLink hoverMain text-black dark:text-textSub2"
@@ -18,7 +19,7 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
         <div className="flex ml-2 md:ml-0 gap-4 md:gap-6 ">
           <div
             onClick={() => setShowImgs((n) => !n)}
-            className="flex items-center gap-2"
+            className={`flex items-center gap-1 ml-3`}
           >
             <Image
               className={`${showImgs && "hidden"}`}
@@ -28,7 +29,7 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
               alt=""
             />
             <span className="download-view-pdf hoverMain">
-              {showImgs ? "Hide Images" : "Preview"}
+              {showImgs ? "Schowaj" : "Pokaż"}
             </span>
           </div>
           {/* <Link
@@ -36,7 +37,7 @@ export default function ResumeLink({ downloadLink, fileName, previewImgs }) {
             className="flex items-center gap-2"
           >
             <Image src="/images/Download.svg" width={18} height={18} alt="" />
-            <span className="download-view-pdf hoverMain">Download pdf</span>
+            <span className="download-view-pdf hoverMain">Pobierz pdf</span>
           </Link> */}
         </div>
       </div>
